@@ -336,7 +336,9 @@ function mountFrames(L, vs) {
       f = document.createElement('iframe');
       f.dataset.v = v.id;
       f.setAttribute('allowfullscreen', '');
-      f.title = `${L.title} — ${v.label}`;
+      // aria-label, not title: a title attribute renders a native tooltip that
+      // floats over the full-screen control pill.
+      f.setAttribute('aria-label', `${L.title} — ${v.label}`);
       f.hidden = true;
       box.appendChild(f);
     }
