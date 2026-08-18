@@ -24,7 +24,7 @@ const VIEWS = [
 const KEYS = [
   ['/', 'Search'], ['&uarr; &darr;', 'Move between lessons'], ['&crarr;', 'Open'],
   ['Tab', 'Next document'], ['&#8984;B', 'Retract the sidebar'], ['F', 'Full screen'],
-  ['G', 'Unit guide'], ['Esc', 'Back out'], ['?', 'This list'],
+  ['G', 'Unit guide'], ['U', 'Next unit'], ['Esc', 'Back out'], ['?', 'This list'],
 ];
 
 const $ = s => document.querySelector(s);
@@ -36,6 +36,7 @@ const S = {                       // application state
   data: null, units: [], lessons: [], guideFor: new Map(),
   ui: 0, li: 0, view: 'quarto', mode: 'doc',
   slim: localStorage.getItem('slim') === '1',
+  open: new Set(JSON.parse(localStorage.getItem('open') || '[]')),
   full: false, offline: false, cached: new Set(), hits: [], hi: 0,
 };
 
@@ -92,10 +93,17 @@ async function load() {
     return;
   }
 
+  // Default: expand the unit you were last in, or the newest one. Collapsed
+  // units keep the rail short once the year has five of them.
+  if (!S.open.size) S.open.add(S.units[S.units.length - 1].unit);
+
   const last = JSON.parse(localStorage.getItem('last') || 'null');
   if (last) {
     const i = S.lessons.findIndex(x => x.L.slug === last.slug);
-    if (i >= 0) { S.li = i; S.ui = S.units.indexOf(S.lessons[i].u); S.view = last.view || 'quarto'; }
+    if (i >= 0) {
+      S.li = i; S.ui = S.units.indexOf(S.lessons[i].u); S.view = last.view || 'quarto';
+      S.open.add(S.lessons[i].u.unit);
+    }
   }
   await refreshCached();
   $('#boot').remove();
@@ -125,21 +133,48 @@ function renderRail() {
   wide.innerHTML = ''; slim.innerHTML = '';
 
   S.units.forEach((u, ui) => {
-    const active = S.mode === 'guide' && ui === S.ui;
-    const head = el('button', 'unithead' + (active ? ' on' : ''),
-      `<b>${esc(unitTitle(u))}</b><span>Unit guide &amp; homework &rarr;</span>`);
-    head.onclick = () => { S.ui = ui; S.mode = 'guide'; render(); };
+    const open = S.open.has(u.unit);
+    const onGuide = S.mode === 'guide' && ui === S.ui;
+
+    const head = el('button', 'unithead',
+      `<b><span class="chev${open ? ' open' : ''}">
+         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M9 6l6 6-6 6"/></svg>
+       </span>${esc(unitTitle(u))}</b>
+       <span>${open ? '' : u.lessons.length + (u.lessons.length === 1 ? ' lesson' : ' lessons')}</span>`);
+    head.onclick = () => {
+      S.open.has(u.unit) ? S.open.delete(u.unit) : S.open.add(u.unit);
+      localStorage.setItem('open', JSON.stringify([...S.open]));
+      renderRail();
+    };
     wide.appendChild(head);
 
-    const gi = el('button', 'srow' + (active ? ' on' : ''),
+    // slim rail: a unit chip that also toggles, then that unit's codes
+    const chip = el('button', 'uchip' + (open ? ' open' : ''), esc('U' + (u.unit.match(/\d+/) || ['?'])[0]));
+    chip.onclick = head.onclick;
+    tipify(chip, unitTitle(u), open ? 'click to collapse' : `${u.lessons.length} lessons — click to expand`);
+    slim.appendChild(chip);
+
+    if (!open) { slim.appendChild(el('div', 'sep')); return; }
+
+    const g = el('button', 'lrow' + (onGuide ? ' on' : ''),
+      `<span class="lcode" style="display:grid;place-items:center;padding-top:0">
+         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5h16v14H4z"/><path d="M4 10h16M4 15h16"/></svg>
+       </span>
+       <span class="lmeta"><span class="ltitle">Unit guide</span>
+       <span class="lsub">every day, every problem</span></span>`);
+    g.onclick = () => { S.ui = ui; S.mode = 'guide'; render(); };
+    wide.appendChild(g);
+
+    const gi = el('button', 'srow' + (onGuide ? ' on' : ''),
       `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v14H4z"/><path d="M4 10h16M4 15h16"/></svg>`);
-    gi.onclick = head.onclick;
-    tipify(gi, unitTitle(u), 'unit guide & homework');
+    gi.onclick = g.onclick;
+    tipify(gi, 'Unit guide', unitTitle(u));
     slim.appendChild(gi);
     slim.appendChild(el('div', 'sep'));
 
     (u.guide && u.guide.length ? u.guide : u.lessons.map(L => ({ kind: 'lesson', _L: L })))
       .forEach(row => railRow(u, row, wide, slim));
+    slim.appendChild(el('div', 'sep'));
   });
 }
 
@@ -377,6 +412,8 @@ function renderNet() {
 function pick(i) {
   S.li = i; S.mode = 'doc';
   S.ui = S.units.indexOf(S.lessons[i].u);
+  S.open.add(S.lessons[i].u.unit);
+  localStorage.setItem('open', JSON.stringify([...S.open]));
   localStorage.setItem('last', JSON.stringify({ slug: S.lessons[i].L.slug, view: S.view }));
   render();
   refreshCached().then(() => { renderRail(); renderFoot(); });
@@ -493,6 +530,11 @@ addEventListener('keydown', e => {
   else if (e.key === 'Tab') { e.preventDefault(); if (S.mode === 'doc') cycleView(e.shiftKey); }
   else if (e.key === 'ArrowDown') { e.preventDefault(); pick(Math.min(S.li + 1, S.lessons.length - 1)); }
   else if (e.key === 'ArrowUp') { e.preventDefault(); pick(Math.max(S.li - 1, 0)); }
+  else if (e.key === 'u' || e.key === 'U') {          // next unit
+    const n = (S.ui + 1) % S.units.length;
+    S.open.add(S.units[n].unit); S.ui = n; S.mode = 'guide';
+    localStorage.setItem('open', JSON.stringify([...S.open])); render();
+  }
 });
 
 /* ── wiring ── */
