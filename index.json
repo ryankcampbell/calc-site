@@ -1,0 +1,1013 @@
+{
+ "units": [
+  {
+   "unit": "unit1-review",
+   "lessons": [
+    {
+     "code": "L1.1a",
+     "slug": "1-1a-functions-catalog",
+     "title": "Functions + Catalog",
+     "stewart": "1.1a",
+     "quarto": {
+      "file": "q/1-1a-functions-catalog.html",
+      "hash": "2c7b720daee945de0e10f8c7f805d06557ce292de6d77467d46448109b20b105",
+      "bytes": 3775525
+     },
+     "sections": [
+      {
+       "id": "what-a-function-is",
+       "text": "What a function is",
+       "level": 2
+      },
+      {
+       "id": "domain-range",
+       "text": "Domain & range",
+       "level": 2
+      },
+      {
+       "id": "piecewise-absolute-value",
+       "text": "Piecewise & absolute value",
+       "level": 2
+      },
+      {
+       "id": "symmetry",
+       "text": "Symmetry",
+       "level": 2
+      },
+      {
+       "id": "the-difference-quotient",
+       "text": "The difference quotient",
+       "level": 2
+      },
+      {
+       "id": "the-function-families",
+       "text": "The function families",
+       "level": 2
+      }
+     ],
+     "docs": {
+      "packet": {
+       "file": "p/1-1a-functions-catalog-packet.pdf",
+       "hash": "c5ca6cf73e29ac7fe3c61b7db8208de709af2faa1450401ed58bd1ef86ddcd73",
+       "bytes": 285034
+      },
+      "ticket": {
+       "file": "p/1-1a-functions-catalog-ticket.pdf",
+       "hash": "bc782842cdcb7f6185220d563c76631bf26dfe8bf7b527e434755bd473f898ef",
+       "bytes": 111171
+      },
+      "onepager": {
+       "file": "p/1-1a-functions-catalog-onepager.pdf",
+       "hash": "2bc18179cd9ae20d0d14e38022103f67b8606e35975f387ece29ef93399ec379",
+       "bytes": 394098
+      }
+     }
+    },
+    {
+     "code": "L1.1b",
+     "slug": "1-1b-transformations",
+     "title": "New Functions from Old",
+     "stewart": "1.1b",
+     "quarto": {
+      "file": "q/1-1b-transformations.html",
+      "hash": "63c8658157fd693c45e0434544c90f65b61e68d0d236e643af14ba1f40c0e3cd",
+      "bytes": 3732584
+     },
+     "sections": [
+      {
+       "id": "transformations",
+       "text": "Transformations",
+       "level": 2
+      },
+      {
+       "id": "combining-functions",
+       "text": "Combining functions",
+       "level": 2
+      },
+      {
+       "id": "composition-and-diffnifod",
+       "text": "Composition and diffnifod",
+       "level": 2
+      }
+     ],
+     "docs": {
+      "packet": {
+       "file": "p/1-1b-transformations-packet.pdf",
+       "hash": "3ce6a4cda02f1766062395ee0e2286c841e4fcee96875a64501869b9130f358f",
+       "bytes": 240009
+      },
+      "ticket": {
+       "file": "p/1-1b-transformations-ticket.pdf",
+       "hash": "46a3ddcfbaf13b406d84abf3047e50662fcc0d5dcc0098eb4a71420e361dc148",
+       "bytes": 118168
+      },
+      "onepager": {
+       "file": "p/1-1b-transformations-onepager.pdf",
+       "hash": "2a623a7fc8285495345bfaf4875d5d33b23e3b5e960bb10f6d2a15847b0c414c",
+       "bytes": 254549
+      }
+     }
+    },
+    {
+     "code": "L1.2",
+     "slug": "1-2-limits",
+     "title": "Limits",
+     "stewart": "1.2",
+     "quarto": {
+      "file": "q/1-2-limits.html",
+      "hash": "816affde9f1b29434c59758f92e505c35822182a76f0663714347ef7c03e5adb",
+      "bytes": 3846097
+     },
+     "sections": [
+      {
+       "id": "what-a-limit-is",
+       "text": "What a limit is",
+       "level": 2
+      },
+      {
+       "id": "watch-out-fa-doesnt-matter",
+       "text": "Watch out — f(a) doesn’t matter",
+       "level": 3
+      },
+      {
+       "id": "when-does-a-limit-exist",
+       "text": "When does a limit exist",
+       "level": 3
+      },
+      {
+       "id": "diagnosing-limits",
+       "text": "Diagnosing limits",
+       "level": 2
+      },
+      {
+       "id": "a-fab",
+       "text": "2a · f(a)=b",
+       "level": 3
+      },
+      {
+       "id": "b-fatfrac00-the-workhorse",
+       "text": "2b · f(a)=\\tfrac00 — the workhorse",
+       "level": 3
+      },
+      {
+       "id": "c-fatfracb0",
+       "text": "2c · f(a)=\\tfrac{b}{0}",
+       "level": 3
+      },
+      {
+       "id": "d-a-squeezed-mystery-function",
+       "text": "2d · A squeezed mystery function",
+       "level": 3
+      },
+      {
+       "id": "e-infinite-oscillation",
+       "text": "2e · Infinite oscillation",
+       "level": 3
+      },
+      {
+       "id": "self-check-every-reading",
+       "text": "Self-check — every reading",
+       "level": 3
+      },
+      {
+       "id": "a-general-flowchart-for-evaluating-limits",
+       "text": "A general flowchart for evaluating limits",
+       "level": 2
+      },
+      {
+       "id": "the-laws",
+       "text": "The laws",
+       "level": 2
+      },
+      {
+       "id": "limit-law-problems",
+       "text": "Limit law problems",
+       "level": 3
+      },
+      {
+       "id": "self-check-squeeze-one-sided-and-the-laws",
+       "text": "Self-check — squeeze, one-sided, and the laws",
+       "level": 3
+      }
+     ],
+     "docs": {
+      "packet": {
+       "file": "p/1-2-limits-packet.pdf",
+       "hash": "1893d305caf1d65c5031ea92ea254356c7818328747dad5f70a47f1b796dc9aa",
+       "bytes": 234670
+      },
+      "ticket": {
+       "file": "p/1-2-limits-ticket.pdf",
+       "hash": "de585ebeb7de300f056136a9bddfe9816dee985fc623f59a2e2078ce157aab25",
+       "bytes": 139970
+      },
+      "onepager": {
+       "file": "p/1-2-limits-onepager.pdf",
+       "hash": "9d510ee0700e59a76c78f28c33286bdf77558b7b3882ab96f5ee76968194c3fe",
+       "bytes": 605335
+      }
+     }
+    },
+    {
+     "code": "L1.3",
+     "slug": "1-3-continuity",
+     "title": "Continuity",
+     "stewart": "1.8",
+     "quarto": {
+      "file": "q/1-3-continuity.html",
+      "hash": "9731bcb7b0440282cd73aea4ef19d1da033c690334f9e32ba9cffa142f07a8c9",
+      "bytes": 3739402
+     },
+     "sections": [
+      {
+       "id": "what-continuity-is",
+       "text": "What continuity is",
+       "level": 2
+      },
+      {
+       "id": "continuity-implies-three-things-read-them-off-the-equation",
+       "text": "Continuity implies three things — read them off the equation",
+       "level": 3
+      },
+      {
+       "id": "every-familiar-function-is-continuous-everywhere-on-its-domain",
+       "text": "Every familiar function is continuous everywhere on its domain",
+       "level": 3
+      },
+      {
+       "id": "limit-of-a-composite-function",
+       "text": "Limit of a composite function",
+       "level": 3
+      },
+      {
+       "id": "self-check",
+       "text": "Self-check",
+       "level": 3
+      },
+      {
+       "id": "where-continuity-breaks",
+       "text": "Where continuity breaks",
+       "level": 2
+      },
+      {
+       "id": "there-are-four-kinds-of-discontinuity",
+       "text": "There are four kinds of discontinuity",
+       "level": 3
+      },
+      {
+       "id": "the-limit-probe",
+       "text": "The Limit Probe",
+       "level": 3
+      },
+      {
+       "id": "the-drill",
+       "text": "The drill",
+       "level": 3
+      },
+      {
+       "id": "self-check-1",
+       "text": "Self-check",
+       "level": 3
+      },
+      {
+       "id": "intervals-of-continuity",
+       "text": "Intervals of continuity",
+       "level": 3
+      },
+      {
+       "id": "intermediate-value-theorem",
+       "text": "Intermediate Value Theorem",
+       "level": 2
+      },
+      {
+       "id": "three-things-to-get-right",
+       "text": "Three things to get right",
+       "level": 3
+      },
+      {
+       "id": "root-form",
+       "text": "Root form",
+       "level": 3
+      },
+      {
+       "id": "the-move-thing1-thing2",
+       "text": "The move: thing1 − thing2",
+       "level": 3
+      },
+      {
+       "id": "self-check-2",
+       "text": "Self-check",
+       "level": 3
+      }
+     ],
+     "docs": {
+      "packet": {
+       "file": "p/1-3-continuity-packet.pdf",
+       "hash": "de2d44f262f50e75055049745367b194938b24575f4470b82481dc5f82664c82",
+       "bytes": 244835
+      },
+      "ticket": {
+       "file": "p/1-3-continuity-ticket.pdf",
+       "hash": "c70d7ff122997d1bf8cbf99306899c1cac17140de21ca3a9ba3cfaf84bf0df19",
+       "bytes": 139436
+      },
+      "onepager": {
+       "file": "p/1-3-continuity-onepager.pdf",
+       "hash": "e4e0d8b7fe38ba03262a57cb99d5603f7ad8ae1aea5d20a1aac849c86e4de2bc",
+       "bytes": 368365
+      }
+     }
+    },
+    {
+     "code": "L1.4",
+     "slug": "1-4-derivative",
+     "title": "The Derivative",
+     "stewart": "2.1-2.2",
+     "quarto": {
+      "file": "q/1-4-derivative.html",
+      "hash": "60396b9c4d822197e916318bda301198dfe73e380e11c55c45abb85463461d5c",
+      "bytes": 3750694
+     },
+     "sections": [
+      {
+       "id": "the-derivative-at-a-point",
+       "text": "The derivative at a point",
+       "level": 2
+      },
+      {
+       "id": "three-notations-one-limit",
+       "text": "Three notations, one limit",
+       "level": 3
+      },
+      {
+       "id": "the-equation-of-the-tangent-line",
+       "text": "The equation of the tangent line",
+       "level": 3
+      },
+      {
+       "id": "velocity",
+       "text": "Velocity",
+       "level": 3
+      },
+      {
+       "id": "the-derivative-as-a-function",
+       "text": "The derivative as a function",
+       "level": 2
+      },
+      {
+       "id": "the-derivative-of-sqrtx",
+       "text": "The derivative of \\sqrt{x}",
+       "level": 3
+      },
+      {
+       "id": "the-second-derivative",
+       "text": "The second derivative",
+       "level": 3
+      },
+      {
+       "id": "the-graph-of-f-from-the-graph-of-f",
+       "text": "The graph of f' from the graph of f",
+       "level": 3
+      },
+      {
+       "id": "derivatives-from-the-definition",
+       "text": "Derivatives from the definition",
+       "level": 3
+      },
+      {
+       "id": "differentiability",
+       "text": "Differentiability",
+       "level": 2
+      },
+      {
+       "id": "four-kinds-of-non-differentiability",
+       "text": "Four kinds of non-differentiability",
+       "level": 3
+      },
+      {
+       "id": "lvert-xrvert-at-x0",
+       "text": "\\lvert x\\rvert at x=0",
+       "level": 3
+      },
+      {
+       "id": "lvert-x2-4rvert",
+       "text": "\\lvert x^2-4\\rvert",
+       "level": 3
+      }
+     ],
+     "docs": {
+      "packet": {
+       "file": "p/1-4-derivative-packet.pdf",
+       "hash": "b7b348e9dfee43253e135a1cc76d3d8113b0a15d83ae44da3a82938d9b6c5cd9",
+       "bytes": 252544
+      },
+      "ticket": {
+       "file": "p/1-4-derivative-ticket.pdf",
+       "hash": "19545d289d748fdd132aede6faf7b569b8dee375192a2f1ba285e9de66953a9f",
+       "bytes": 125601
+      },
+      "onepager": {
+       "file": "p/1-4-derivative-onepager.pdf",
+       "hash": "cdc96625f182ecd06baf096a1d5d98a484898517e06bbe4e32627d5e8d1bba01",
+       "bytes": 350910
+      }
+     }
+    },
+    {
+     "code": "L1.5",
+     "slug": "1-5-formulae",
+     "title": "Differentiation Formulae",
+     "stewart": "2.3",
+     "quarto": {
+      "file": "q/1-5-formulae.html",
+      "hash": "e949916e6ce77d6b49a0b7d4ab1792d5a5c15efc425bf6632e4a2c3d91f3a079",
+      "bytes": 3710171
+     },
+     "sections": [
+      {
+       "id": "the-five-rules",
+       "text": "The five rules",
+       "level": 2
+      },
+      {
+       "id": "constant-rule",
+       "text": "Constant rule",
+       "level": 3
+      },
+      {
+       "id": "power-rule",
+       "text": "Power rule",
+       "level": 3
+      },
+      {
+       "id": "sum-and-difference-rule",
+       "text": "Sum and difference rule",
+       "level": 3
+      },
+      {
+       "id": "product-rule",
+       "text": "Product rule",
+       "level": 3
+      },
+      {
+       "id": "quotient-rule",
+       "text": "Quotient rule",
+       "level": 3
+      },
+      {
+       "id": "leibniz-and-prime-notation",
+       "text": "Leibniz and prime notation",
+       "level": 3
+      },
+      {
+       "id": "proof-of-the-power-rule",
+       "text": "Proof of the power rule",
+       "level": 2
+      },
+      {
+       "id": "binomial-expansion-of-xh3",
+       "text": "Binomial expansion of (x+h)^{3}",
+       "level": 3
+      },
+      {
+       "id": "the-power-rule-for-any-n",
+       "text": "The power rule for any n",
+       "level": 3
+      },
+      {
+       "id": "product-and-quotient-rules",
+       "text": "Product and quotient rules",
+       "level": 2
+      },
+      {
+       "id": "proof-of-the-product-rule",
+       "text": "Proof of the product rule",
+       "level": 3
+      },
+      {
+       "id": "the-product-rule-checked-by-expanding",
+       "text": "The product rule checked by expanding",
+       "level": 3
+      },
+      {
+       "id": "worked-products-and-quotients",
+       "text": "Worked products and quotients",
+       "level": 3
+      },
+      {
+       "id": "four-expressions-and-the-rule-each-needs",
+       "text": "Four expressions and the rule each needs",
+       "level": 3
+      },
+      {
+       "id": "higher-derivatives-and-horizontal-tangents",
+       "text": "Higher derivatives and horizontal tangents",
+       "level": 2
+      },
+      {
+       "id": "the-second-derivative",
+       "text": "The second derivative",
+       "level": 3
+      },
+      {
+       "id": "migration-from-f-to-f-to-f",
+       "text": "Migration from f to f' to f''",
+       "level": 3
+      },
+      {
+       "id": "horizontal-tangents",
+       "text": "Horizontal tangents",
+       "level": 3
+      }
+     ],
+     "docs": {
+      "packet": {
+       "file": "p/1-5-formulae-packet.pdf",
+       "hash": "08d65f1170d9e6e1ffdf4dbd7c630019f2fefbd40876dc54a8495dbc554536b6",
+       "bytes": 226770
+      },
+      "ticket": {
+       "file": "p/1-5-formulae-ticket.pdf",
+       "hash": "6cce8a2af400ab52260dbbcf2c30467ced60f0c2e9cbcafbc4da7d546c702760",
+       "bytes": 141227
+      },
+      "onepager": {
+       "file": "p/1-5-formulae-onepager.pdf",
+       "hash": "7eedecfbbd969a9478eeb3dd6a719fa14d36a4eb3bb65be194d1adffd341ed64",
+       "bytes": 292282
+      }
+     }
+    },
+    {
+     "code": "L1.6",
+     "slug": "1-6-trig-chain",
+     "title": "Trig Derivatives & the Chain Rule",
+     "stewart": "2.4-2.5",
+     "quarto": {
+      "file": "q/1-6-trig-chain.html",
+      "hash": "ae75f3626a905611aa4847e2ac19ae093f2821205fa46c5dff6f9548c731a8c8",
+      "bytes": 3728423
+     },
+     "sections": [
+      {
+       "id": "the-six-trig-derivatives",
+       "text": "The six trig derivatives",
+       "level": 2
+      },
+      {
+       "id": "radians-and-degrees",
+       "text": "Radians and degrees",
+       "level": 3
+      },
+      {
+       "id": "the-derivatives-of-sine-and-cosine",
+       "text": "The derivatives of sine and cosine",
+       "level": 3
+      },
+      {
+       "id": "the-co-function-rule",
+       "text": "The co-function rule",
+       "level": 3
+      },
+      {
+       "id": "tangent-cotangent-secant-and-cosecant",
+       "text": "Tangent, cotangent, secant and cosecant",
+       "level": 3
+      },
+      {
+       "id": "the-two-special-limits",
+       "text": "The two special limits",
+       "level": 3
+      },
+      {
+       "id": "limits-evaluated-with-the-special-limits",
+       "text": "Limits evaluated with the special limits",
+       "level": 3
+      },
+      {
+       "id": "differentials",
+       "text": "Differentials",
+       "level": 2
+      },
+      {
+       "id": "dx-dy-and-dfx",
+       "text": "dx, dy and d(f(x))",
+       "level": 3
+      },
+      {
+       "id": "computing-dy",
+       "text": "Computing dy",
+       "level": 3
+      },
+      {
+       "id": "the-chain-rule",
+       "text": "The chain rule",
+       "level": 2
+      },
+      {
+       "id": "nudge-propagation-on-three-number-lines",
+       "text": "Nudge propagation on three number lines",
+       "level": 3
+      },
+      {
+       "id": "outer-and-inner-functions",
+       "text": "Outer and inner functions",
+       "level": 3
+      },
+      {
+       "id": "worked-chain-rule-derivatives",
+       "text": "Worked chain-rule derivatives",
+       "level": 3
+      },
+      {
+       "id": "the-chain-rule-with-the-product-and-quotient-rules",
+       "text": "The chain rule with the product and quotient rules",
+       "level": 2
+      },
+      {
+       "id": "top-level-structure",
+       "text": "Top-level structure",
+       "level": 3
+      },
+      {
+       "id": "a-product-whose-factor-needs-the-chain-rule",
+       "text": "A product whose factor needs the chain rule",
+       "level": 3
+      },
+      {
+       "id": "chain-inside-quotient-inside-trig",
+       "text": "Chain inside quotient inside trig",
+       "level": 3
+      }
+     ],
+     "docs": {
+      "packet": {
+       "file": "p/1-6-trig-chain-packet.pdf",
+       "hash": "0fba96ddb50f249c28626c5a1047c85acc1b7d9afcb9e8154c995434adeacc57",
+       "bytes": 213481
+      },
+      "ticket": {
+       "file": "p/1-6-trig-chain-ticket.pdf",
+       "hash": "71a3f6c13b993f5ddcaf63e1a78c28ee49eda3e9cdabbf03d15ce9c3d32ce672",
+       "bytes": 150258
+      },
+      "onepager": {
+       "file": "p/1-6-trig-chain-onepager.pdf",
+       "hash": "141e0a658eafe009598f31d8604e5df751a8a1aa17df748c6e3114a07570433c",
+       "bytes": 308920
+      }
+     }
+    },
+    {
+     "code": "L1.7a",
+     "slug": "1-7a-implicit",
+     "title": "Implicit Differentiation",
+     "stewart": "2.6",
+     "quarto": {
+      "file": "q/1-7a-implicit.html",
+      "hash": "f2976a22c5e1296d9fc80bc95bba836abdc8886fb41be4d27f1e997e891d17e4",
+      "bytes": 4368998
+     },
+     "sections": [
+      {
+       "id": "implicit-curves-and-level-sets",
+       "text": "Implicit curves and level sets",
+       "level": 2
+      },
+      {
+       "id": "the-differential-of-s",
+       "text": "The differential of S",
+       "level": 3
+      },
+      {
+       "id": "ds0-on-the-tangent-line",
+       "text": "d(S)=0 on the tangent line",
+       "level": 3
+      },
+      {
+       "id": "implicit-differentiation",
+       "text": "Implicit differentiation",
+       "level": 2
+      },
+      {
+       "id": "d-of-both-sides",
+       "text": "d of both sides",
+       "level": 3
+      },
+      {
+       "id": "chain-rule-on-every-y-term",
+       "text": "Chain rule on every y-term",
+       "level": 3
+      },
+      {
+       "id": "worked-implicit-derivatives",
+       "text": "Worked implicit derivatives",
+       "level": 3
+      },
+      {
+       "id": "tangent-lines-to-an-implicit-curve",
+       "text": "Tangent lines to an implicit curve",
+       "level": 2
+      },
+      {
+       "id": "the-circle-at-34",
+       "text": "The circle at (3,4)",
+       "level": 3
+      },
+      {
+       "id": "the-folium-of-descartes-at-21",
+       "text": "The folium of Descartes at (2,1)",
+       "level": 3
+      },
+      {
+       "id": "horizontal-and-vertical-tangents",
+       "text": "Horizontal and vertical tangents",
+       "level": 2
+      },
+      {
+       "id": "top-0-and-bottom-0",
+       "text": "Top =0 and bottom =0",
+       "level": 3
+      },
+      {
+       "id": "horizontal-and-vertical-tangents-of-an-ellipse",
+       "text": "Horizontal and vertical tangents of an ellipse",
+       "level": 3
+      },
+      {
+       "id": "back-substitution",
+       "text": "Back-substitution",
+       "level": 3
+      },
+      {
+       "id": "tangents-of-a-given-slope",
+       "text": "Tangents of a given slope",
+       "level": 3
+      }
+     ],
+     "docs": {
+      "packet": {
+       "file": "p/1-7a-implicit-packet.pdf",
+       "hash": "9a71ae0158f99f9fe9fc4b33abe20b069873c58f208e907ddce93be5bb3de13e",
+       "bytes": 235724
+      },
+      "ticket": {
+       "file": "p/1-7a-implicit-ticket.pdf",
+       "hash": "263fd57dff14102e3532acf8545f203eb306b677ec41b9da47b3de813f7bf67a",
+       "bytes": 130125
+      },
+      "onepager": {
+       "file": "p/1-7a-implicit-onepager.pdf",
+       "hash": "84750bd1487657b25c0a0b261df1ba1260f05b0debc4f6b413821a7c94ad7b2d",
+       "bytes": 264852
+      }
+     }
+    },
+    {
+     "code": "L1.7b",
+     "slug": "1-7b-related-rates",
+     "title": "Related Rates",
+     "stewart": "2.8",
+     "quarto": {
+      "file": "q/1-7b-related-rates.html",
+      "hash": "b8cd16fc57ad608767c604c36f0ffae69e6793c967a7347e782732da0c0a77a2",
+      "bytes": 3737415
+     },
+     "sections": [
+      {
+       "id": "rates-linked-by-an-equation",
+       "text": "Rates linked by an equation",
+       "level": 2
+      },
+      {
+       "id": "newtons-dot-notation",
+       "text": "Newton’s dot notation",
+       "level": 3
+      },
+      {
+       "id": "implicit-differentiation-in-t",
+       "text": "Implicit differentiation in t",
+       "level": 3
+      },
+      {
+       "id": "the-ladder-and-the-tangent-line",
+       "text": "The ladder and the tangent line",
+       "level": 3
+      },
+      {
+       "id": "the-related-rates-template",
+       "text": "The related-rates template",
+       "level": 2
+      },
+      {
+       "id": "constants-variables-rates",
+       "text": "Constants, variables, rates",
+       "level": 3
+      },
+      {
+       "id": "signs-of-the-known-rates",
+       "text": "Signs of the known rates",
+       "level": 3
+      },
+      {
+       "id": "the-master-equation",
+       "text": "The master equation",
+       "level": 3
+      },
+      {
+       "id": "substitution-after-differentiating",
+       "text": "Substitution after differentiating",
+       "level": 3
+      },
+      {
+       "id": "worked-related-rates-problems",
+       "text": "Worked related-rates problems",
+       "level": 2
+      },
+      {
+       "id": "radians",
+       "text": "Radians",
+       "level": 3
+      },
+      {
+       "id": "auxiliary-equations",
+       "text": "Auxiliary equations",
+       "level": 2
+      },
+      {
+       "id": "similar-triangles-in-the-cone",
+       "text": "Similar triangles in the cone",
+       "level": 3
+      }
+     ],
+     "docs": {
+      "packet": {
+       "file": "p/1-7b-related-rates-packet.pdf",
+       "hash": "a7461f426d45b2234f3889061a8299b33c56795558cf1b59cc1241085ba91f56",
+       "bytes": 258120
+      },
+      "ticket": {
+       "file": "p/1-7b-related-rates-ticket.pdf",
+       "hash": "d59f5ffb8ecb4f1f9efaf0e8ba21095f72445ec1e5e3eae651c3f3e438f030ea",
+       "bytes": 152916
+      },
+      "onepager": {
+       "file": "p/1-7b-related-rates-onepager.pdf",
+       "hash": "c3b817c79aa3402e32008f2b3c683aa425e1fd631b4d9889609870970d72fe28",
+       "bytes": 317191
+      }
+     }
+    }
+   ],
+   "guide": [
+    {
+     "kind": "banner",
+     "text": "REVIEW: Stewart Chapters 1 & 2 (University Credit Exam)"
+    },
+    {
+     "kind": "lesson",
+     "date": "9/2",
+     "name": "Course launch",
+     "detail": "Diagnostic",
+     "stewart": "—",
+     "hw": "Read §1.1 + Quarto self-review",
+     "count": null
+    },
+    {
+     "kind": "lesson",
+     "date": "9/4",
+     "name": "1.1a Functions & Catalog",
+     "detail": "4 representations, intervals, D/R, piecewise |x|, · even/odd, difference quotient, 9 families",
+     "stewart": "§1.1–1.2",
+     "hw": "p.19: 3,10 p.20: 20 p.21: 28,30,38,42,46 p.22: 72 p.33: 2,4",
+     "count": 11
+    },
+    {
+     "kind": "lesson",
+     "date": "9/8",
+     "name": "1.1b Transformations",
+     "detail": "Inside/outside, |f(x)| vs f(|x|), combos, · composition · diffnifod",
+     "stewart": "§1.3",
+     "hw": "p.42: 2 p.43: 5,15,24,29 p.44: 32,37,38,44,53",
+     "count": 10
+    },
+    {
+     "kind": "lesson",
+     "date": "9/9",
+     "name": "1.2 Limits",
+     "detail": "Flowchart, fill in the hole, F&C, · rationalize, squeeze",
+     "stewart": "§1.5–1.6",
+     "hw": "p.59: 1,6 p.60: 16 p.61: 38,40a p.70: 1,12,14, 16,18,22,30 p.71: 38,51",
+     "count": 14
+    },
+    {
+     "kind": "lesson",
+     "date": "9/11",
+     "name": "1.3 Continuity",
+     "detail": "One equation ⇒ 3 things, 3 kinds of · discontinuity, IVT",
+     "stewart": "§1.8",
+     "hw": "p.91: 3,5,17,19,21,23, 35,37,39,43,45,53",
+     "count": null
+    },
+    {
+     "kind": "quiz",
+     "date": "9/15",
+     "name": "QUIZ 1",
+     "detail": "",
+     "stewart": "§1.1–1.8",
+     "hw": "",
+     "count": null
+    },
+    {
+     "kind": "lesson",
+     "date": "9/16",
+     "name": "1.4 The Derivative",
+     "detail": "Secant vs. tangent vs. TL equation, · f→ f' sketching, 4 non-diff kinds",
+     "stewart": "§2.1–2.2 · (+ 2.7)",
+     "hw": "p.113: 7,11,13,27 p.125: 1,3,5,13,17,23 p.127: 31,39,45,47",
+     "count": 14
+    },
+    {
+     "kind": "lesson",
+     "date": "9/18",
+     "name": "1.5 Differentiation Formulae",
+     "detail": "Power, product, quotient, higher · derivatives",
+     "stewart": "§2.3",
+     "hw": "p.140: 1,5,9,13,17,24,25,29 p.141: 51,59 p.142: 71,77 p.143: 89",
+     "count": 13
+    },
+    {
+     "kind": "lesson",
+     "date": "9/22",
+     "name": "1.6 Trig Derivatives & Chain Rule",
+     "detail": "co-f ⇒ ⊖, differentials, product rule · geometrically, 3b1b nudge",
+     "stewart": "§2.4–2.5",
+     "hw": "p.150: 3,5,9,15 p.151: 21,41 p.158: 1,3,7,9,13,17,23,31",
+     "count": null
+    },
+    {
+     "kind": "break",
+     "text": "No class 9/23 – 9/28 · chain rule settles before implicit differentiation"
+    },
+    {
+     "kind": "lesson",
+     "date": "9/29",
+     "name": "1.7a Implicit Differentiation",
+     "detail": "f(x,y) levels, d(S)=0 on TL, · HT/VT from top/bottom",
+     "stewart": "§2.6",
+     "hw": "p.166: 1,5,6,9,11,17,27 p.167: 31,35,39,43,47",
+     "count": null
+    },
+    {
+     "kind": "lesson",
+     "date": "9/30",
+     "name": "1.7b Related Rates",
+     "detail": "C/V/R → MEQ → REQ → Solve; · aux eqns · Newton dots",
+     "stewart": "§2.8",
+     "hw": "p.185: 1,3,5,7,9,11,13 p.186: 15,21,25 p.187: 33,44",
+     "count": null
+    },
+    {
+     "kind": "lesson",
+     "date": "10/2",
+     "name": "1.8 Linearization & Taylor",
+     "detail": "``Better TL'', error analysis, Δ y vs dy, · Taylor applications",
+     "stewart": "§2.9 · §11.10",
+     "hw": "p.192: 1,5,11,19 p.193: 23,31 p.811: 2,10,16,24,26 p.812: 52",
+     "count": 12
+    },
+    {
+     "kind": "lesson",
+     "date": "10/6",
+     "name": "1.9 L'Hôpital's Rule",
+     "detail": "Indeterminate forms, 0/0 only · when the · algebra runs out · §3.4 supplies ∞/∞",
+     "stewart": "§6.8",
+     "hw": "§6.8 set not yet cut",
+     "count": null
+    },
+    {
+     "kind": "review",
+     "date": "10/7",
+     "name": "Review",
+     "detail": "",
+     "stewart": "§1.1–2.9, 6.8",
+     "hw": "Review packet",
+     "count": null
+    },
+    {
+     "kind": "break",
+     "text": "Bridge day · after the exam, out of Chapter 2 and into Chapter 3"
+    },
+    {
+     "kind": "exam",
+     "date": "10/13",
+     "name": "REVIEW EXAM",
+     "detail": "Test 1 · Chapters 1–2 and §6.8 · P01–",
+     "stewart": "§1.1–2.9, 6.8",
+     "hw": "",
+     "count": null
+    }
+   ]
+  }
+ ]
+}
