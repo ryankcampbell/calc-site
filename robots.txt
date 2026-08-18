@@ -1,0 +1,3 @@
+# Course materials for enrolled students. Not for indexing.
+User-agent: *
+Disallow: /
