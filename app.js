@@ -38,11 +38,36 @@ const S = {                       // application state
   slim: localStorage.getItem('slim') === '1',
   open: new Set(JSON.parse(localStorage.getItem('open') || '[]')),
   full: false, offline: false, cached: new Set(), hits: [], hi: 0,
+  // Freshness.  The pill used to read "Up to date" whenever navigator.onLine
+  // was true, which said nothing about whether the manifest was current -- an
+  // app left docked and open never noticed a publish at all.
+  fingerprint: '', lastCheck: 0, pending: false, checking: false,
 };
 
 /* ══════════════════════════════════════════════════════════ data ══ */
 
 const docURL = d => d ? `${d.file}?h=${d.hash.slice(0, 12)}` : null;
+
+/** A cheap identity for the whole manifest: every lesson's slug and every
+ *  document hash.  Documents are content-addressed, so a changed hash IS a
+ *  changed document -- this catches a new lesson AND a re-rendered one. */
+function fingerprint(j) {
+  const out = [];
+  for (const u of (j.units || []))
+    for (const L of (u.lessons || [])) {
+      out.push(L.slug, L.quarto ? L.quarto.hash : '-');
+      for (const k of Object.keys(L.docs || {}).sort()) out.push(k, L.docs[k].hash);
+    }
+  return out.join('|');
+}
+
+const ago = t => {
+  const m = Math.floor((Date.now() - t) / 60000);
+  if (m < 1)  return 'just now';
+  if (m < 60) return m + ' min ago';
+  const h = Math.floor(m / 60);
+  return h < 24 ? h + ' h ago' : Math.floor(h / 24) + ' d ago';
+};
 
 function viewsOf(L) {
   return VIEWS.map(v => ({ ...v, doc: v.id === 'quarto' ? L.quarto : L.docs[v.id] }));
@@ -83,6 +108,8 @@ async function load() {
     S.offline = true;
   }
   S.data = json;
+  S.fingerprint = fingerprint(json);
+  S.lastCheck = Date.now();
   S.units = json.units || [];
   S.units.forEach(linkGuide);
   S.lessons = S.units.flatMap(u => u.lessons.map(L => ({ L, u })));
@@ -110,15 +137,52 @@ async function load() {
   render();
 }
 
+/** Re-read the manifest and say so if it moved.  Called when the window comes
+ *  back to the front and when the network returns -- load() runs once at boot,
+ *  so without this a running app is frozen at whatever was published the moment
+ *  it started. */
+async function checkForUpdates(force) {
+  if (S.checking || S.pending) return;
+  if (!navigator.onLine) { S.offline = true; renderNet(); return; }
+  if (!force && S.lastCheck && Date.now() - S.lastCheck < 60000) return;
+  S.checking = true;
+  try {
+    const r = await fetch('index.json', { cache: 'no-cache' });
+    if (!r.ok) throw new Error(r.status);
+    // The worker served its cached copy, so this was not a real check.
+    if (r.headers.get('X-From-Cache') === '1') { S.offline = true; return; }
+    const j = await r.json();
+    S.offline = false;
+    S.lastCheck = Date.now();
+    if (fingerprint(j) !== S.fingerprint) {
+      S.pending = true;
+      toast('New lessons are available.');
+    }
+  } catch (e) {
+    S.offline = true;        // say the check failed rather than claim freshness
+  } finally {
+    S.checking = false;
+    renderNet();
+  }
+}
+
 async function refreshCached() {
   S.cached = new Set();
   if (!('caches' in window)) return;
   try {
     const c = await caches.open(CACHE_DOCS);
-    for (const req of await c.keys()) S.cached.add(new URL(req.url).pathname.split('/').slice(-2).join('/'));
+    // Key on path AND hash, exactly as the worker does.  Stripping the query
+    // made a RE-RENDERED document report as saved while only its previous
+    // version was cached -- the rail's dot went green and the button said
+    // "Saved for offline" for a file that was not there.
+    for (const req of await c.keys()) {
+      const u = new URL(req.url);
+      S.cached.add(u.pathname.split('/').slice(-2).join('/') + u.search);
+    }
   } catch (e) { /* private mode */ }
 }
-const isCached = d => d && S.cached.has(d.file.split('/').slice(-2).join('/'));
+const cacheKey = d => `${d.file.split('/').slice(-2).join('/')}?h=${d.hash.slice(0, 12)}`;
+const isCached = d => d && S.cached.has(cacheKey(d));
 
 /* ══════════════════════════════════════════════════════════ rail ══ */
 
@@ -247,15 +311,21 @@ function tipify(node, title, sub) {
 function renderFoot() {
   const u = S.units[S.ui];
   const files = u.lessons.flatMap(L => [L.quarto, ...Object.values(L.docs)]);
-  const have = files.filter(isCached).length;
-  S.savedAll = have === files.length;
-  const mb = files.reduce((a, f) => a + f.bytes, 0) / 1e6;
+  // Only what is actually missing.  Documents are content-addressed, so an
+  // unchanged file is already a cache hit and costs nothing -- quoting the
+  // whole unit's size after a one-lesson publish read as "re-download 45 MB",
+  // which is not what happens.
+  const missing = files.filter(f => !isCached(f));
+  S.savedAll = missing.length === 0;
+  const mb = missing.reduce((a, f) => a + f.bytes, 0) / 1e6;
+  const size = mb < 1 ? mb.toFixed(1) : mb.toFixed(0);
+  const partial = missing.length > 0 && missing.length < files.length;
   const b = $('#savebtn');
-  b.innerHTML = have === files.length
+  b.innerHTML = S.savedAll
     ? `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Saved for offline`
-    : `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16"/></svg> Save this unit <small>${mb.toFixed(0)} MB</small>`;
-  b.disabled = have === files.length;
-  b.onclick = () => saveUnit(u, files);
+    : `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16"/></svg> ${partial ? 'Save what&rsquo;s new' : 'Save this unit'} <small>${size} MB</small>`;
+  b.disabled = S.savedAll;
+  b.onclick = () => saveUnit(u, missing);
 }
 
 async function saveUnit(u, files) {
@@ -402,11 +472,19 @@ function renderGuide() {
 
 function renderNet() {
   const pill = $('#netpill'), txt = $('#nettext');
+  if (S.pending) {                       // something new is published, not yet loaded
+    pill.className = 'pillstat new';
+    txt.textContent = 'New lessons ready';
+    return;
+  }
   if (S.offline || !navigator.onLine) {
     pill.className = 'pillstat off';
     txt.textContent = S.savedAll ? 'Offline · saved' : 'Offline';
+    return;
   }
-  else { pill.className = 'pillstat'; txt.textContent = 'Up to date'; }
+  // "Checked ..." is a claim we can actually support; "Up to date" was not.
+  pill.className = 'pillstat';
+  txt.textContent = 'Checked ' + (S.lastCheck ? ago(S.lastCheck) : 'just now');
 }
 
 /* ═════════════════════════════════════════════════════ behaviour ══ */
@@ -546,7 +624,13 @@ $('#railbtn').onclick = () => { S.slim = !S.slim; localStorage.setItem('slim', S
 $('#helpbtn').onclick = () => $('#help').classList.toggle('open');
 $('#help').onclick = e => { if (e.target.id === 'help') $('#help').classList.remove('open'); };
 $('#keys').innerHTML = KEYS.map(([k, d]) => `<div class="krow"><span>${d}</span><kbd>${k}</kbd></div>`).join('');
-addEventListener('online', renderNet); addEventListener('offline', renderNet);
+addEventListener('online',  () => { S.offline = false; renderNet(); checkForUpdates(true); });
+addEventListener('offline', () => { S.offline = true;  renderNet(); });
+// Coming back to the app is the moment a student would expect it to have noticed.
+document.addEventListener('visibilitychange', () => { if (!document.hidden) checkForUpdates(); });
+addEventListener('focus', () => checkForUpdates());
+// Keeps "Checked 5 min ago" honest without polling the network.
+setInterval(renderNet, 60000);
 $('#toastbtn').onclick = () => location.reload();
 
 function toast(msg) { $('#toastmsg').textContent = msg; $('#toast').classList.add('open'); }

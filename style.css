@@ -42,6 +42,8 @@ kbd{font:11px/1 ui-monospace,SFMono-Regular,Menlo,monospace;padding:3px 5px;bord
 .pillstat{display:flex;align-items:center;gap:6px;font-size:12px;padding:4px 10px;border-radius:999px;
   border:1px solid var(--ok-line);background:var(--ok-bg);color:var(--ok-ink);white-space:nowrap}
 .pillstat.off{border-color:var(--line);background:var(--line-soft);color:var(--ink-3)}
+.pillstat.new{border-color:var(--accent-line);background:var(--accent-bg);color:var(--accent-ink)}
+.pillstat.new .dot{background:var(--accent)}
 .dot{width:6px;height:6px;border-radius:50%;background:var(--ok);flex:0 0 auto}
 .dot.grey{background:#cbd5e1}.dot.pale{background:#e2e8f0}
 
