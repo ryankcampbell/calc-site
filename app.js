@@ -630,7 +630,17 @@ addEventListener('offline', () => { S.offline = true;  renderNet(); });
 document.addEventListener('visibilitychange', () => { if (!document.hidden) checkForUpdates(); });
 addEventListener('focus', () => checkForUpdates());
 // Keeps "Checked 5 min ago" honest without polling the network.
-setInterval(renderNet, 60000);
+// The 08-19 fix gave freshness a refocus trigger and an online trigger, but no
+// timer -- so an app that stays VISIBLE and online never re-fetched the
+// manifest at all. That is the docked-during-class case, and Ryan hit it the
+// first time a publish landed while the window was in front of him.
+// checkForUpdates() already self-throttles to 60s, so this cannot hammer.
+// Tick at 20s, NOT 60s. checkForUpdates() self-throttles to 60s (see its
+// lastCheck guard), so a 60s interval races its own throttle and gets dropped
+// -- verified: with the periods equal, the tick never got through. Ticking
+// faster than the throttle lets the throttle be the real rate limiter, which
+// lands a genuine check about once a minute.
+setInterval(() => { renderNet(); if (!document.hidden) checkForUpdates(); }, 20000);
 $('#toastbtn').onclick = () => location.reload();
 
 function toast(msg) { $('#toastmsg').textContent = msg; $('#toast').classList.add('open'); }
