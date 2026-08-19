@@ -927,6 +927,51 @@
        "bytes": 329351
       }
      }
+    },
+    {
+     "code": "L1.9",
+     "slug": "1-9-lhopital",
+     "title": "L’Hôpital’s Rule",
+     "stewart": "6.8",
+     "quarto": {
+      "file": "q/1-9-lhopital.html",
+      "hash": "5e46cd9e311703ffd3f413e65067b383ca801f12eae5b2fe68662a243ba2bcc7",
+      "bytes": 3700255
+     },
+     "sections": [
+      {
+       "id": "where-lhôpitals-rule-comes-from",
+       "text": "Where L’Hôpital’s Rule comes from",
+       "level": 2
+      },
+      {
+       "id": "decomposing-the-quotient-at-the-hole",
+       "text": "Decomposing the quotient at the hole",
+       "level": 3
+      },
+      {
+       "id": "the-two-direct-forms-tfrac00-and-tfracinftyinfty",
+       "text": "The two direct forms: \\tfrac{0}{0} and \\tfrac{\\infty}{\\infty}",
+       "level": 2
+      }
+     ],
+     "docs": {
+      "packet": {
+       "file": "p/1-9-lhopital-packet.pdf",
+       "hash": "5e978f640c7ae29d690f0683d06a225ede210c75473f2f7ccdee1acabf105d97",
+       "bytes": 199338
+      },
+      "ticket": {
+       "file": "p/1-9-lhopital-ticket.pdf",
+       "hash": "ec462b337e352d88e98e96c393dde4d49e62c526b23e44f4c79649dfde484428",
+       "bytes": 133342
+      },
+      "onepager": {
+       "file": "p/1-9-lhopital-onepager.pdf",
+       "hash": "6b1af821b0774f3253555c1fa7a0d9fd88385f13d350c647b4bf6914f76d5437",
+       "bytes": 348452
+      }
+     }
     }
    ],
    "guide": [
@@ -1050,10 +1095,10 @@
      "kind": "lesson",
      "date": "10/6",
      "name": "1.9 L'Hôpital's Rule",
-     "detail": "Indeterminate forms, 0/0 only · when the · algebra runs out · §3.4 supplies ∞/∞",
+     "detail": "Ratio forms 0/0 and ∞/∞ · when the · algebra runs out · other forms in Ch 6",
      "stewart": "§6.8",
-     "hw": "§6.8 set not yet cut",
-     "count": null
+     "hw": "p.499: 1,5,6,8 p.500: 13,14,18, 20,23,25,30 p.501: 75,76",
+     "count": 13
     },
     {
      "kind": "review",
