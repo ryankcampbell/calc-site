@@ -857,6 +857,76 @@
        "bytes": 317191
       }
      }
+    },
+    {
+     "code": "L1.8",
+     "slug": "1-8-linearize-taylor",
+     "title": "Linearization and Taylor Series",
+     "stewart": "2.9, 11.10",
+     "quarto": {
+      "file": "q/1-8-linearize-taylor.html",
+      "hash": "6ca059e177d17ef8f9081ad53c1528ee25c29165da8056d14a755ef39a36b673",
+      "bytes": 3716409
+     },
+     "sections": [
+      {
+       "id": "linearization",
+       "text": "Linearization",
+       "level": 2
+      },
+      {
+       "id": "small-angle-approximation",
+       "text": "Small-angle approximation",
+       "level": 3
+      },
+      {
+       "id": "differentials-and-actual-change",
+       "text": "Differentials and actual change",
+       "level": 2
+      },
+      {
+       "id": "error-propagation",
+       "text": "Error propagation",
+       "level": 2
+      },
+      {
+       "id": "summation-notation-and-the-closed-forms",
+       "text": "Summation notation and the closed forms",
+       "level": 2
+      },
+      {
+       "id": "maclaurin-and-taylor-series",
+       "text": "Maclaurin and Taylor series",
+       "level": 2
+      },
+      {
+       "id": "the-binomial-series",
+       "text": "The binomial series",
+       "level": 3
+      },
+      {
+       "id": "the-tangent-series-by-long-division",
+       "text": "The tangent series by long division",
+       "level": 3
+      }
+     ],
+     "docs": {
+      "packet": {
+       "file": "p/1-8-linearize-taylor-packet.pdf",
+       "hash": "ad9e1dbc756b54f3166516745b00c1af5cb75f8a6bd6f892c743f5d1982875e5",
+       "bytes": 235145
+      },
+      "ticket": {
+       "file": "p/1-8-linearize-taylor-ticket.pdf",
+       "hash": "99e29cd19d335f8730b237617b8318a0d0801e06098acbb1dbae9bc427b5f194",
+       "bytes": 135205
+      },
+      "onepager": {
+       "file": "p/1-8-linearize-taylor-onepager.pdf",
+       "hash": "f05cc93a591277721233b7b4446665e1edaf7713b6ae2ad4a0e77be4a65d022e",
+       "bytes": 329351
+      }
+     }
     }
    ],
    "guide": [
@@ -973,7 +1043,7 @@
      "name": "1.8 Linearization & Taylor",
      "detail": "``Better TL'', error analysis, Δ y vs dy, · Taylor applications",
      "stewart": "§2.9 · §11.10",
-     "hw": "p.192: 1,5,11,19 p.193: 23,31 p.811: 2,10,16,24,26 p.812: 52",
+     "hw": "p.192: 1 p.193: 11,19,23,27,31 p.811: 2,6 16,24,26 (series only) p.812: 52",
      "count": 12
     },
     {
