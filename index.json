@@ -1284,7 +1284,23 @@
        "level": 3
       }
      ],
-     "docs": {}
+     "docs": {
+      "packet": {
+       "file": "p/2-2-mvt-packet.pdf",
+       "hash": "8d3cbe5fefd09850923e6cd67c72d8692434cbf428473e36f609e9ccc7bdc08a",
+       "bytes": 249168
+      },
+      "ticket": {
+       "file": "p/2-2-mvt-ticket.pdf",
+       "hash": "f27209b981046c7f10f452cd1e465487e35031025c708b8cef8356e4cd86fb16",
+       "bytes": 124107
+      },
+      "onepager": {
+       "file": "p/2-2-mvt-onepager.pdf",
+       "hash": "c4ece206b3261e06d2dfd7a600f052c9e778965cf10bf8c5d2942849aa558c41",
+       "bytes": 365057
+      }
+     }
     }
    ],
    "guide": [
