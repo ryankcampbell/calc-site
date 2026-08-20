@@ -287,10 +287,22 @@ function railRow(u, row, wide, slim) {
   slim.appendChild(s);
 }
 
-/** "unit1-review" -> "Unit 1 · Review".  The guide's banner is the subtitle,
- *  not the title — it is a full sentence and reads as shouting in the rail. */
+/** "unit1-review" -> "Unit 1 · Review",
+ *  "unit2-applications_of_derivatives" -> "Unit 2 · Applications of Derivatives".
+ *  The guide's banner is the subtitle, not the title — it is a full sentence and
+ *  reads as shouting in the rail.
+ *
+ *  Separators have to be turned into spaces BEFORE title-casing: `_` is a word
+ *  character, so \b never fires after one and the old version shipped
+ *  "Applications_of_derivatives" straight into the rail. */
+const UNIT_SMALL = new Set(['of', 'the', 'and', 'a', 'an', 'to', 'in', 'for', 'at', 'by', 'from', 'on', 'vs']);
+const unitCase = s => s.split(/\s+/).filter(Boolean)
+  .map((w, i) => (i && UNIT_SMALL.has(w.toLowerCase()))
+    ? w.toLowerCase()
+    : w.charAt(0).toUpperCase() + w.slice(1))
+  .join(' ');
 const unitTitle = u => u.unit.replace(/^unit(\d+)-?/, 'Unit $1 · ')
-  .split('·').map(s => s.trim().replace(/\b\w/g, c => c.toUpperCase())).join(' · ');
+  .split('·').map(s => unitCase(s.trim().replace(/[_-]+/g, ' '))).join(' · ');
 const unitSub = u => ((u.guide || []).find(r => r.kind === 'banner')?.text || '')
   .replace(/^REVIEW:\s*/i, '').trim();
 
