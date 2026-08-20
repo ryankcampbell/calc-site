@@ -1,6 +1,16 @@
 /* Calculus — service worker.
 
-   Bump CACHE_VERSION whenever this file changes, or browsers keep the old worker.
+   CACHE_VERSION IS STAMPED AT DEPLOY TIME by deploy.py, with a hash of
+   index.html + style.css + app.js + manifest.webmanifest.  Do not hand-edit it
+   and do not rely on the value below -- it is a placeholder in the source copy.
+
+   Why: a browser installs a new worker only when THIS FILE's bytes change.
+   While the version was hand-bumped, editing app.js shipped a fix that no
+   installed app ever saw -- sw.js was unchanged, so no new worker installed and
+   shellFirst() went on serving the cached app.js.  It revalidates in the
+   background, so the fix appeared on the SECOND reload, which reads to a user
+   as "I refreshed and nothing happened."  Stamping makes any shell edit
+   invalidate the shell cache on the next publish, automatically.
 
    Strategy, per admin/reference/student_site_plan.md 4:
      index.json  network-first  — tiny, and new lessons must appear
@@ -12,7 +22,7 @@
    is no stale-copy problem to detect and no hash bookkeeping in here.  Old
    versions are swept when a new hash for the same path is cached.
 */
-const CACHE_VERSION = 'v3';
+const CACHE_VERSION = '5146f32dded1';
 const SHELL = `calc-shell-${CACHE_VERSION}`;
 const DOCS = 'calc-docs-v1';          // survives shell upgrades — documents are content-addressed
 const SHELL_FILES = ['./', 'index.html', 'style.css', 'app.js', 'index.json',
