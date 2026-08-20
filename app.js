@@ -523,20 +523,32 @@ document.addEventListener('fullscreenchange', () => {
 });
 
 /* ── search ── */
+
+/* Fold accents and apostrophes off BOTH sides before matching.
+   L'Hopital was effectively unfindable: nobody types the circumflex, and the
+   index carries two different apostrophes for the same lesson -- the Quarto's
+   typographic one in "L’Hôpital’s Rule" and the schedule's straight one in
+   "1.9 L'Hôpital's Rule". Folding both makes hopital, l'hopital, lhopital
+   and L’Hôpital all find it. */
+const sfold = s => String(s)
+  .normalize('NFD').replace(/[\u0300-\u036f]/g, '')          // H\u00f4pital -> Hopital
+  .replace(/[\u2018\u2019\u02bc\u0060\u0027]/g, '')       // every apostrophe variant
+  .toLowerCase();
+
 function buildHits(q) {
-  q = q.trim().toLowerCase();
+  q = sfold(q.trim());
   if (!q) return [];
   const out = [];
   for (const { L, u } of S.lessons) {
-    if (L.title.toLowerCase().includes(q))
+    if (sfold(L.title).includes(q))
       out.push({ kind: 'lesson', L, u, t: L.title, s: `${L.code}${L.stewart ? ' · §' + L.stewart.replace(/^§/, '') : ''}` });
     for (const sec of L.sections)
-      if (sec.text.toLowerCase().includes(q))
+      if (sfold(sec.text).includes(q))
         out.push({ kind: 'section', L, u, id: sec.id, t: sec.text, s: `${L.title} · ${L.code}` });
   }
   for (const u of S.units)
     for (const row of (u.guide || []))
-      if (row.kind === 'lesson' && (row.hw || '').toLowerCase().includes(q))
+      if (row.kind === 'lesson' && sfold(row.hw || '').includes(q))
         out.push({ kind: 'guide', u, t: `${row.name} — homework`, s: row.hw });
   return out.slice(0, 12);
 }
