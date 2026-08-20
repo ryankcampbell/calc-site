@@ -177,11 +177,22 @@ async function refreshCached() {
     // "Saved for offline" for a file that was not there.
     for (const req of await c.keys()) {
       const u = new URL(req.url);
-      S.cached.add(u.pathname.split('/').slice(-2).join('/') + u.search);
+      S.cached.add(ckey(u.pathname.split('/').slice(-2).join('/') + u.search));
     }
   } catch (e) { /* private mode */ }
 }
-const cacheKey = d => `${d.file.split('/').slice(-2).join('/')}?h=${d.hash.slice(0, 12)}`;
+
+/** Both key derivations run through this, because they read the same name from
+ *  two places that encode it differently: cacheKey() gets the RAW string out of
+ *  index.json, refreshCached() gets a URL pathname, which is percent-encoded.
+ *  `q/2-1-min-max values.html` vs `q/2-1-min-max%20values.html` could never
+ *  compare equal, so every Unit 2 document reported itself unsaved forever --
+ *  the rail dot stayed pale and the button never flipped to "Saved for
+ *  offline", while the files were in fact downloaded and available offline.
+ *  deploy.py no longer publishes such a name; decoding here means a stray
+ *  space, `+` or accent can never desync the two again. */
+const ckey = s => { try { return decodeURIComponent(s); } catch (e) { return s; } };
+const cacheKey = d => ckey(`${d.file.split('/').slice(-2).join('/')}?h=${d.hash.slice(0, 12)}`);
 const isCached = d => d && S.cached.has(cacheKey(d));
 
 /* ══════════════════════════════════════════════════════════ rail ══ */

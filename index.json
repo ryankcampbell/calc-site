@@ -1129,11 +1129,11 @@
    "lessons": [
     {
      "code": "L2.1",
-     "slug": "2-1-min-max values",
+     "slug": "2-1-min-max-values",
      "title": "Maximum and Minimum Values",
      "stewart": "2.1",
      "quarto": {
-      "file": "q/2-1-min-max values.html",
+      "file": "q/2-1-min-max-values.html",
       "hash": "5f9531d8dade82697ea9729fa83bd36056bf9bba292d334124cabd418c39dd76",
       "bytes": 3736414
      },
@@ -1196,21 +1196,95 @@
      ],
      "docs": {
       "packet": {
-       "file": "p/2-1-min-max values-packet.pdf",
+       "file": "p/2-1-min-max-values-packet.pdf",
        "hash": "5886617a6982915b8382c5d245077967bff22b0155cb4059796ddee47eb2aa9b",
        "bytes": 243084
       },
       "ticket": {
-       "file": "p/2-1-min-max values-ticket.pdf",
+       "file": "p/2-1-min-max-values-ticket.pdf",
        "hash": "412e6c6f9f499539d2fbe8b354534765d0d7626bd865486e82ec58b6a7b5cc3f",
        "bytes": 99392
       },
       "onepager": {
-       "file": "p/2-1-min-max values-onepager.pdf",
+       "file": "p/2-1-min-max-values-onepager.pdf",
        "hash": "bb27925219ea7b9e92bbc13c786fc0698fa8403b866d5c90c5a7e2374168e799",
        "bytes": 290317
       }
      }
+    },
+    {
+     "code": "L2.2",
+     "slug": "2-2-mvt",
+     "title": "The Mean Value Theorem",
+     "stewart": "2.2",
+     "quarto": {
+      "file": "q/2-2-mvt.html",
+      "hash": "e3ba91c816120c7a5925785444942787b1b776762ce5f8e0f53fa2c286937e1c",
+      "bytes": 3725712
+     },
+     "sections": [
+      {
+       "id": "rolles-theorem",
+       "text": "Rolle’s Theorem",
+       "level": 2
+      },
+      {
+       "id": "derivation-of-rolles-theorem",
+       "text": "Derivation of Rolle’s Theorem",
+       "level": 3
+      },
+      {
+       "id": "rolles-theorem-with-differentiability-missing",
+       "text": "Rolle’s Theorem with differentiability missing",
+       "level": 3
+      },
+      {
+       "id": "the-mean-value-theorem",
+       "text": "The Mean Value Theorem",
+       "level": 2
+      },
+      {
+       "id": "the-secant-and-the-parallel-tangent",
+       "text": "The secant and the parallel tangent",
+       "level": 3
+      },
+      {
+       "id": "hypotheses-of-the-mean-value-theorem",
+       "text": "Hypotheses of the Mean Value Theorem",
+       "level": 3
+      },
+      {
+       "id": "exactly-one-real-root",
+       "text": "Exactly one real root",
+       "level": 2
+      },
+      {
+       "id": "the-contradiction-as-a-picture",
+       "text": "The contradiction, as a picture",
+       "level": 3
+      },
+      {
+       "id": "the-shape-of-the-argument",
+       "text": "The shape of the argument",
+       "level": 3
+      },
+      {
+       "id": "functions-with-the-same-derivative",
+       "text": "Functions with the same derivative",
+       "level": 2
+      },
+      {
+       "id": "curves-with-identical-derivatives",
+       "text": "Curves with identical derivatives",
+       "level": 3
+      },
+      {
+       "id": "lawyer-math",
+       "text": "Lawyer Math",
+       "level": 3
+      }
+     ],
+     "docs": {}
     }
    ],
    "guide": [
