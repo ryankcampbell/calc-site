@@ -1392,8 +1392,8 @@
      "name": "2.3 Derivatives & Graphs",
      "detail": "I/D test, 1st and 2nd derivative tests, · CNs, PIPs, the sign test",
      "stewart": "§3.3",
-     "hw": "p.227: 1,5 p.228: 9,13,15,21 p.229: 33,43,45",
-     "count": 9
+     "hw": "p.227: 1,5 p.228: 9,13,15,21 p.229: 33,41,43,45",
+     "count": 10
     },
     {
      "kind": "lesson",
