@@ -1301,6 +1301,66 @@
        "bytes": 365057
       }
      }
+    },
+    {
+     "code": "L2.3",
+     "slug": "2-3-derivatives-graphs",
+     "title": "How Derivatives Affect the Shape of a Graph",
+     "stewart": "2.3",
+     "quarto": {
+      "file": "q/2-3-derivatives-graphs.html",
+      "hash": "eb25b4e14f00215996f3ce1e4c30c0e6b5dd88b3fe7631b1d89742fe3958a7ec",
+      "bytes": 3714106
+     },
+     "sections": [
+      {
+       "id": "the-id-test-and-the-sign-test",
+       "text": "The I/D Test and the sign test",
+       "level": 2
+      },
+      {
+       "id": "the-first-derivative-test",
+       "text": "The First Derivative Test",
+       "level": 2
+      },
+      {
+       "id": "concavity-and-the-second-derivative-test",
+       "text": "Concavity and the Second Derivative Test",
+       "level": 2
+      },
+      {
+       "id": "possible-inflection-points",
+       "text": "Possible inflection points",
+       "level": 3
+      },
+      {
+       "id": "the-derivatives-table",
+       "text": "The derivatives table",
+       "level": 2
+      },
+      {
+       "id": "the-table-run-backwards",
+       "text": "The table run backwards",
+       "level": 3
+      }
+     ],
+     "docs": {
+      "packet": {
+       "file": "p/2-3-derivatives-graphs-packet.pdf",
+       "hash": "d24d3bb68f9bac4695151b6ca1f57932de361c51f12b5185a3d99cc8d23d6d28",
+       "bytes": 229696
+      },
+      "ticket": {
+       "file": "p/2-3-derivatives-graphs-ticket.pdf",
+       "hash": "c956dc0d369983c5e968406bea206ff89107736ad47f86eb01515b2d248fcd66",
+       "bytes": 131804
+      },
+      "onepager": {
+       "file": "p/2-3-derivatives-graphs-onepager.pdf",
+       "hash": "666d03c47f17fe319941c8a4fac4c8acaa38502eaff878248599948eff512560",
+       "bytes": 309876
+      }
+     }
     }
    ],
    "guide": [
