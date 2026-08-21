@@ -1292,8 +1292,8 @@
       },
       "ticket": {
        "file": "p/2-2-mvt-ticket.pdf",
-       "hash": "f27209b981046c7f10f452cd1e465487e35031025c708b8cef8356e4cd86fb16",
-       "bytes": 124107
+       "hash": "d44f54d1e6ca83cf54ebd78e7562b230373d0a7a32d990d39d870fd676e5a26b",
+       "bytes": 132242
       },
       "onepager": {
        "file": "p/2-2-mvt-onepager.pdf",
@@ -1352,13 +1352,78 @@
       },
       "ticket": {
        "file": "p/2-3-derivatives-graphs-ticket.pdf",
-       "hash": "c956dc0d369983c5e968406bea206ff89107736ad47f86eb01515b2d248fcd66",
-       "bytes": 131804
+       "hash": "6c3eb1da2d068119221f7d403963ce1b9fde83a524c1ef391233165a39eaa7b8",
+       "bytes": 138320
       },
       "onepager": {
        "file": "p/2-3-derivatives-graphs-onepager.pdf",
        "hash": "666d03c47f17fe319941c8a4fac4c8acaa38502eaff878248599948eff512560",
        "bytes": 309876
+      }
+     }
+    },
+    {
+     "code": "L2.4",
+     "slug": "2-4-limits-at-infinity",
+     "title": "Limits at Infinity; Horizontal Asymptotes",
+     "stewart": "2.4",
+     "quarto": {
+      "file": "q/2-4-limits-at-infinity.html",
+      "hash": "17248d44dd7c101499925a27b7ea93edf8c957b9e7d5063de866c69b8ee1d230",
+      "bytes": 3708332
+     },
+     "sections": [
+      {
+       "id": "limits-at-infinity-and-horizontal-asymptotes",
+       "text": "Limits at infinity and horizontal asymptotes",
+       "level": 2
+      },
+      {
+       "id": "limits-at-infinity-of-sin-x-and-sinfrac1x",
+       "text": "Limits at infinity of \\sin x and \\sin\\frac1x",
+       "level": 3
+      },
+      {
+       "id": "the-three-asymptote-rules-derived",
+       "text": "The three asymptote rules, derived",
+       "level": 2
+      },
+      {
+       "id": "limits-at--infty",
+       "text": "Limits at -\\infty",
+       "level": 2
+      },
+      {
+       "id": "sqrtx2lvert-xrvert",
+       "text": "\\sqrt{x^{2}}=\\lvert x\\rvert",
+       "level": 3
+      },
+      {
+       "id": "slant-asymptotes",
+       "text": "Slant asymptotes",
+       "level": 2
+      },
+      {
+       "id": "the-conjugate-trick",
+       "text": "The conjugate trick",
+       "level": 3
+      }
+     ],
+     "docs": {
+      "packet": {
+       "file": "p/2-4-limits-at-infinity-packet.pdf",
+       "hash": "0ac04919dfd8067a1cd0ea1ebf1e20cf859ee8b6485fe76779b67edda82835e0",
+       "bytes": 217217
+      },
+      "ticket": {
+       "file": "p/2-4-limits-at-infinity-ticket.pdf",
+       "hash": "5452e3110344d360a6afd7aa32136d19d8ce9aa16ba80f160a34bb17af9b9e0f",
+       "bytes": 137394
+      },
+      "onepager": {
+       "file": "p/2-4-limits-at-infinity-onepager.pdf",
+       "hash": "8bb6a73a2ae99c283fc120ff0eef9c34673dedb0aff8e676e3595824c05f0e4e",
+       "bytes": 270127
       }
      }
     }
