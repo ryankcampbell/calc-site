@@ -1484,13 +1484,13 @@
      "name": "2.5 Curve Sketching",
      "detail": "DIAS + the derivatives table + the · Closed Interval Method",
      "stewart": "§3.5",
-     "hw": "p.250: 1,9,15,21,23,37 p.251: 47,49",
-     "count": 8
+     "hw": "p.250: 1,9,11,15,17,21,23,29,37 p.251: 47,49",
+     "count": 11
     },
     {
      "kind": "lesson",
      "date": "10/28",
-     "name": "2.6 Optimization",
+     "name": "2.6a Optimization",
      "detail": "Picture · OEq, Constraint, Interval · CPs · min or max? · check the ends",
      "stewart": "§3.7",
      "hw": "p.264: 3,7 p.265: 13,15,16",
@@ -1499,7 +1499,7 @@
     {
      "kind": "lesson",
      "date": "10/30",
-     "name": "2.6 More Optimization",
+     "name": "2.6b More Optimization",
      "detail": "Open intervals ⇒ 2nd derivative test; · minimize d^2, not d",
      "stewart": "§3.7",
      "hw": "p.265: 21,25 p.266: 37",
