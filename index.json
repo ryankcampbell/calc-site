@@ -1426,6 +1426,66 @@
        "bytes": 270127
       }
      }
+    },
+    {
+     "code": "L2.5",
+     "slug": "2-5-curve-sketching",
+     "title": "Summary of Curve Sketching",
+     "stewart": "2.5",
+     "quarto": {
+      "file": "q/2-5-curve-sketching.html",
+      "hash": "5602c1237e809f57ea55d35035750cd937680fad7d23739d025fde3b9af5eb79",
+      "bytes": 3698713
+     },
+     "sections": [
+      {
+       "id": "curve-sketching",
+       "text": "Curve Sketching",
+       "level": 2
+      },
+      {
+       "id": "end-behaviour",
+       "text": "End behaviour",
+       "level": 3
+      },
+      {
+       "id": "the-derivatives-table",
+       "text": "The derivatives table",
+       "level": 3
+      },
+      {
+       "id": "a-cubic-from-factored-form-to-sketch",
+       "text": "A cubic from factored form to sketch",
+       "level": 2
+      },
+      {
+       "id": "vertical-tangents-and-cusps",
+       "text": "Vertical tangents and cusps",
+       "level": 2
+      },
+      {
+       "id": "slant-asymptotes-in-a-full-sketch",
+       "text": "Slant asymptotes in a full sketch",
+       "level": 2
+      }
+     ],
+     "docs": {
+      "packet": {
+       "file": "p/2-5-curve-sketching-packet.pdf",
+       "hash": "85f46bca323e5636a0fbf09fc72694c6ce40a3e225fa08a1baabc4c6415280cf",
+       "bytes": 183948
+      },
+      "ticket": {
+       "file": "p/2-5-curve-sketching-ticket.pdf",
+       "hash": "554f3da01d538b2ed3c08132f847d31e0e7c61cb81c3cc9929014167708fa75e",
+       "bytes": 168271
+      },
+      "onepager": {
+       "file": "p/2-5-curve-sketching-onepager.pdf",
+       "hash": "66bbfd4e50998e37ba9e62ad4ddfe5cb5956a91d63ee52ed6ec6af4e87025645",
+       "bytes": 222178
+      }
+     }
     }
    ],
    "guide": [
@@ -1482,7 +1542,7 @@
      "kind": "lesson",
      "date": "10/27",
      "name": "2.5 Curve Sketching",
-     "detail": "DIAS + the derivatives table + the · Closed Interval Method",
+     "detail": "DIAS (precalc) + the derivatives · table (day 18)",
      "stewart": "§3.5",
      "hw": "p.250: 1,9,11,15,17,21,23,29,37 p.251: 47,49",
      "count": 11
