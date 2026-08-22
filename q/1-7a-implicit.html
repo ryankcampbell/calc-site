@@ -3985,10 +3985,10 @@ window.IMP = (function(){
   return { comps:comps, proj:proj, slopePts:slopePts, arclen:arclen, at:at, nearest:nearest };
 })();
 </script>
+<p>Suppose you want the tangent line to the circle <span class="math inline">x^{2}+y^{2}=25</span> at the point <span class="math inline">(3,4)</span>. There is no <span class="math inline">y=f(x)</span> here to differentiate — the circle fails the vertical line test. Today: how to get <span class="math inline">\dfrac{dy}{dx}</span> anyway.</p>
 <section id="implicit-curves-and-level-sets" class="level2">
 <h2 class="anchored" data-anchor-id="implicit-curves-and-level-sets">1 · Implicit curves and level sets</h2>
-<p><span class="math inline">x^{2}+y^{2}=25</span> is not a function — not <span class="math inline">y=f(x)</span>. It fails the vertical line test, and nothing on the left-hand side is waiting to be evaluated. So the first question is not <em>how do I differentiate this</em> — it is <strong>why does <span class="math inline">\frac{d}{dx}</span> apply at all.</strong></p>
-<p>Read the left side as <strong>a function of two variables</strong>:</p>
+<p>Nothing on the left-hand side of <span class="math inline">x^{2}+y^{2}=25</span> is waiting to be evaluated, so before differentiating it, read the left side as <strong>a function of two variables</strong>:</p>
 <p><span class="math display">S(x,y)=x^{2}+y^{2}</span></p>
 <p><span class="math inline">S</span> takes a point of the plane and returns a number. The relation is the set of points where that number is <span class="math inline">25</span> — <strong>one level of <span class="math inline">S</span>.</strong> Check one: <span class="math inline">S\big(1,\sqrt{24}\big)=1+24=25</span> ✓.</p>
 <div class="key-box">

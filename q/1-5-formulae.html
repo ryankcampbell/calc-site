@@ -2757,9 +2757,12 @@ window.exsGo = function(btn, d){
   if(window.RC) RC.redraws.forEach(function(f){ try{f();}catch(e){} });
 };
 </script>
+<p>Suppose you wanted to find <span class="math inline">\dfrac{d}{dx}\!\left(x^{7}\right)</span>. From the limit definition that means</p>
+<p><span class="math display">\frac{d}{dx}\!\left(x^{7}\right)=\lim_{h\to0}\frac{(x+h)^{7}-x^{7}}{h}</span></p>
+<p>and then expanding <span class="math inline">(x+h)^{7}</span> — yuck.</p>
+<p>Now that you understand where the derivative comes from, you can pivot. <strong>There are five shortcut rules that exist which greatly simplify these calculations</strong>, and together they will differentiate almost any function you come across.</p>
 <section id="the-five-rules" class="level2">
 <h2 class="anchored" data-anchor-id="the-five-rules">1 · The five rules</h2>
-<p>Every derivative from here on is one line of pattern-matching. The limit stays behind the rules — it is where they come from, not how they are used.</p>
 <p><strong>Four of these rules work term by term. Two do not.</strong></p>
 <div class="br-wrap">
 <button class="br-nav br-prev" type="button" aria-label="scroll left">‹</button>
@@ -2923,7 +2926,7 @@ Reveal solution
 <section id="quotient-rule" class="level3">
 <h3 class="anchored" data-anchor-id="quotient-rule">Quotient rule</h3>
 <p><span class="math display">\boxed{\ \frac{d}{dx}\left(\frac{f(x)}{g(x)}\right)=\frac{g(x)f&#39;(x)-f(x)g&#39;(x)}{\big[g(x)\big]^{2}}\ }</span></p>
-<p>Said out loud: <strong>low d high, minus high d low, all over low squared.</strong></p>
+<p>Said out loud: <strong>low d high, minus high d low, over the square of what’s below.</strong></p>
 <div class="warn-box">
 <p><strong>The numerator is a subtraction, so its order is not free.</strong> Writing <span class="math inline">fg&#39;-gf&#39;</span> gives the negative of the right answer every time.</p>
 </div>

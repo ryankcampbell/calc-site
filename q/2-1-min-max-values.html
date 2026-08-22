@@ -2794,9 +2794,39 @@ window.exsGo = function(btn, d){
   if(window.RC) RC.redraws.forEach(function(f){ try{f();}catch(e){} });
 };
 </script>
+<p>Here is a graph of a function with its peaks and valleys marked.</p>
+<div class="panel">
+  <div class="panel-head">
+    <div class="sec-label">Where the curve turns</div>
+    <button class="popout-btn" onclick="popOut(this)" title="Open in presentation mode">⛶ Present</button>
+  </div>
+  <canvas id="teeC"></canvas>
+</div>
+<script>
+(function(){
+  var cv=document.getElementById('teeC'); if(!cv) return;
+  var W=620,H=270;
+  function f(x){ return 0.32*x*x*x*x - 1.1*x*x*x - 1.6*x*x + 4.4*x + 4; }
+  function draw(){
+    var ctx=RC.setup(cv,W,H), C=RC.C;
+    var g=RC.frame(ctx,W,H,[-2.25,4.2],[-4,14],{pad:{l:34,r:16,t:16,b:24},stepX:1,stepY:2});
+    RC.curve(ctx,g,f,{color:C.curve,from:-2.2,to:4.15});
+    // The three turning points -- solved from f', not eyeballed -- marked and
+    // deliberately NOT named. Naming them is the rest of the section.
+    [-1.314, 0.864, 3.029].forEach(function(x){
+      RC.glowDot(ctx,g.X(x),g.Y(f(x)),5,C.alt);
+    });
+    RC.mlabel(ctx,g.X(0.864),g.Y(f(0.864))-14,[{s:'?'}],C.alt,'center',18);
+    RC.mlabel(ctx,g.X(-1.314),g.Y(f(-1.314))+22,[{s:'?'}],C.alt,'center',18);
+    RC.mlabel(ctx,g.X(3.029),g.Y(f(3.029))+22,[{s:'?'}],C.alt,'center',18);
+  }
+  RC.register(draw);
+})();
+</script>
+<p><strong>How would you find those points if all you had was the formula?</strong> Today: what those points are called, and the theorem that promises they exist.</p>
 <section id="local-and-absolute-extrema" class="level2">
 <h2 class="anchored" data-anchor-id="local-and-absolute-extrema">1 · Local and absolute extrema</h2>
-<p>Every problem in this unit is about something at a minimum or a maximum — and there are two kinds of each.</p>
+<p>There are two kinds of each, and the difference is one word.</p>
 <div class="key-box">
 <p><strong>Absolute.</strong> <span class="math inline">f(c)</span> is the <strong>absolute maximum</strong> of <span class="math inline">f</span> on a domain <span class="math inline">D</span> if <span class="math inline">f(c)\ge f(x)</span> for <strong>every</strong> <span class="math inline">x</span> in <span class="math inline">D</span>. Absolute minimum: <span class="math inline">f(c)\le f(x)</span> for every <span class="math inline">x</span> in <span class="math inline">D</span>.</p>
 <p><strong>Local.</strong> <span class="math inline">f(c)</span> is a <strong>local maximum</strong> if <span class="math inline">f(c)\ge f(x)</span> for every <span class="math inline">x</span> <strong>near</strong> <span class="math inline">c</span>. Local minimum: <span class="math inline">f(c)\le f(x)</span> for every <span class="math inline">x</span> near <span class="math inline">c</span>.</p>

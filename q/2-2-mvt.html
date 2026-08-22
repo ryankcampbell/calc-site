@@ -2766,9 +2766,39 @@ window.rcQuiz = function(mountId, bank){
   show();
 };
 </script>
+<p>Here is a function that starts and ends at the same height.</p>
+<div class="panel">
+  <div class="panel-head">
+    <div class="sec-label">Same height at both ends</div>
+    <button class="popout-btn" onclick="popOut(this)" title="Open in presentation mode">⛶ Present</button>
+  </div>
+  <canvas id="teeRolleC"></canvas>
+</div>
+<script>
+(function(){
+  var cv=document.getElementById('teeRolleC'); if(!cv) return;
+  var W=580,H=260;
+  function f(x){ return 1 - 0.6*(x-1)*(x-4); }
+  function draw(){
+    var ctx=RC.setup(cv,W,H), C=RC.C;
+    var g=RC.frame(ctx,W,H,[0.35,4.65],[-0.4,3.2],{pad:{l:34,r:16,t:14,b:26},stepX:1,stepY:1});
+    RC.hdash(ctx,g,1,C.dim,g.X(1),g.X(4));          // the equal heights, joined
+    RC.curve(ctx,g,f,{color:C.curve,from:0.4,to:4.6});
+    RC.seg(ctx,g,2.5,f(2.5),0,0.72,C.aux,2.6);      // the flat tangent at the turn
+    [[1,'a'],[4,'b']].forEach(function(q){
+      RC.glowDot(ctx,g.X(q[0]),g.Y(1),4.6,C.alt);
+      RC.mlabel(ctx,g.X(q[0]),g.Y(1)+20,[{s:q[1],it:true}],C.alt,'center',13);
+    });
+    RC.glowDot(ctx,g.X(2.5),g.Y(f(2.5)),4.8,C.aux);
+    RC.mlabel(ctx,g.X(2.5),g.Y(f(2.5))-12,[{s:'c',it:true}],C.aux,'center',13);
+    RC.mlabel(ctx,g.X(3.34),g.Y(f(2.5))+4,[{s:'f',it:true},{s:'′('},{s:'c',it:true},{s:') = 0'}],C.aux,'left',13);
+  }
+  RC.register(draw);
+})();
+</script>
+<p>Somewhere in between it has to turn around — and at the turn, the tangent is flat. <strong>Today: the theorem that says exactly that, and the more useful one that follows from it.</strong></p>
 <section id="rolles-theorem" class="level2">
 <h2 class="anchored" data-anchor-id="rolles-theorem">1 · Rolle’s Theorem</h2>
-<p>Two of the results from the previous lesson combine into a third, and that third is the only machinery this chapter needs for the rest of it.</p>
 <div class="key-box">
 <p><strong>Rolle’s Theorem.</strong> If <span class="math inline">f</span> satisfies:</p>
 <ul class="stack">

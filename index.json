@@ -10,8 +10,8 @@
      "stewart": "1.1a",
      "quarto": {
       "file": "q/1-1a-functions-catalog.html",
-      "hash": "2c7b720daee945de0e10f8c7f805d06557ce292de6d77467d46448109b20b105",
-      "bytes": 3775525
+      "hash": "d35efa3ae28a36b8c45aa334a182ae1586397b23ad29933eb3aeab3491ff1c03",
+      "bytes": 3775822
      },
      "sections": [
       {
@@ -70,8 +70,8 @@
      "stewart": "1.1b",
      "quarto": {
       "file": "q/1-1b-transformations.html",
-      "hash": "63c8658157fd693c45e0434544c90f65b61e68d0d236e643af14ba1f40c0e3cd",
-      "bytes": 3732584
+      "hash": "8fb1e1eeaadcea3b053a6d272a18dd9fef30cca21bb03f4d5c1c0aa2a51db8db",
+      "bytes": 3732860
      },
      "sections": [
       {
@@ -115,8 +115,8 @@
      "stewart": "1.2",
      "quarto": {
       "file": "q/1-2-limits.html",
-      "hash": "816affde9f1b29434c59758f92e505c35822182a76f0663714347ef7c03e5adb",
-      "bytes": 3846097
+      "hash": "f44fbf3548042695bb4936f730a888ce8be7dfced7e670e50858e6e9a6149a4e",
+      "bytes": 3846576
      },
      "sections": [
       {
@@ -215,8 +215,8 @@
      "stewart": "1.8",
      "quarto": {
       "file": "q/1-3-continuity.html",
-      "hash": "9731bcb7b0440282cd73aea4ef19d1da033c690334f9e32ba9cffa142f07a8c9",
-      "bytes": 3739402
+      "hash": "31db8d73fa27d208db45336bd1a2d1e513be95c69212c72e1c937008122facdc",
+      "bytes": 3739700
      },
      "sections": [
       {
@@ -325,8 +325,8 @@
      "stewart": "2.1-2.2",
      "quarto": {
       "file": "q/1-4-derivative.html",
-      "hash": "60396b9c4d822197e916318bda301198dfe73e380e11c55c45abb85463461d5c",
-      "bytes": 3750694
+      "hash": "c822247e60126806023aa4d2c5fdd3767c5f132ba203f155e630b44563506168",
+      "bytes": 3751864
      },
      "sections": [
       {
@@ -420,8 +420,8 @@
      "stewart": "2.3",
      "quarto": {
       "file": "q/1-5-formulae.html",
-      "hash": "e949916e6ce77d6b49a0b7d4ab1792d5a5c15efc425bf6632e4a2c3d91f3a079",
-      "bytes": 3710171
+      "hash": "1dde5e428aabcf9e63fd253d951842d91ea34f27efaff7e5e7531b99601437e0",
+      "bytes": 3710610
      },
      "sections": [
       {
@@ -545,8 +545,8 @@
      "stewart": "2.4-2.5",
      "quarto": {
       "file": "q/1-6-trig-chain.html",
-      "hash": "ae75f3626a905611aa4847e2ac19ae093f2821205fa46c5dff6f9548c731a8c8",
-      "bytes": 3728423
+      "hash": "651543608db83d7669cf71362344fe8f9a3b0955e359d6ddcb2b0744097339f9",
+      "bytes": 3728867
      },
      "sections": [
       {
@@ -665,8 +665,8 @@
      "stewart": "2.6",
      "quarto": {
       "file": "q/1-7a-implicit.html",
-      "hash": "f2976a22c5e1296d9fc80bc95bba836abdc8886fb41be4d27f1e997e891d17e4",
-      "bytes": 4368998
+      "hash": "3b38943762ea6226aba9f2f39cd622da3b0ea2a1e961d9cb6e68a2c1187e89d7",
+      "bytes": 4369107
      },
      "sections": [
       {
@@ -770,8 +770,8 @@
      "stewart": "2.8",
      "quarto": {
       "file": "q/1-7b-related-rates.html",
-      "hash": "b8cd16fc57ad608767c604c36f0ffae69e6793c967a7347e782732da0c0a77a2",
-      "bytes": 3737415
+      "hash": "e576413b518ee509a62f1b026ec9fadc2ce40576386012d2e802e53097c195a9",
+      "bytes": 3737630
      },
      "sections": [
       {
@@ -865,8 +865,8 @@
      "stewart": "2.9, 11.10",
      "quarto": {
       "file": "q/1-8-linearize-taylor.html",
-      "hash": "6ca059e177d17ef8f9081ad53c1528ee25c29165da8056d14a755ef39a36b673",
-      "bytes": 3716409
+      "hash": "106db6a63c0a84782d451013f1dc8ea192b8609136f546f881ae603733222365",
+      "bytes": 3716548
      },
      "sections": [
       {
@@ -935,8 +935,8 @@
      "stewart": "6.8",
      "quarto": {
       "file": "q/1-9-lhopital.html",
-      "hash": "5e46cd9e311703ffd3f413e65067b383ca801f12eae5b2fe68662a243ba2bcc7",
-      "bytes": 3700255
+      "hash": "cb8ec48760faaf3348a62a369cfdb1d8d0424ed272e2a6deb264af0ab1c1c191",
+      "bytes": 3700256
      },
      "sections": [
       {
@@ -1134,8 +1134,8 @@
      "stewart": "2.1",
      "quarto": {
       "file": "q/2-1-min-max-values.html",
-      "hash": "5f9531d8dade82697ea9729fa83bd36056bf9bba292d334124cabd418c39dd76",
-      "bytes": 3736414
+      "hash": "fb163d7e65b97305ecc90030aa7f0fe6566baf44922f92da5d438a26c68ee411",
+      "bytes": 3737767
      },
      "sections": [
       {
@@ -1219,8 +1219,8 @@
      "stewart": "2.2",
      "quarto": {
       "file": "q/2-2-mvt.html",
-      "hash": "e3ba91c816120c7a5925785444942787b1b776762ce5f8e0f53fa2c286937e1c",
-      "bytes": 3725712
+      "hash": "e285793cf135ded8428aebbc1e6a24367352ec4673c33f973182f0380f1869c7",
+      "bytes": 3727087
      },
      "sections": [
       {
@@ -1309,8 +1309,8 @@
      "stewart": "2.3",
      "quarto": {
       "file": "q/2-3-derivatives-graphs.html",
-      "hash": "eb25b4e14f00215996f3ce1e4c30c0e6b5dd88b3fe7631b1d89742fe3958a7ec",
-      "bytes": 3714106
+      "hash": "dfc785c0524b92c96a944bb120b549ce4d26b2f5d79a44de68a86e2c2bf24f6d",
+      "bytes": 3714223
      },
      "sections": [
       {
@@ -1369,8 +1369,8 @@
      "stewart": "2.4",
      "quarto": {
       "file": "q/2-4-limits-at-infinity.html",
-      "hash": "17248d44dd7c101499925a27b7ea93edf8c957b9e7d5063de866c69b8ee1d230",
-      "bytes": 3708332
+      "hash": "3dffc7121e6798cd0ee00f02d15239bbc25f0b711e3c114607e426e324e31e42",
+      "bytes": 3708929
      },
      "sections": [
       {
@@ -1434,8 +1434,8 @@
      "stewart": "2.5",
      "quarto": {
       "file": "q/2-5-curve-sketching.html",
-      "hash": "5602c1237e809f57ea55d35035750cd937680fad7d23739d025fde3b9af5eb79",
-      "bytes": 3698713
+      "hash": "d66889f0529ea0579d9da7b82a398a2260f346b550275aaca3d84ea7592e7bad",
+      "bytes": 3698960
      },
      "sections": [
       {

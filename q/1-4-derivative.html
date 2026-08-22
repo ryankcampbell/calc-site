@@ -2745,6 +2745,31 @@ window.exsGo = function(btn, d){
   if(window.RC) RC.redraws.forEach(function(f){ try{f();}catch(e){} });
 };
 </script>
+<p>Here is <span class="math inline">y=x^{2}</span>, with a single point marked on it.</p>
+<div class="panel">
+  <div class="panel-head">
+    <div class="sec-label">How steep is the curve right here?</div>
+    <button class="popout-btn" onclick="popOut(this)" title="Open in presentation mode">⛶ Present</button>
+  </div>
+  <canvas id="teeSlopeC"></canvas>
+</div>
+<script>
+(function(){
+  var cv=document.getElementById('teeSlopeC'); if(!cv) return;
+  var W=560,H=250;
+  function f(x){ return x*x; }
+  function draw(){
+    var ctx=RC.setup(cv,W,H), C=RC.C;
+    var g=RC.frame(ctx,W,H,[-1.7,2.4],[-0.6,4.2],{pad:{l:34,r:16,t:14,b:24},stepX:1,stepY:1});
+    RC.curve(ctx,g,f,{color:C.curve,from:-1.65,to:2.05});
+    RC.glowDot(ctx,g.X(1),g.Y(1),5.5,C.alt);
+    RC.mlabel(ctx,g.X(1)+11,g.Y(1)-6,[{s:'(1, 1)'}],C.alt,'left',12.5);
+    RC.mlabel(ctx,g.X(1)+11,g.Y(1)+12,[{s:'?'}],C.alt,'left',19);
+  }
+  RC.register(draw);
+})();
+</script>
+<p>The curve plainly has a steepness there — you can see it. But slope is rise over run, and that needs <strong>two</strong> points. You have one. <strong>Today: how to measure the slope of a function at a single point.</strong></p>
 <section id="the-derivative-at-a-point" class="level2">
 <h2 class="anchored" data-anchor-id="the-derivative-at-a-point">1 · The derivative at a point</h2>
 <p><span class="math display">\boxed{\ f&#39;(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}\ }</span></p>
