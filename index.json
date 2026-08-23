@@ -1486,6 +1486,111 @@
        "bytes": 222178
       }
      }
+    },
+    {
+     "code": "L2.6a",
+     "slug": "2-6a-optimization",
+     "title": "Optimization Problems",
+     "stewart": "2.6a",
+     "quarto": {
+      "file": "q/2-6a-optimization.html",
+      "hash": "b90d84bebf2251c8d9fdf9d0685c5d0d2143a984371780480f001a21997aa4f8",
+      "bytes": 3717073
+     },
+     "sections": [
+      {
+       "id": "optimization-under-a-constraint",
+       "text": "Optimization under a constraint",
+       "level": 2
+      },
+      {
+       "id": "rectangle-of-maximum-area",
+       "text": "Rectangle of maximum area",
+       "level": 2
+      },
+      {
+       "id": "the-optimization-template",
+       "text": "The optimization template",
+       "level": 2
+      }
+     ],
+     "docs": {
+      "packet": {
+       "file": "p/2-6a-optimization-packet.pdf",
+       "hash": "675ebaf5cf2020b164c40abcccd4d514d76fa888f223376363b5f150fd1b903c",
+       "bytes": 188650
+      },
+      "ticket": {
+       "file": "p/2-6a-optimization-ticket.pdf",
+       "hash": "ad083961f45cea3114e07174b36ddc3ba80e25fe7e18ed214f5dc3c0981ed5b5",
+       "bytes": 112223
+      },
+      "onepager": {
+       "file": "p/2-6a-optimization-onepager.pdf",
+       "hash": "5ff09ab8da229d9b3bf08156bba1a71a5eea45fcd55662ccff16e817dac4f93c",
+       "bytes": 206046
+      }
+     }
+    },
+    {
+     "code": "L2.6b",
+     "slug": "2-6b-more-optimization",
+     "title": "More Optimization",
+     "stewart": "2.6b",
+     "quarto": {
+      "file": "q/2-6b-more-optimization.html",
+      "hash": "a72dd5872c70aa6e963f2357d6e000bf99a5f82cbabb1c6075e68d5ad0070af1",
+      "bytes": 3714877
+     },
+     "sections": [
+      {
+       "id": "monotonic-functions",
+       "text": "Monotonic functions",
+       "level": 2
+      },
+      {
+       "id": "the-first-derivative-test-for-absolute-extreme-values",
+       "text": "The First Derivative Test for Absolute Extreme Values",
+       "level": 2
+      },
+      {
+       "id": "closed-interval-or-open",
+       "text": "Closed interval or open",
+       "level": 3
+      },
+      {
+       "id": "using-it-on-an-optimization-problem",
+       "text": "Using it on an optimization problem",
+       "level": 3
+      },
+      {
+       "id": "the-optimization-template-on-an-open-interval",
+       "text": "The optimization template on an open interval",
+       "level": 2
+      },
+      {
+       "id": "three-more-example-problems-to-try",
+       "text": "Three more example problems to try",
+       "level": 3
+      }
+     ],
+     "docs": {
+      "packet": {
+       "file": "p/2-6b-more-optimization-packet.pdf",
+       "hash": "5e9c4314b2ce688153230f0ddd5a75b790986b28952d00cf5f5144d84bdd7fdc",
+       "bytes": 186615
+      },
+      "ticket": {
+       "file": "p/2-6b-more-optimization-ticket.pdf",
+       "hash": "d3432d8bcfd1e398adbef6cec438306019671c8f1f80d496717ec950a04d0f49",
+       "bytes": 141455
+      },
+      "onepager": {
+       "file": "p/2-6b-more-optimization-onepager.pdf",
+       "hash": "52f086cf45b2813fc7b9aae3fb6782785a926ab26bbcb977055a06c5522f64cd",
+       "bytes": 235666
+      }
+     }
     }
    ],
    "guide": [
