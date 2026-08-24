@@ -1591,6 +1591,106 @@
        "bytes": 235666
       }
      }
+    },
+    {
+     "code": "L2.7",
+     "slug": "2-7-newtons-method",
+     "title": "Newton’s Method",
+     "stewart": "2.7",
+     "quarto": {
+      "file": "q/2-7-newtons-method.html",
+      "hash": "54011ad8355a52cbc942131ee53d30db0866c1c6ff5cfb6c4ed457c43e664b47",
+      "bytes": 3705187
+     },
+     "sections": [
+      {
+       "id": "where-root-finding-runs-out",
+       "text": "Where root-finding runs out",
+       "level": 2
+      },
+      {
+       "id": "quadratics",
+       "text": "Quadratics",
+       "level": 3
+      },
+      {
+       "id": "cubics",
+       "text": "Cubics",
+       "level": 3
+      },
+      {
+       "id": "degree-five-and-higher",
+       "text": "Degree five and higher",
+       "level": 3
+      },
+      {
+       "id": "newtons-method",
+       "text": "Newton’s method",
+       "level": 2
+      },
+      {
+       "id": "the-tangents-x-intercept",
+       "text": "The tangent’s x-intercept",
+       "level": 3
+      },
+      {
+       "id": "the-explorer",
+       "text": "The explorer",
+       "level": 3
+      },
+      {
+       "id": "the-quadratic-done-again",
+       "text": "The quadratic, done again",
+       "level": 3
+      },
+      {
+       "id": "a-number-turned-into-an-equation",
+       "text": "A number turned into an equation",
+       "level": 3
+      },
+      {
+       "id": "the-stopping-rule",
+       "text": "The stopping rule",
+       "level": 3
+      },
+      {
+       "id": "when-newtons-method-fails",
+       "text": "When Newton’s method fails",
+       "level": 2
+      },
+      {
+       "id": "a-nearly-flat-tangent",
+       "text": "A nearly flat tangent",
+       "level": 3
+      },
+      {
+       "id": "iterations-that-never-converge",
+       "text": "Iterations that never converge",
+       "level": 3
+      },
+      {
+       "id": "choosing-x_1",
+       "text": "Choosing x_{1}",
+       "level": 3
+      }
+     ],
+     "docs": {
+      "packet": {
+       "file": "p/2-7-newtons-method-packet.pdf",
+       "hash": "88878fb6c03a35c3390c79eeae42354e6014d3d67fc6c0b32faaf7b4287c70c5",
+       "bytes": 224264
+      },
+      "ticket": {
+       "file": "p/2-7-newtons-method-ticket.pdf",
+       "hash": "ac6d0533089279ac1f7471c4c2ae8aa3fa30ab1471d41fa0d67d1f46ebfc441c",
+       "bytes": 119046
+      },
+      "onepager": {
+       "file": "p/2-7-newtons-method-onepager.pdf",
+       "hash": "388a088652abec3dafc7b9c1c5c3f8bcf61e0c0a49eb1fbe54c9ca2ac33d24c4",
+       "bytes": 230139
+      }
+     }
     }
    ],
    "guide": [
@@ -1676,8 +1776,8 @@
      "name": "2.7 Newton's Method",
      "detail": "The tangent's x-intercept, iterated; · when it fails",
      "stewart": "§3.8",
-     "hw": "to be assigned",
-     "count": null
+     "hw": "p.276: 1,2,3,4,5,6,7,8,13(a),14(a) p.277: 28(a),32",
+     "count": 12
     },
     {
      "kind": "lesson",
@@ -1685,8 +1785,8 @@
      "name": "2.8 Antiderivatives",
      "detail": "Running the rules backwards, the +C · family, initial value problems",
      "stewart": "§3.9",
-     "hw": "p.282: 1,3,7,15 p.283: 21,23,27,33,37,43,53,55",
-     "count": 12
+     "hw": "p.282: 1,3,7,15 p.283: 21,23,27,33,37,43,47,49,53,55",
+     "count": 14
     },
     {
      "kind": "review",
