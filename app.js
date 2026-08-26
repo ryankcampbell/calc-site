@@ -575,8 +575,20 @@ function buildHits(q) {
         out.push({ kind: 'guide', u, t: `${row.name} — homework`, s: row.hw });
   return out.slice(0, 12);
 }
+/* Hover must NOT repaint. paintHits() replaces every row node, so a repaint
+   landing between mousedown and mouseup destroys the row the press started on;
+   the browser then fires `click` on the nearest common ancestor -- #results,
+   which has no handler -- and the hit is simply unclickable. That is what Ryan
+   hit 2026-08-26: typing a query listed results, and clicking one did nothing.
+   Selection now only toggles a class, so the row under the cursor survives. */
+let hitEls = [];
+function markSel(scroll) {
+  hitEls.forEach((b, i) => b.classList.toggle('sel', i === S.hi));
+  if (scroll && hitEls[S.hi]) hitEls[S.hi].scrollIntoView({ block: 'nearest' });
+}
 function paintHits() {
   const box = $('#results');
+  hitEls = [];
   if (!S.hits.length) {
     box.innerHTML = $('#search').value.trim() ? '<div class="empty">Nothing matches that.</div>' : '';
     box.classList.toggle('open', !!$('#search').value.trim());
@@ -594,9 +606,11 @@ function paintHits() {
     const b = el('button', 'hit' + (i === S.hi ? ' sel' : ''),
       `<span class="ic">${ic}</span><span style="min-width:0;flex:1"><b>${mark(h.t)}</b><span>${mark(h.s)}</span></span>
        ${h.kind === 'section' ? '<span style="font-size:10.5px;color:var(--ink-4)">jump to heading</span>' : ''}`);
-    b.onmouseenter = () => { S.hi = i; paintHits(); };
+    b.onmouseenter = () => { if (S.hi !== i) { S.hi = i; markSel(); } };
+    b.onmousedown = e => e.preventDefault();   // keep the caret in the search box
     b.onclick = () => openHit(i);
     box.appendChild(b);
+    hitEls.push(b);
   });
   box.classList.add('open');
 }
@@ -615,7 +629,7 @@ function openHit(i) {
   pick(idx);
 }
 function closeSearch() {
-  $('#search').value = ''; S.hits = []; S.hi = 0;
+  $('#search').value = ''; S.hits = []; S.hi = 0; hitEls = [];
   $('#results').classList.remove('open'); $('#search').blur();
 }
 
@@ -632,8 +646,8 @@ addEventListener('keydown', e => {
     return;
   }
   if (typing) {
-    if (e.key === 'ArrowDown') { e.preventDefault(); S.hi = (S.hi + 1) % Math.max(1, S.hits.length); paintHits(); }
-    else if (e.key === 'ArrowUp') { e.preventDefault(); S.hi = (S.hi - 1 + S.hits.length) % Math.max(1, S.hits.length); paintHits(); }
+    if (e.key === 'ArrowDown') { e.preventDefault(); S.hi = (S.hi + 1) % Math.max(1, S.hits.length); markSel(true); }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); S.hi = (S.hi - 1 + S.hits.length) % Math.max(1, S.hits.length); markSel(true); }
     else if (e.key === 'Enter') { e.preventDefault(); openHit(S.hi); }
     return;
   }
