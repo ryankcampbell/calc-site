@@ -48,18 +48,18 @@
      "docs": {
       "packet": {
        "file": "p/1-1a-functions-catalog-packet.pdf",
-       "hash": "c5ca6cf73e29ac7fe3c61b7db8208de709af2faa1450401ed58bd1ef86ddcd73",
-       "bytes": 285034
+       "hash": "34758cb4f6a2e678d223b8e945b87f594c23ef93a76633794e2562edd68419e9",
+       "bytes": 91609
       },
       "ticket": {
        "file": "p/1-1a-functions-catalog-ticket.pdf",
-       "hash": "bc782842cdcb7f6185220d563c76631bf26dfe8bf7b527e434755bd473f898ef",
-       "bytes": 111171
+       "hash": "f4fcbe237489881299a5827b93c04c43add1a484cc2e65109490b5d84dfb95d3",
+       "bytes": 23141
       },
       "onepager": {
        "file": "p/1-1a-functions-catalog-onepager.pdf",
-       "hash": "2bc18179cd9ae20d0d14e38022103f67b8606e35975f387ece29ef93399ec379",
-       "bytes": 394098
+       "hash": "548baf11cefb39e438a24df460f1f45e87d2eb42ec852b94a070410138c9b1ef",
+       "bytes": 84985
       }
      }
     },
@@ -93,18 +93,18 @@
      "docs": {
       "packet": {
        "file": "p/1-1b-transformations-packet.pdf",
-       "hash": "3ce6a4cda02f1766062395ee0e2286c841e4fcee96875a64501869b9130f358f",
-       "bytes": 240009
+       "hash": "3b4059aa59313197fa3f55ce0ada96dd43643d1550751c6744303aaec7789817",
+       "bytes": 59231
       },
       "ticket": {
        "file": "p/1-1b-transformations-ticket.pdf",
-       "hash": "46a3ddcfbaf13b406d84abf3047e50662fcc0d5dcc0098eb4a71420e361dc148",
-       "bytes": 118168
+       "hash": "ca34dab6d9abb62a145d91b96726bfbbb74e26b0cd82150c9146247a3c38b6c4",
+       "bytes": 24791
       },
       "onepager": {
        "file": "p/1-1b-transformations-onepager.pdf",
-       "hash": "2a623a7fc8285495345bfaf4875d5d33b23e3b5e960bb10f6d2a15847b0c414c",
-       "bytes": 254549
+       "hash": "bd3874dac541a768a6781de9c269dcb284e0f94941c5d7734e08deb396aaa740",
+       "bytes": 70943
       }
      }
     },
@@ -193,18 +193,18 @@
      "docs": {
       "packet": {
        "file": "p/1-2-limits-packet.pdf",
-       "hash": "1893d305caf1d65c5031ea92ea254356c7818328747dad5f70a47f1b796dc9aa",
-       "bytes": 234670
+       "hash": "1e9ea98f1069d2af9f4a15bc78e042e61232515aced87dcac4dc0f08364d9bf5",
+       "bytes": 57800
       },
       "ticket": {
        "file": "p/1-2-limits-ticket.pdf",
-       "hash": "de585ebeb7de300f056136a9bddfe9816dee985fc623f59a2e2078ce157aab25",
-       "bytes": 139970
+       "hash": "689c93f87c6cffb88549e3fdc290fc4b3c6a3317a6cbaa029976fd3ab02410fb",
+       "bytes": 27556
       },
       "onepager": {
        "file": "p/1-2-limits-onepager.pdf",
-       "hash": "9d510ee0700e59a76c78f28c33286bdf77558b7b3882ab96f5ee76968194c3fe",
-       "bytes": 605335
+       "hash": "4a32b404109234694da99b2404666cd23f83e5943ebe3cf601db91640fb96ce8",
+       "bytes": 371495
       }
      }
     },
@@ -303,18 +303,18 @@
      "docs": {
       "packet": {
        "file": "p/1-3-continuity-packet.pdf",
-       "hash": "de2d44f262f50e75055049745367b194938b24575f4470b82481dc5f82664c82",
-       "bytes": 244835
+       "hash": "00e0fbec52932a35c7dd555d9d5af6a67d21c9c26ef8d95793c51aba52ef2b48",
+       "bytes": 60469
       },
       "ticket": {
        "file": "p/1-3-continuity-ticket.pdf",
-       "hash": "c70d7ff122997d1bf8cbf99306899c1cac17140de21ca3a9ba3cfaf84bf0df19",
-       "bytes": 139436
+       "hash": "a8295d5f5f310db588ff111617a95bcfef81e3a6b3754be4ac6d5d23640c49e0",
+       "bytes": 29152
       },
       "onepager": {
        "file": "p/1-3-continuity-onepager.pdf",
-       "hash": "e4e0d8b7fe38ba03262a57cb99d5603f7ad8ae1aea5d20a1aac849c86e4de2bc",
-       "bytes": 368365
+       "hash": "772c85b8528c110d041f1d2d323b2718bb7a9504c95e11a73bcf09dda8924be2",
+       "bytes": 85071
       }
      }
     },
@@ -398,18 +398,18 @@
      "docs": {
       "packet": {
        "file": "p/1-4-derivative-packet.pdf",
-       "hash": "b7b348e9dfee43253e135a1cc76d3d8113b0a15d83ae44da3a82938d9b6c5cd9",
-       "bytes": 252544
+       "hash": "e107730cf1d85a6e275ea1c7a9d2c305bf7d5e76fd6596ddac07df70d6a86cfc",
+       "bytes": 65734
       },
       "ticket": {
        "file": "p/1-4-derivative-ticket.pdf",
-       "hash": "19545d289d748fdd132aede6faf7b569b8dee375192a2f1ba285e9de66953a9f",
-       "bytes": 125601
+       "hash": "88a89a2a60e71c01340fa5c4949a06893c77577bf428c1991bbba0076d8e9627",
+       "bytes": 25653
       },
       "onepager": {
        "file": "p/1-4-derivative-onepager.pdf",
-       "hash": "cdc96625f182ecd06baf096a1d5d98a484898517e06bbe4e32627d5e8d1bba01",
-       "bytes": 350910
+       "hash": "6ba43df3aa1e99290bbb43a0dce7325b1a130ada82d6b4cf82da6b09c2e6b434",
+       "bytes": 79397
       }
      }
     },
@@ -523,18 +523,18 @@
      "docs": {
       "packet": {
        "file": "p/1-5-formulae-packet.pdf",
-       "hash": "08d65f1170d9e6e1ffdf4dbd7c630019f2fefbd40876dc54a8495dbc554536b6",
-       "bytes": 226770
+       "hash": "c3634daa47c3b1717f2ef820e1bf383d286bafe11616ef431a64f49e5357fd8a",
+       "bytes": 52985
       },
       "ticket": {
        "file": "p/1-5-formulae-ticket.pdf",
-       "hash": "db7a1f35e1671713d2de0a51dede1ab5a63f09e655d29a46608f905ba4a6aff9",
-       "bytes": 141227
+       "hash": "23b41b34e8b18ff6cab6c5b7595cbc7526e68857002ecca3a2c47d2677d5d781",
+       "bytes": 30426
       },
       "onepager": {
        "file": "p/1-5-formulae-onepager.pdf",
-       "hash": "7eedecfbbd969a9478eeb3dd6a719fa14d36a4eb3bb65be194d1adffd341ed64",
-       "bytes": 292282
+       "hash": "b4c354266ffe1f7cb5766d8dfdc71d8594ea816b2f8e26444c83037e33bfcf09",
+       "bytes": 63564
       }
      }
     },
@@ -643,18 +643,18 @@
      "docs": {
       "packet": {
        "file": "p/1-6-trig-chain-packet.pdf",
-       "hash": "0fba96ddb50f249c28626c5a1047c85acc1b7d9afcb9e8154c995434adeacc57",
-       "bytes": 213481
+       "hash": "f9a4f8f201f819b5d1bb30598eef68a87d1f541b27f2cb53bea7514ba3b7bc28",
+       "bytes": 53579
       },
       "ticket": {
        "file": "p/1-6-trig-chain-ticket.pdf",
-       "hash": "71a3f6c13b993f5ddcaf63e1a78c28ee49eda3e9cdabbf03d15ce9c3d32ce672",
-       "bytes": 150258
+       "hash": "3c2476a9c1fb90300f2fb91105b7b9053b038ea270e2e4a1f907547a0d2e34a3",
+       "bytes": 33492
       },
       "onepager": {
        "file": "p/1-6-trig-chain-onepager.pdf",
-       "hash": "141e0a658eafe009598f31d8604e5df751a8a1aa17df748c6e3114a07570433c",
-       "bytes": 308920
+       "hash": "9e9ae4a6fc325be146909ee40e2b8d74b9c1da097743742d43481f88fb27a444",
+       "bytes": 71467
       }
      }
     },
@@ -748,18 +748,18 @@
      "docs": {
       "packet": {
        "file": "p/1-7a-implicit-packet.pdf",
-       "hash": "9a71ae0158f99f9fe9fc4b33abe20b069873c58f208e907ddce93be5bb3de13e",
-       "bytes": 235724
+       "hash": "18a2251794c6383adf09277dbc758e040db3943bd6405a4a5dff714f178cab51",
+       "bytes": 51872
       },
       "ticket": {
        "file": "p/1-7a-implicit-ticket.pdf",
-       "hash": "263fd57dff14102e3532acf8545f203eb306b677ec41b9da47b3de813f7bf67a",
-       "bytes": 130125
+       "hash": "a917040ab44ffbfcde8a5f3f37e3471092940573b97ec90d6f13fb9e431b2c4e",
+       "bytes": 28120
       },
       "onepager": {
        "file": "p/1-7a-implicit-onepager.pdf",
-       "hash": "84750bd1487657b25c0a0b261df1ba1260f05b0debc4f6b413821a7c94ad7b2d",
-       "bytes": 264852
+       "hash": "1513feb5306e75abb909a27e067c380caf1a3292e6854eeb98b778bfb9fdd1b5",
+       "bytes": 63506
       }
      }
     },
@@ -843,18 +843,18 @@
      "docs": {
       "packet": {
        "file": "p/1-7b-related-rates-packet.pdf",
-       "hash": "a7461f426d45b2234f3889061a8299b33c56795558cf1b59cc1241085ba91f56",
-       "bytes": 258120
+       "hash": "d87c1f7373b9b8cd715387d34d0a3bacabae67485db3b72e327201f864bb3923",
+       "bytes": 60841
       },
       "ticket": {
        "file": "p/1-7b-related-rates-ticket.pdf",
-       "hash": "d59f5ffb8ecb4f1f9efaf0e8ba21095f72445ec1e5e3eae651c3f3e438f030ea",
-       "bytes": 152916
+       "hash": "e4089d049308439386d7ef4db3944dc6f5432752b893712b022a2b775dddc2f6",
+       "bytes": 30421
       },
       "onepager": {
        "file": "p/1-7b-related-rates-onepager.pdf",
-       "hash": "c3b817c79aa3402e32008f2b3c683aa425e1fd631b4d9889609870970d72fe28",
-       "bytes": 317191
+       "hash": "5e07c63338df6d3188a82e65e7389be02d2b668831c458c4a8c2cf6e52a3e8f3",
+       "bytes": 73836
       }
      }
     },
@@ -913,18 +913,18 @@
      "docs": {
       "packet": {
        "file": "p/1-8-linearize-taylor-packet.pdf",
-       "hash": "ad9e1dbc756b54f3166516745b00c1af5cb75f8a6bd6f892c743f5d1982875e5",
-       "bytes": 235145
+       "hash": "2caf5e28aeed4daae30bf5eb22192abdda8ceb1d3eb35c2b7e9edc9030560d9a",
+       "bytes": 58615
       },
       "ticket": {
        "file": "p/1-8-linearize-taylor-ticket.pdf",
-       "hash": "99e29cd19d335f8730b237617b8318a0d0801e06098acbb1dbae9bc427b5f194",
-       "bytes": 135205
+       "hash": "bb7c7e2ce67f1bfa5ab49066e2eb30d47dfff468f9aa0ad436bea27932d20abf",
+       "bytes": 27443
       },
       "onepager": {
        "file": "p/1-8-linearize-taylor-onepager.pdf",
-       "hash": "f05cc93a591277721233b7b4446665e1edaf7713b6ae2ad4a0e77be4a65d022e",
-       "bytes": 329351
+       "hash": "36fdf7c3cde34e9186ce1d9724a916ac80ec818ba96ebf86606b773bf7d97f3b",
+       "bytes": 78625
       }
      }
     },
@@ -958,18 +958,18 @@
      "docs": {
       "packet": {
        "file": "p/1-9-lhopital-packet.pdf",
-       "hash": "5e978f640c7ae29d690f0683d06a225ede210c75473f2f7ccdee1acabf105d97",
-       "bytes": 199338
+       "hash": "742a6ea5fff1ae8c6e458c72118a24c8a52b975fed976c6a98657cc467a2c690",
+       "bytes": 45341
       },
       "ticket": {
        "file": "p/1-9-lhopital-ticket.pdf",
-       "hash": "ec462b337e352d88e98e96c393dde4d49e62c526b23e44f4c79649dfde484428",
-       "bytes": 133342
+       "hash": "e227ce4e1c6468afe0cf649673bdd3ccd07a81f7b324333bff11d62ae294b27f",
+       "bytes": 24998
       },
       "onepager": {
        "file": "p/1-9-lhopital-onepager.pdf",
-       "hash": "6b1af821b0774f3253555c1fa7a0d9fd88385f13d350c647b4bf6914f76d5437",
-       "bytes": 348452
+       "hash": "e23de4ffcdc343b8262b103e0da4332db7c510e02e2f740e72c80b65e3ca8f28",
+       "bytes": 70709
       }
      }
     }
@@ -1197,18 +1197,18 @@
      "docs": {
       "packet": {
        "file": "p/2-1-min-max-values-packet.pdf",
-       "hash": "5886617a6982915b8382c5d245077967bff22b0155cb4059796ddee47eb2aa9b",
-       "bytes": 243084
+       "hash": "5765e08afe6fb5e1e911031e8c692d5b124b732157547d6d5243774b95fdf7cd",
+       "bytes": 62661
       },
       "ticket": {
        "file": "p/2-1-min-max-values-ticket.pdf",
-       "hash": "412e6c6f9f499539d2fbe8b354534765d0d7626bd865486e82ec58b6a7b5cc3f",
-       "bytes": 99392
+       "hash": "be4893825f8df6db4e47e7278490e8765f79ddbcca2bc026bb15e8cec6544d41",
+       "bytes": 22654
       },
       "onepager": {
        "file": "p/2-1-min-max-values-onepager.pdf",
-       "hash": "bb27925219ea7b9e92bbc13c786fc0698fa8403b866d5c90c5a7e2374168e799",
-       "bytes": 290317
+       "hash": "44a7c16fb22440212bee5ed05d2780c91bfa18070c6d15003d148e0cad373eab",
+       "bytes": 63985
       }
      }
     },
@@ -1287,18 +1287,18 @@
      "docs": {
       "packet": {
        "file": "p/2-2-mvt-packet.pdf",
-       "hash": "8d3cbe5fefd09850923e6cd67c72d8692434cbf428473e36f609e9ccc7bdc08a",
-       "bytes": 249168
+       "hash": "76c47f5d1a94c94564ba2fb54253229f00609d714f632e68d03519fd1b9e6785",
+       "bytes": 61591
       },
       "ticket": {
        "file": "p/2-2-mvt-ticket.pdf",
-       "hash": "d44f54d1e6ca83cf54ebd78e7562b230373d0a7a32d990d39d870fd676e5a26b",
-       "bytes": 132242
+       "hash": "888597075aaf6870c6b2ff5e7879ea268dd94421093137251dc354f217729931",
+       "bytes": 26577
       },
       "onepager": {
        "file": "p/2-2-mvt-onepager.pdf",
-       "hash": "c4ece206b3261e06d2dfd7a600f052c9e778965cf10bf8c5d2942849aa558c41",
-       "bytes": 365057
+       "hash": "ee903178f58afe87ee6b4d005e134637ebbb85f9bc108124ce2e0a0dbab01a07",
+       "bytes": 76279
       }
      }
     },
@@ -1347,18 +1347,18 @@
      "docs": {
       "packet": {
        "file": "p/2-3-derivatives-graphs-packet.pdf",
-       "hash": "d24d3bb68f9bac4695151b6ca1f57932de361c51f12b5185a3d99cc8d23d6d28",
-       "bytes": 229696
+       "hash": "9b0481cc0fc221e96a255522cd0c9aa5f3b353e0ccf7aac84aa7245178e8f535",
+       "bytes": 56859
       },
       "ticket": {
        "file": "p/2-3-derivatives-graphs-ticket.pdf",
-       "hash": "6c3eb1da2d068119221f7d403963ce1b9fde83a524c1ef391233165a39eaa7b8",
-       "bytes": 138320
+       "hash": "e10dd1bbcce3bb2d67a9ea4ec8a6afdcb98a3020eb84e1676daf29b3f9bfe52e",
+       "bytes": 29702
       },
       "onepager": {
        "file": "p/2-3-derivatives-graphs-onepager.pdf",
-       "hash": "666d03c47f17fe319941c8a4fac4c8acaa38502eaff878248599948eff512560",
-       "bytes": 309876
+       "hash": "73b293c545e203f9ac03785ab391bdce27b17c1e62ae8bbcd20b3f486b692346",
+       "bytes": 71300
       }
      }
     },
@@ -1412,18 +1412,18 @@
      "docs": {
       "packet": {
        "file": "p/2-4-limits-at-infinity-packet.pdf",
-       "hash": "0ac04919dfd8067a1cd0ea1ebf1e20cf859ee8b6485fe76779b67edda82835e0",
-       "bytes": 217217
+       "hash": "15849e4685973d231ac1f15ad422d9b81b3a794ef63cf2db4d58a0daf074df7b",
+       "bytes": 52394
       },
       "ticket": {
        "file": "p/2-4-limits-at-infinity-ticket.pdf",
-       "hash": "5452e3110344d360a6afd7aa32136d19d8ce9aa16ba80f160a34bb17af9b9e0f",
-       "bytes": 137394
+       "hash": "60be6b70accd28cad522472c09df7559ff0ce4ef7dd9fd734ba011aa64c8fda0",
+       "bytes": 29488
       },
       "onepager": {
        "file": "p/2-4-limits-at-infinity-onepager.pdf",
-       "hash": "8bb6a73a2ae99c283fc120ff0eef9c34673dedb0aff8e676e3595824c05f0e4e",
-       "bytes": 270127
+       "hash": "1e2833703dfba25bbf5454dfadd338d59d3f11ac488a831c3233d846eae74e68",
+       "bytes": 61749
       }
      }
     },
@@ -1472,18 +1472,18 @@
      "docs": {
       "packet": {
        "file": "p/2-5-curve-sketching-packet.pdf",
-       "hash": "85f46bca323e5636a0fbf09fc72694c6ce40a3e225fa08a1baabc4c6415280cf",
-       "bytes": 183948
+       "hash": "217314c6dd66a48de7f45a9703f4b3811addd1107e77600e18cf0ca044412014",
+       "bytes": 39891
       },
       "ticket": {
        "file": "p/2-5-curve-sketching-ticket.pdf",
-       "hash": "554f3da01d538b2ed3c08132f847d31e0e7c61cb81c3cc9929014167708fa75e",
-       "bytes": 168271
+       "hash": "2c972d4f95a5f55db25d7c24a68ce43718035bf06751ad17025d566e1a516936",
+       "bytes": 32219
       },
       "onepager": {
        "file": "p/2-5-curve-sketching-onepager.pdf",
-       "hash": "66bbfd4e50998e37ba9e62ad4ddfe5cb5956a91d63ee52ed6ec6af4e87025645",
-       "bytes": 222178
+       "hash": "f676469c5bf33a9b44ea89662a4815b08e3ddb00ad3c2bee9a489dfad3cdab3c",
+       "bytes": 53296
       }
      }
     },
@@ -1517,18 +1517,18 @@
      "docs": {
       "packet": {
        "file": "p/2-6a-optimization-packet.pdf",
-       "hash": "675ebaf5cf2020b164c40abcccd4d514d76fa888f223376363b5f150fd1b903c",
-       "bytes": 188650
+       "hash": "db07b67b6104266e003ab7fe1a69997ccf591c913c617501b4255c2b1558966c",
+       "bytes": 46362
       },
       "ticket": {
        "file": "p/2-6a-optimization-ticket.pdf",
-       "hash": "ad083961f45cea3114e07174b36ddc3ba80e25fe7e18ed214f5dc3c0981ed5b5",
-       "bytes": 112223
+       "hash": "0e3d39b9ff50477eba99cce9c36d83b5625bf8887b4f5ebc381fc43345a47dea",
+       "bytes": 24338
       },
       "onepager": {
        "file": "p/2-6a-optimization-onepager.pdf",
-       "hash": "5ff09ab8da229d9b3bf08156bba1a71a5eea45fcd55662ccff16e817dac4f93c",
-       "bytes": 206046
+       "hash": "ac9eafd1b7366a3ce58f9b48dc7fe16afc67116da454917cd5e99bea50b8cc90",
+       "bytes": 49173
       }
      }
     },
@@ -1577,18 +1577,18 @@
      "docs": {
       "packet": {
        "file": "p/2-6b-more-optimization-packet.pdf",
-       "hash": "5e9c4314b2ce688153230f0ddd5a75b790986b28952d00cf5f5144d84bdd7fdc",
-       "bytes": 186615
+       "hash": "45733627cacd538fc2cf4f5de2324a4533466f435716ee4f0d48d592f1d7d5fd",
+       "bytes": 45330
       },
       "ticket": {
        "file": "p/2-6b-more-optimization-ticket.pdf",
-       "hash": "d3432d8bcfd1e398adbef6cec438306019671c8f1f80d496717ec950a04d0f49",
-       "bytes": 141455
+       "hash": "c1f5a3afb25e7ca28fb56abb9127b194730eb6dc8bbd200de59276d24df2eb71",
+       "bytes": 26612
       },
       "onepager": {
        "file": "p/2-6b-more-optimization-onepager.pdf",
-       "hash": "52f086cf45b2813fc7b9aae3fb6782785a926ab26bbcb977055a06c5522f64cd",
-       "bytes": 235666
+       "hash": "1d402b3934b5f08360550a8802e56d05f0f0265bf8f8c6ed134a4b52e6f37261",
+       "bytes": 57493
       }
      }
     },
@@ -1677,18 +1677,18 @@
      "docs": {
       "packet": {
        "file": "p/2-7-newtons-method-packet.pdf",
-       "hash": "88878fb6c03a35c3390c79eeae42354e6014d3d67fc6c0b32faaf7b4287c70c5",
-       "bytes": 224264
+       "hash": "b0ad60b403f063cb59205987f2ad9a85561feba6f21a14b94916eff9594d88e4",
+       "bytes": 49713
       },
       "ticket": {
        "file": "p/2-7-newtons-method-ticket.pdf",
-       "hash": "ac6d0533089279ac1f7471c4c2ae8aa3fa30ab1471d41fa0d67d1f46ebfc441c",
-       "bytes": 119046
+       "hash": "c25d79da4861eed6e02e72e0fa1c46a5c03a79ccf0d36cd04644be0f9bd7c26f",
+       "bytes": 24912
       },
       "onepager": {
        "file": "p/2-7-newtons-method-onepager.pdf",
-       "hash": "388a088652abec3dafc7b9c1c5c3f8bcf61e0c0a49eb1fbe54c9ca2ac33d24c4",
-       "bytes": 230139
+       "hash": "8af9b5ccd3631381600959d8bde49aa9b02873475025e902543f2b57d397bd04",
+       "bytes": 57931
       }
      }
     }
