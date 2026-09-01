@@ -2736,7 +2736,7 @@ window.rcQuiz = function(mountId, bank){
   show();
 };
 </script>
-<p>All year the arrow has pointed one way. You hand over <span class="math inline">x^{3}</span>, the power rule hands back <span class="math inline">3x^{2}</span>.</p>
+<p>All year we’ve started with functions and found their derivatives. For example, <span class="math inline">f(x)=x^{3}</span> gives <span class="math inline">f&#39;(x)=3x^{2}</span>.</p>
 <div class="panel">
   <div class="panel-head">
     <div class="sec-label">A function and its derivative</div>
@@ -2764,11 +2764,11 @@ window.rcQuiz = function(mountId, bank){
   RC.register(draw);
 })();
 </script>
-<p>Now start from <span class="math inline">3x^{2}</span> and ask for the function it came from. <span class="math inline">x^{3}</span> works. So does <span class="math inline">x^{3}+1</span>, since the <span class="math inline">1</span> differentiates to zero. So does <span class="math inline">x^{3}-1</span>, and <span class="math inline">x^{3}+\pi</span>, and every other vertical shift. The backwards question does not have <strong>one</strong> answer, and it is not obvious how many it has.</p>
-<p><strong>Today:</strong> run the derivative rules backwards, and find out exactly how many answers there are.</p>
+<p>But can we go backwards? Starting from <span class="math inline">f&#39;(x)=3x^{2}</span>, what possible original functions — what <strong>antiderivatives</strong> — are there? Is it only <span class="math inline">x^{3}</span>?</p>
+<p>What you’ll find is that going backwards returns not one function but a whole <strong>function family</strong>, because not only does <span class="math inline">f(x)=x^{3}</span> have a derivative of <span class="math inline">3x^{2}</span>, but so do <span class="math inline">x^{3}-1</span>, and <span class="math inline">x^{3}+\pi</span>, and every other vertical shift.</p>
+<p><strong>Today:</strong> we will run the derivative operation backwards to find the antiderivatives of common functions.</p>
 <section id="antiderivatives-and-the-reverse-power-rule" class="level2">
 <h2 class="anchored" data-anchor-id="antiderivatives-and-the-reverse-power-rule">1 · Antiderivatives and the reverse power rule</h2>
-<p>Every derivative rule runs forward: hand it a function, it returns the derivative. Backwards there is no new rule at all — the only tool is your memory of the forward ones, read from right to left.</p>
 <div class="key-box">
 <b>Antiderivative.</b> Given a function $f&#39;$, an <b>antiderivative</b> of $f&#39;$ is a function $f$ whose
 derivative is $f&#39;$ — that is, a function $f$ with
