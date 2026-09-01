@@ -1691,6 +1691,81 @@
        "bytes": 57931
       }
      }
+    },
+    {
+     "code": "L2.8",
+     "slug": "2-8-antiderivatives",
+     "title": "Antiderivatives",
+     "stewart": "2.8",
+     "quarto": {
+      "file": "q/2-8-antiderivatives.html",
+      "hash": "f689b20c9853defc7e911c201ab53287c7b42dff552c5d393e4805c2d3b78216",
+      "bytes": 3699060
+     },
+     "sections": [
+      {
+       "id": "antiderivatives-and-the-reverse-power-rule",
+       "text": "Antiderivatives and the reverse power rule",
+       "level": 2
+      },
+      {
+       "id": "the-reverse-power-rule",
+       "text": "The reverse power rule",
+       "level": 3
+      },
+      {
+       "id": "the-antiderivative-table",
+       "text": "The antiderivative table",
+       "level": 3
+      },
+      {
+       "id": "the-c-family",
+       "text": "The +C family",
+       "level": 2
+      },
+      {
+       "id": "reading-an-antiderivative-off-a-graph",
+       "text": "Reading an antiderivative off a graph",
+       "level": 3
+      },
+      {
+       "id": "initial-value-problems",
+       "text": "Initial value problems",
+       "level": 2
+      },
+      {
+       "id": "position-from-acceleration",
+       "text": "Position from acceleration",
+       "level": 2
+      },
+      {
+       "id": "sketching-position-from-a-velocity-graph",
+       "text": "Sketching position from a velocity graph",
+       "level": 3
+      },
+      {
+       "id": "the-integral-sign",
+       "text": "The integral sign",
+       "level": 2
+      }
+     ],
+     "docs": {
+      "packet": {
+       "file": "p/2-8-antiderivatives-packet.pdf",
+       "hash": "b2f58ae471ae93459f376f818bcee932b1225d2cca065950f9c34f9976792601",
+       "bytes": 244376
+      },
+      "ticket": {
+       "file": "p/2-8-antiderivatives-ticket.pdf",
+       "hash": "9d1f541d001857d3c1c71aa56302aaaaef256dae3274108fee3013bfaedeb324",
+       "bytes": 109873
+      },
+      "onepager": {
+       "file": "p/2-8-antiderivatives-onepager.pdf",
+       "hash": "26e9df65c115331961cd48aeba5711242b58017b41daa917e0e3453f62293c42",
+       "bytes": 282777
+      }
+     }
     }
    ],
    "guide": [
