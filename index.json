@@ -1699,8 +1699,8 @@
      "stewart": "2.8",
      "quarto": {
       "file": "q/2-8-antiderivatives.html",
-      "hash": "9327c41e33248ffe7d233482577c0f61fc22394d3a3e236389180a23b20db724",
-      "bytes": 3699179
+      "hash": "decd46b750cb01e6475817c8a795d1c5e2207f3ea3faeef21031bc6bd2caab22",
+      "bytes": 3699402
      },
      "sections": [
       {
@@ -1762,8 +1762,8 @@
       },
       "onepager": {
        "file": "p/2-8-antiderivatives-onepager.pdf",
-       "hash": "58a1bf9cc71420884e996397c993905b364a0da377e14e3c7c424c6bd9485e22",
-       "bytes": 290655
+       "hash": "aff83c6f140a93b5d7e62c88799e38c03e911d5003d168fa75733c82f4febecd",
+       "bytes": 290785
       }
      }
     }
