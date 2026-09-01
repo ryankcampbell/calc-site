@@ -2784,6 +2784,7 @@ on an interval.
 <b>Reverse power rule.</b> For $n\neq-1$,
 $$f&#39;(x)=x^{n}\qquad\Longrightarrow\qquad f(x)=\frac{x^{n+1}}{n+1}+C$$
 </div>
+<p>The <span class="math inline">+C</span> is the family from the opening. Every vertical shift of <span class="math inline">\frac{x^{n+1}}{n+1}</span> differentiates to the same <span class="math inline">x^{n}</span>, so an answer naming only one of them would be leaving functions out. <strong>Whether <span class="math inline">+C</span> catches <em>every</em> antiderivative</strong> — or only the ones anybody happens to write down — is the question of the next section.</p>
 <p>The restriction is not bookkeeping. Putting <span class="math inline">n=-1</span> gives <span class="math inline">\dfrac{x^{0}}{0}</span>, and the denominator is zero. Nothing has gone wrong with the algebra — <strong>no power of <span class="math inline">x</span> has derivative <span class="math inline">\frac1x</span></strong>, so the rule genuinely breaks. To foreshadow a little: there <em>is</em> a function whose derivative is <span class="math inline">\frac1x</span>, so <span class="math inline">\frac1x</span> does have an antiderivative. It is <span class="math inline">\ln x</span>, and you will study it in Unit 5.</p>
 </section>
 <section id="the-antiderivative-table" class="level3">
@@ -2832,7 +2833,6 @@ $$f&#39;(x)=x^{n}\qquad\Longrightarrow\qquad f(x)=\frac{x^{n+1}}{n+1}+C$$
 <div class="panel example-box">
   <div class="ex-head"><span class="ex-tag">Ex. 1 · Rewrite before the rule</span></div>
   <div>Find the antiderivative of $\;f&#39;(x)=4x^{-4}$.</div>
-</div>
 <details class="soln"><summary>Reveal solution</summary>
 <div class="soln-body">
 The coefficient comes along for the ride; the exponent goes from $-4$ to $-3$.
@@ -2843,13 +2843,13 @@ $$\boxed{\,f(x)=-\tfrac{4}{3}x^{-3}+C\,}$$
 Check by differentiating: $\frac{d}{dx}\!\left(-\tfrac43x^{-3}\right)=-\tfrac43(-3)x^{-4}=4x^{-4}$.
 </div>
 </details>
+</div>
 
 <div class="panel example-box">
   <div class="ex-head"><span class="ex-tag">Ex. 2 · A quotient and a radical</span></div>
   <div>Find all functions $g$ such that
   $$g&#39;(x)=4\sin x+\frac{2x^{5}-\sqrt{x}}{x}$$
   </div>
-</div>
 <details class="soln"><summary>Reveal solution</summary>
 <div class="soln-body">
 Division by $x$ is not a rule that runs backwards. Powers are — so split the quotient and write
@@ -2865,6 +2865,7 @@ The rewrite is the only decision in the problem. Radicals, quotients and squares
 before any rule applies.
 </div>
 </details>
+</div>
 <div class="panel">
   <div class="sec-label">Self-check · running the rules backwards</div>
   <div id="q1"></div>
@@ -3101,7 +3102,6 @@ Repeat all three, in order, once for each derivative you have to undo.
 <div class="panel example-box">
   <div class="ex-head"><span class="ex-tag">Ex. 3 · One condition</span></div>
   <div>Find $f$ given $\;f&#39;(x)=x^{2}+\sin x\;$ and $\;f(0)=4$.</div>
-</div>
 <details class="soln"><summary>Reveal solution</summary>
 <div class="soln-body">
 Antidifferentiate term by term, keeping the constant:
@@ -3114,13 +3114,13 @@ $$\boxed{\,f(x)=\tfrac13x^{3}-\cos x+5\,}$$
 </div>
 </div>
 </details>
+</div>
 
 <div class="panel example-box">
   <div class="ex-head"><span class="ex-tag">Ex. 4 · Two conditions</span></div>
   <div>Find $f$ given
   $$f&#39;&#39;(x)=12x^{2}-6x+2,\qquad f&#39;(1)=5,\qquad f(1)=-1$$
   </div>
-</div>
 <details class="soln"><summary>Reveal solution</summary>
 <div class="soln-body">
 Two derivatives to undo, so two antidifferentiations and two constants. <b>Resolve the first constant
@@ -3141,6 +3141,7 @@ $$\boxed{\,f(x)=x^{4}-x^{3}+x^{2}+2x-4\,}$$
 </div>
 </div>
 </details>
+</div>
 <p>The order is the whole difficulty. Carry an unresolved <span class="math inline">C</span> into the second antidifferentiation and it becomes <span class="math inline">Cx+D</span> — one equation, two unknowns, and the problem stops being solvable. <strong>One constant per antidifferentiation, and each one is pinned down before the next one appears.</strong></p>
 <p>The count scales with the order of the derivative. Given <span class="math inline">f&#39;&#39;&#39;</span>, you antidifferentiate three times and need three conditions, resolved in that same order.</p>
 <div class="panel">
@@ -3181,7 +3182,6 @@ rcQuiz('q2',[
   <div class="ex-head"><span class="ex-tag">Ex. 5 · From acceleration to position</span></div>
   <div>A particle has acceleration $\;a(t)=6t+4$, initial velocity $\;v(0)=-6\;$ and initial position
   $\;x(0)=9$. Find $v(t)$ and $x(t)$.</div>
-</div>
 <details class="soln"><summary>Reveal solution</summary>
 <div class="soln-body">
 <p><b>Acceleration to velocity.</b></p>
@@ -3199,6 +3199,7 @@ $$\boxed{\,x(t)=t^{3}+2t^{2}-6t+9\,}$$
 Both constants came straight off the initial conditions, with no equation to solve.
 </div>
 </details>
+</div>
 <section id="sketching-position-from-a-velocity-graph" class="level3">
 <h3 class="anchored" data-anchor-id="sketching-position-from-a-velocity-graph">Sketching position from a velocity graph</h3>
 <p>The graphical version uses the same reading as the family did, run on <span class="math inline">v</span> and <span class="math inline">x</span> instead of <span class="math inline">f&#39;</span> and <span class="math inline">f</span>. Where <span class="math inline">v</span> is positive the object moves forward, so <span class="math inline">x</span> rises. Where <span class="math inline">v</span> crosses zero, <span class="math inline">x</span> has a horizontal tangent — and if <span class="math inline">v</span> changes sign there, <span class="math inline">x</span> turns around.</p>
@@ -3210,7 +3211,6 @@ Both constants came straight off the initial conditions, with no equation to sol
     <canvas id="vgC"></canvas>
     <div class="figcap">$v(t)$, in metres per second, for $0\le t\le 4$.</div>
   </div>
-</div>
 <details class="soln"><summary>Reveal solution</summary>
 <div class="soln-body">
 Read the sign of $v$ off the graph and write down what $x$ does on each piece.
@@ -3232,6 +3232,7 @@ Start the sketch at $(0,0)$ because that is the given condition, and let the fou
 </div>
 </div>
 </details>
+</div>
 <script>
 (function(){
   var vc=document.getElementById('vgC'), xc=document.getElementById('xgC');
