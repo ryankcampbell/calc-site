@@ -2911,8 +2911,8 @@ on an interval.
 <b>Reverse power rule.</b> For $n\neq-1$,
 $$f&#39;(x)=x^{n}\qquad\Longrightarrow\qquad f(x)=\frac{x^{n+1}}{n+1}+C$$
 </div>
-<p>Why is the <span class="math inline">+C</span> needed? Every vertical shift of <span class="math inline">\dfrac{x^{n+1}}{n+1}</span> has the same slope everywhere, so every one of them has <span class="math inline">x^{n}</span> as its derivative — naming only one would leave functions out. <strong>Whether <span class="math inline">+C</span> catches <em>every</em> antiderivative</strong> — or only the ones anybody happens to write down — is the question of the next section.</p>
-<p>The restriction is not bookkeeping. Putting <span class="math inline">n=-1</span> gives <span class="math inline">\dfrac{x^{0}}{0}</span>, and the denominator is zero. Nothing has gone wrong with the algebra — <strong>no power of <span class="math inline">x</span> has derivative <span class="math inline">\frac1x</span></strong>, so the rule genuinely breaks. To foreshadow a little: there <em>is</em> a function whose derivative is <span class="math inline">\frac1x</span>, so <span class="math inline">\frac1x</span> does have an antiderivative. It is <span class="math inline">\ln x</span>, and you will study it in Unit 5.</p>
+<p>Why is the <span class="math inline">+C</span> needed? Every vertical shift of <span class="math inline">\dfrac{x^{n+1}}{n+1}</span> has the same slope everywhere, so every one of them has <span class="math inline">x^{n}</span> as its derivative. If we didn’t write <span class="math inline">+C</span> we could leave some of them out.</p>
+<p>The restriction that <span class="math inline">n\neq-1</span> is important. Putting <span class="math inline">n=-1</span> gives <span class="math inline">\dfrac{x^{0}}{0}</span>, and the denominator is zero. Nothing has gone wrong with the algebra — <strong>no power of <span class="math inline">x</span> has derivative <span class="math inline">\frac1x</span></strong>, so the rule genuinely breaks. To foreshadow a little: there <em>is</em> a function whose derivative is <span class="math inline">\frac1x</span>, so <span class="math inline">\frac1x</span> does have an antiderivative. It is <span class="math inline">\ln x</span>, and you will study it in Unit 5.</p>
 </section>
 <section id="the-antiderivative-table" class="level3">
 <h3 class="anchored" data-anchor-id="the-antiderivative-table">The antiderivative table</h3>
@@ -3167,7 +3167,7 @@ $$\boxed{\,f(x)=g(x)+C\,}$$
 })();
 </script>
 <p>Drag the line anywhere and the tangent segments stay parallel — one slope, shared by the whole stack, at every <span class="math inline">x</span>. That picture is the corollary: same derivative everywhere means the members differ only by a vertical shift.</p>
-<p>Switch to <strong>Through a point</strong> and the stack collapses to one curve. <strong>A single condition picks a single member</strong>, and that is the next section before any algebra happens.</p>
+<p>Switch to <strong>Through a point</strong> and the stack collapses to one curve. <strong>A single condition picks a single member</strong> — an initial value problem, before any algebra.</p>
 <details class="cov"><summary>Why the theorem says <i>on an interval</i></summary>
 <div class="cov-body">
 The corollary needs the two functions to share a derivative on an <b>interval</b>, and when the domain
@@ -3304,7 +3304,7 @@ rcQuiz('q2',[
 <h2 class="anchored" data-anchor-id="position-from-acceleration">4 · Position from acceleration</h2>
 <p>Acceleration is the derivative of velocity and velocity is the derivative of position:</p>
 <p><span class="math display">a(t)=v&#39;(t),\qquad v(t)=x&#39;(t)</span></p>
-<p>So <strong>position is the antiderivative of the antiderivative of acceleration</strong>. That is the two-constant problem from the previous section wearing different letters — the same two antidifferentiations, the same two constants, resolved in the same order. What is new is the reading, not the method.</p>
+<p>So <strong>position is the antiderivative of the antiderivative of acceleration</strong>. That is the two-constant initial value problem wearing different letters — the same two antidifferentiations, the same two constants, resolved in the same order. What is new is the reading, not the method.</p>
 <p>One thing is easier here. The conditions are almost always given at <span class="math inline">t=0</span>, and substituting <span class="math inline">t=0</span> kills every term with a <span class="math inline">t</span> in it. <strong>So <span class="math inline">v(0)</span> <em>is</em> the constant</strong> — you read it off rather than solving for it.</p>
 <div class="panel example-box">
   <div class="ex-head"><span class="ex-tag">Ex. 5 · From acceleration to position</span></div>
