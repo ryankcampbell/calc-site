@@ -1882,6 +1882,465 @@
      "count": null
     }
    ]
+  },
+  {
+   "unit": "unit3-integrals",
+   "lessons": [
+    {
+     "code": "L3.1",
+     "slug": "3-1-areas-and-distances",
+     "title": "Areas and Distances",
+     "stewart": "",
+     "quarto": {
+      "file": "q/3-1-areas-and-distances.html",
+      "hash": "77408e6b3a2c6b972dd0b6780236c5977bb5496c02d9f3fb712e911fac853573",
+      "bytes": 4507666
+     },
+     "sections": [
+      {
+       "id": "summation-notation",
+       "text": "Summation Notation",
+       "level": 2
+      },
+      {
+       "id": "the-area-problem",
+       "text": "The Area Problem",
+       "level": 2
+      },
+      {
+       "id": "riemann-sum-explorer",
+       "text": "Riemann Sum Explorer",
+       "level": 2
+      },
+      {
+       "id": "identify-the-sample-points",
+       "text": "Identify the Sample Points",
+       "level": 3
+      },
+      {
+       "id": "squeezing-the-true-area",
+       "text": "Squeezing the True Area",
+       "level": 2
+      },
+      {
+       "id": "the-distance-problem",
+       "text": "The Distance Problem",
+       "level": 2
+      }
+     ],
+     "docs": {}
+    },
+    {
+     "code": "L3.2a",
+     "slug": "3-2a-definite-integral",
+     "title": "The Definite Integral",
+     "stewart": "",
+     "quarto": {
+      "file": "q/3-2a-definite-integral.html",
+      "hash": "001b0fd99993fff62f8e34e5a683705c6af1ce4f1549ab86978c7dffa1a499fd",
+      "bytes": 3763075
+     },
+     "sections": [
+      {
+       "id": "the-definition",
+       "text": "The Definition",
+       "level": 2
+      },
+      {
+       "id": "net-area",
+       "text": "Net Area",
+       "level": 2
+      },
+      {
+       "id": "recognizing-a-riemann-sum",
+       "text": "Recognizing a Riemann Sum",
+       "level": 2
+      },
+      {
+       "id": "right-endpoint-formula",
+       "text": "Right-Endpoint Formula",
+       "level": 2
+      },
+      {
+       "id": "geometric-interpretation",
+       "text": "Geometric Interpretation",
+       "level": 2
+      },
+      {
+       "id": "midpoint-rule",
+       "text": "Midpoint Rule",
+       "level": 2
+      }
+     ],
+     "docs": {}
+    },
+    {
+     "code": "L3.2b",
+     "slug": "3-2b-properties",
+     "title": "Properties of the Definite Integral",
+     "stewart": "",
+     "quarto": {
+      "file": "q/3-2b-properties.html",
+      "hash": "38f70251971dcc751d0b3b1ef784dc896a5254797c7a2c41d2e6bd3513c67518",
+      "bytes": 3734419
+     },
+     "sections": [
+      {
+       "id": "properties",
+       "text": "Properties",
+       "level": 2
+      }
+     ],
+     "docs": {}
+    },
+    {
+     "code": "L3.3a",
+     "slug": "3-3a-ftc-part-1",
+     "title": "The Fundamental Theorem, Part 1",
+     "stewart": "",
+     "quarto": {
+      "file": "q/3-3a-ftc-part-1.html",
+      "hash": "df4fa8126f8a0efe8a85e733e1f8da0bdfb10962e3149bc2e88bc725c8b0a9af",
+      "bytes": 3748128
+     },
+     "sections": [
+      {
+       "id": "the-big-picture",
+       "text": "The Big Picture",
+       "level": 2
+      },
+      {
+       "id": "the-accumulation-function",
+       "text": "The Accumulation Function",
+       "level": 2
+      },
+      {
+       "id": "ftc-1-proof",
+       "text": "FTC 1 — Proof",
+       "level": 2
+      }
+     ],
+     "docs": {}
+    },
+    {
+     "code": "L3.3b",
+     "slug": "3-3b-ftc-part-2",
+     "title": "The Fundamental Theorem, Part 2",
+     "stewart": "",
+     "quarto": {
+      "file": "q/3-3b-ftc-part-2.html",
+      "hash": "9b79647307b89a4ec773431f801e83d0e672b23e53eb26e3c58362b0972165a6",
+      "bytes": 3758053
+     },
+     "sections": [
+      {
+       "id": "ftc-2-proof",
+       "text": "FTC 2 — Proof",
+       "level": 2
+      },
+      {
+       "id": "evaluating-integrals",
+       "text": "Evaluating Integrals",
+       "level": 2
+      },
+      {
+       "id": "ftc-1-with-the-chain-rule",
+       "text": "FTC 1 with the Chain Rule",
+       "level": 2
+      },
+      {
+       "id": "practice",
+       "text": "Practice",
+       "level": 2
+      }
+     ],
+     "docs": {}
+    },
+    {
+     "code": "L3.4a",
+     "slug": "3-4a-indefinite-integrals",
+     "title": "Indefinite Integrals",
+     "stewart": "",
+     "quarto": {
+      "file": "q/3-4a-indefinite-integrals.html",
+      "hash": "e06f9e4a2e0ef034e06848eedda8e106e5a53ab64d64a98549e5929749010abc",
+      "bytes": 4480250
+     },
+     "sections": [
+      {
+       "id": "from-derivative-to-antiderivative",
+       "text": "From derivative to antiderivative",
+       "level": 2
+      },
+      {
+       "id": "indefinite-vs.-definite-dont-confuse-them",
+       "text": "Indefinite vs. definite — don’t confuse them",
+       "level": 2
+      },
+      {
+       "id": "table-of-indefinite-integrals",
+       "text": "Table of indefinite integrals",
+       "level": 2
+      },
+      {
+       "id": "worked-examples",
+       "text": "Worked examples",
+       "level": 2
+      }
+     ],
+     "docs": {}
+    },
+    {
+     "code": "L3.4b",
+     "slug": "3-4b-net-change",
+     "title": "Net Change as an Integral",
+     "stewart": "",
+     "quarto": {
+      "file": "q/3-4b-net-change.html",
+      "hash": "59c6b4115d4da9c02ba0b2353e57c369104c9b68be097a8ea98ea14890ba63fd",
+      "bytes": 4475823
+     },
+     "sections": [
+      {
+       "id": "the-net-change-theorem",
+       "text": "The Net Change Theorem",
+       "level": 2
+      },
+      {
+       "id": "application-particle-motion",
+       "text": "Application — particle motion",
+       "level": 2
+      },
+      {
+       "id": "a-note-on-units",
+       "text": "A note on units",
+       "level": 2
+      }
+     ],
+     "docs": {}
+    },
+    {
+     "code": "L3.5a",
+     "slug": "3-5a-substitution-rule",
+     "title": "The Substitution Rule",
+     "stewart": "",
+     "quarto": {
+      "file": "q/3-5a-substitution-rule.html",
+      "hash": "6852d7712859966b54bf7706200cda36a31babbacdb7261f769db95efe478707",
+      "bytes": 3759384
+     },
+     "sections": [
+      {
+       "id": "the-problem-we-need-something-extra",
+       "text": "The problem — we need something extra",
+       "level": 2
+      },
+      {
+       "id": "why-substitution-works-the-geometric-story",
+       "text": "Why substitution works — the geometric story",
+       "level": 2
+      },
+      {
+       "id": "the-claim",
+       "text": "The claim",
+       "level": 3
+      },
+      {
+       "id": "why-zoom-into-one-rectangle",
+       "text": "Why? Zoom into one rectangle",
+       "level": 3
+      },
+      {
+       "id": "the-symbolic-side-its-the-chain-rule-reversed",
+       "text": "The symbolic side — it’s the chain rule, reversed",
+       "level": 3
+      },
+      {
+       "id": "the-substitution-rule",
+       "text": "The Substitution Rule",
+       "level": 2
+      },
+      {
+       "id": "worked-example-1-displaystyleint-x3-cosx4-2dx",
+       "text": "Worked Example 1 — \\(\\displaystyle\\int x^3 \\cos(x^4 + 2)\\,dx\\)",
+       "level": 3
+      },
+      {
+       "id": "worked-example-2-displaystyleint-sqrt2x1dx",
+       "text": "Worked Example 2 — \\(\\displaystyle\\int \\sqrt{2x+1}\\,dx\\)",
+       "level": 3
+      },
+      {
+       "id": "worked-example-3-displaystyleint-fracxsqrt1-4x2dx",
+       "text": "Worked Example 3 — \\(\\displaystyle\\int \\frac{x}{\\sqrt{1-4x^2}}\\,dx\\)",
+       "level": 3
+      },
+      {
+       "id": "drill-spot-the-u",
+       "text": "Drill — spot the \\(u\\)",
+       "level": 3
+      }
+     ],
+     "docs": {}
+    },
+    {
+     "code": "L3.5b",
+     "slug": "3-5b-definite-substitution-and-symmetry",
+     "title": "Substitution in Definite Integrals & Symmetry",
+     "stewart": "",
+     "quarto": {
+      "file": "q/3-5b-definite-substitution-and-symmetry.html",
+      "hash": "449c9ffdcca715be6f1312fc74b295f27bfd0537600be78914d0778f348fcbec",
+      "bytes": 3744140
+     },
+     "sections": [
+      {
+       "id": "substitution-in-a-definite-integral",
+       "text": "Substitution in a definite integral",
+       "level": 2
+      },
+      {
+       "id": "worked-example-displaystyleint_12-fracdx3-5x2",
+       "text": "Worked Example — \\(\\displaystyle\\int_1^{2} \\frac{dx}{(3-5x)^2}\\)",
+       "level": 3
+      },
+      {
+       "id": "symmetry-shortcuts",
+       "text": "Symmetry shortcuts",
+       "level": 2
+      },
+      {
+       "id": "worked-example-displaystyleint_-221-x6dx",
+       "text": "Worked Example — \\(\\displaystyle\\int_{-2}^{2}(1 + x^6)\\,dx\\)",
+       "level": 3
+      },
+      {
+       "id": "worked-example-displaystyleint_-11fractan-x1-x2-x4dx",
+       "text": "Worked Example — \\(\\displaystyle\\int_{-1}^{1}\\frac{\\tan x}{1 + x^2 + x^4}\\,dx\\)",
+       "level": 3
+      }
+     ],
+     "docs": {}
+    }
+   ],
+   "guide": [
+    {
+     "kind": "banner",
+     "text": "CHAPTER 4: Integrals (Homework is required this unit)"
+    },
+    {
+     "kind": "lesson",
+     "date": "11/13",
+     "name": "3.1 Areas and Distances",
+     "detail": "Summation notation, the area problem, · Riemann sums, the distance problem",
+     "stewart": "§4.1",
+     "hw": "to be assigned",
+     "count": null
+    },
+    {
+     "kind": "lesson",
+     "date": "11/17",
+     "name": "3.2a The Definite Integral",
+     "detail": "The definition, net area, recognizing a · Riemann sum, the Midpoint Rule",
+     "stewart": "§4.2",
+     "hw": "to be assigned",
+     "count": null
+    },
+    {
+     "kind": "lesson",
+     "date": "11/18",
+     "name": "3.2b Properties of the Definite Integral",
+     "detail": "The five properties, additivity, · comparison",
+     "stewart": "§4.2",
+     "hw": "to be assigned",
+     "count": null
+    },
+    {
+     "kind": "break",
+     "text": "No class 11/19 – 11/30 · Thanksgiving break"
+    },
+    {
+     "kind": "lesson",
+     "date": "12/1",
+     "name": "3.3a Re-entry: Riemann Sums → FTC Part 1",
+     "detail": "The accumulation function; FTC unites · differentiation and integration",
+     "stewart": "§4.2–4.3",
+     "hw": "to be assigned",
+     "count": null
+    },
+    {
+     "kind": "quiz",
+     "date": "12/2",
+     "name": "QUIZ 3",
+     "detail": "",
+     "stewart": "§4.1–4.2",
+     "hw": "",
+     "count": null
+    },
+    {
+     "kind": "lesson",
+     "date": "12/4",
+     "name": "3.3b FTC Part 2: the Evaluation Theorem",
+     "detail": "F(x)=g(x)+c, so the c's cancel; FTC 1 · with the chain rule",
+     "stewart": "§4.3",
+     "hw": "to be assigned",
+     "count": null
+    },
+    {
+     "kind": "lesson",
+     "date": "12/8",
+     "name": "3.4a Indefinite Integrals",
+     "detail": "A family, not a number; the table read · backwards from the derivative rules",
+     "stewart": "§4.4",
+     "hw": "to be assigned",
+     "count": null
+    },
+    {
+     "kind": "lesson",
+     "date": "12/9",
+     "name": "3.4b Net Change as an Integral",
+     "detail": "The integral of a rate of change is the · net change; displacement vs. distance",
+     "stewart": "§4.4",
+     "hw": "to be assigned",
+     "count": null
+    },
+    {
+     "kind": "lesson",
+     "date": "12/11",
+     "name": "3.5a The Substitution Rule",
+     "detail": "The chain rule read backwards; spotting · the inside function",
+     "stewart": "§4.5",
+     "hw": "to be assigned",
+     "count": null
+    },
+    {
+     "kind": "lesson",
+     "date": "12/15",
+     "name": "3.5b Substitution: Definite Integrals · Symmetry",
+     "detail": "Change the limits, or substitute back; · even doubles, odd cancels",
+     "stewart": "§4.5",
+     "hw": "to be assigned",
+     "count": null
+    },
+    {
+     "kind": "review",
+     "date": "12/16",
+     "name": "Review: Chapter 4",
+     "detail": "",
+     "stewart": "§4.1–4.5",
+     "hw": "Review packet",
+     "count": null
+    },
+    {
+     "kind": "exam",
+     "date": "12/18",
+     "name": "TEST 3: Chapter 4",
+     "detail": "",
+     "stewart": "§4.1–4.5",
+     "hw": "",
+     "count": null
+    }
+   ]
   }
  ]
 }
