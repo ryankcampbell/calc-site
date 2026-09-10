@@ -3236,7 +3236,7 @@ Reveal solution
     <details class="soln"><summary>Reveal solution</summary><div class="soln-body">
       <p>Diagnostic: $\frac{1-1}{1-1}=\frac00$. Rewrite.</p>
       $$\lim_{x\to1}\frac{x^2-1}{x-1}=\lim_{x\to1}\frac{(x-1)(x+1)}{(x-1)}=\lim_{x\to1}(x+1)=\boxed{2}$$
-      <p>The cancellation left a <b>hole</b>. The limit is the <b>height of the hole</b>: the graph is the line $y=x+1$ with the single point at $x=1$ removed. <span class="book">HE @ 1</span></p>
+      <p>The cancellation left a <b>hole</b>. The limit is the <b>height of the hole</b>: the graph is the line $y=x+1$ with the single point at $x=1$ removed. <span class="book">H @ 1</span></p>
     </div></details>
   </div>
 
@@ -3245,7 +3245,7 @@ Reveal solution
     <details class="soln"><summary>Reveal solution</summary><div class="soln-body">
       <p>Diagnostic: $\frac00$. Rewrite.</p>
       $$\lim_{x\to1}\frac{x-1}{x^2-1}=\lim_{x\to1}\frac{(x-1)}{(x+1)(x-1)}=\lim_{x\to1}\frac{1}{x+1}=\boxed{\tfrac12}$$
-      <p class="book">HA @ y=0 · Z: none · HE @ 1 · VA @ -1</p>
+      <p class="book">HA @ y=0 · Z: none · H @ 1 · VA @ -1</p>
       <p><b>Numerical confirmation, in passing:</b> $x=0.999\Rightarrow 0.5002$, $x=1.001\Rightarrow 0.4997$. The table agrees, so $\tfrac12$.</p>
     </div></details>
   </div>
@@ -4627,7 +4627,7 @@ const CARDS = [
     {n:'Cancel.', t:'= \\dfrac{1}{x+1}'},
     {n:'Run the diagnostic on the new form.', t:'\\lim_{x \\to 1}\\dfrac{1}{x+1} = \\dfrac{1}{2}'}],
   ans:'\\lim_{x \\to 1}\\dfrac{x-1}{x^2-1} = \\boxed{\\dfrac{1}{2}}',
-  ansNote:'The shorthand reading of this one: $\\text{HA @ } y=0$, no zeros, $\\text{HE @ }1$, $\\text{VA @ }-1$.',
+  ansNote:'The shorthand reading of this one: $\\text{HA @ } y=0$, no zeros, $\\text{H @ }1$, $\\text{VA @ }-1$.',
   plot:{view:[-1.7,3,-4.5,4.5], curves:[{f:x=>1/(x+1)}], vas:[-1], pts:[{x:1,y:0.5,open:true}], focus:{x:1,y:0.5}},
   gnote:'Hole at (1, ½), vertical asymptote at x = −1, horizontal asymptote y = 0.',
   zoom:'Zoom in on <b>x = 1</b>. The curve flattens into a straight line and the missing point stays exactly one pixel wide forever. Magnification <b>resolves</b> this graph.'

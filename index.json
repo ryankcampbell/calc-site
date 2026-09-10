@@ -10,8 +10,8 @@
      "stewart": "1.1a",
      "quarto": {
       "file": "q/1-1a-functions-catalog.html",
-      "hash": "d35efa3ae28a36b8c45aa334a182ae1586397b23ad29933eb3aeab3491ff1c03",
-      "bytes": 3775822
+      "hash": "ff022aac074839fbd95500e744016f4316c44517e6d61c72b0d37829268c4370",
+      "bytes": 3775818
      },
      "sections": [
       {
@@ -48,8 +48,8 @@
      "docs": {
       "packet": {
        "file": "p/1-1a-functions-catalog-packet.pdf",
-       "hash": "d14ad8fcfdf56fbc8cbb9da14724d08dd0fb9835800a34fb620c4cb24bd54fff",
-       "bytes": 284951
+       "hash": "ce75ced4f50a13091394c05b94618cce188aa89dc04b14d47fbb83063a495526",
+       "bytes": 284653
       },
       "ticket": {
        "file": "p/1-1a-functions-catalog-ticket.pdf",
@@ -58,8 +58,8 @@
       },
       "onepager": {
        "file": "p/1-1a-functions-catalog-onepager.pdf",
-       "hash": "548baf11cefb39e438a24df460f1f45e87d2eb42ec852b94a070410138c9b1ef",
-       "bytes": 84985
+       "hash": "43f742e194440780c21132fc44d67cf57d225012e0e6a467c84aac01939ef7f4",
+       "bytes": 393499
       }
      }
     },
@@ -70,8 +70,8 @@
      "stewart": "1.1b",
      "quarto": {
       "file": "q/1-1b-transformations.html",
-      "hash": "8fb1e1eeaadcea3b053a6d272a18dd9fef30cca21bb03f4d5c1c0aa2a51db8db",
-      "bytes": 3732860
+      "hash": "8c9d4a3640a161f01bd13e217ce341eaaea2572827283c0841e9d4f852fe25e6",
+      "bytes": 3732859
      },
      "sections": [
       {
@@ -115,8 +115,8 @@
      "stewart": "1.2",
      "quarto": {
       "file": "q/1-2-limits.html",
-      "hash": "f44fbf3548042695bb4936f730a888ce8be7dfced7e670e50858e6e9a6149a4e",
-      "bytes": 3846576
+      "hash": "3e9523235c9a53c84e4fc156005f5feaa4518190d542bb5cdbeace670dec9df8",
+      "bytes": 3846573
      },
      "sections": [
       {
@@ -193,18 +193,18 @@
      "docs": {
       "packet": {
        "file": "p/1-2-limits-packet.pdf",
-       "hash": "1e9ea98f1069d2af9f4a15bc78e042e61232515aced87dcac4dc0f08364d9bf5",
-       "bytes": 57800
+       "hash": "32d55e42dd2caf26d348dd1efa51974a78b9c54c125234241369779cda8deae4",
+       "bytes": 220923
       },
       "ticket": {
        "file": "p/1-2-limits-ticket.pdf",
-       "hash": "689c93f87c6cffb88549e3fdc290fc4b3c6a3317a6cbaa029976fd3ab02410fb",
-       "bytes": 27556
+       "hash": "147b79ca48c28904048b5424dfbb2c48a68d386ecdda9d8778471118b3b78695",
+       "bytes": 139963
       },
       "onepager": {
        "file": "p/1-2-limits-onepager.pdf",
-       "hash": "4a32b404109234694da99b2404666cd23f83e5943ebe3cf601db91640fb96ce8",
-       "bytes": 371495
+       "hash": "21d30adf23030f90b29e6fecc8fd565ccaa4f40146214c4b1af25c49397af802",
+       "bytes": 605663
       }
      }
     },
@@ -215,8 +215,8 @@
      "stewart": "1.8",
      "quarto": {
       "file": "q/1-3-continuity.html",
-      "hash": "31db8d73fa27d208db45336bd1a2d1e513be95c69212c72e1c937008122facdc",
-      "bytes": 3739700
+      "hash": "98b9a87a51fdea99b79bff01913e465215b5426062a1a554ee5cd6674e288c14",
+      "bytes": 3739698
      },
      "sections": [
       {
@@ -303,8 +303,8 @@
      "docs": {
       "packet": {
        "file": "p/1-3-continuity-packet.pdf",
-       "hash": "00e0fbec52932a35c7dd555d9d5af6a67d21c9c26ef8d95793c51aba52ef2b48",
-       "bytes": 60469
+       "hash": "cf42e85f5d6e5f2e44ac0a2aa712a7311f33b4a3695b22a8eab34bb986105d10",
+       "bytes": 244552
       },
       "ticket": {
        "file": "p/1-3-continuity-ticket.pdf",
@@ -313,8 +313,8 @@
       },
       "onepager": {
        "file": "p/1-3-continuity-onepager.pdf",
-       "hash": "772c85b8528c110d041f1d2d323b2718bb7a9504c95e11a73bcf09dda8924be2",
-       "bytes": 85071
+       "hash": "76133661dc8db2da0584870ba446e2a1bc34bdff81d9cd2edffae6219fb9f57d",
+       "bytes": 368366
       }
      }
     },

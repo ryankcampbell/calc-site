@@ -4641,12 +4641,12 @@ rcQuiz('q3',[
           $\deg(\text{bot})&lt;\deg(\text{top}) \Rightarrow$ polynomial long division, <code>SA</code> (slant)
         </div>
         <div class="fg-prob">
-          <span class="ex-tag">Problem</span> — for $\dfrac{x^{2}-x-6}{x^{2}-4}$ find <code>Z</code>, <code>VA</code>, <code>HE</code>, <code>HA</code>, and $D$.
+          <span class="ex-tag">Problem</span> — for $\dfrac{x^{2}-x-6}{x^{2}-4}$ find <code>Z</code>, <code>VA</code>, <code>H</code>, <code>HA</code>, and $D$.
           <details class="soln"><summary>Reveal solution</summary><div class="soln-body">
             $$\frac{x^2-x-6}{x^2-4}=\frac{(x-3)(x+2)}{(x-2)(x+2)}$$
             The $(x+2)$ cancels — that input is still gone, so it is a hole, not a <code>VA</code>. Its height is $\dfrac{-2-3}{-2-2}=\dfrac54$.
             Degrees are equal, so <code>HA</code> is the ratio of leading coefficients, $\tfrac11$.
-            <div class="ansred">$$\boxed{\ \texttt{Z@3}\ \cdot\ \texttt{VA@2}\ \cdot\ \texttt{HE@(-2,5/4)}\ \cdot\ \texttt{HA y=1}\ }$$</div>
+            <div class="ansred">$$\boxed{\ \texttt{Z@3}\ \cdot\ \texttt{VA@2}\ \cdot\ \texttt{H@(-2,5/4)}\ \cdot\ \texttt{HA y=1}\ }$$</div>
             <div class="dr">$$D=\{x\mid x\neq 2,-2\}=(-\infty,-2)\cup(-2,2)\cup(2,\infty)$$</div>
           </div></details>
         </div>
@@ -4872,7 +4872,7 @@ window.FG = (function(){
         // limit), never written in by hand — same rule as RCFIG's markers
         var hy = holeY(pf, p[0]);
         RC.openDot(ctx,g.X(mx(p[0])),g.Y(my(hy)),5,C.vio);
-        RC.mlabel(ctx,g.X(mx(p[0])),g.Y(my(hy))-10,[{s:'HE'}],C.vio,'center',11);
+        RC.mlabel(ctx,g.X(mx(p[0])),g.Y(my(hy))-10,[{s:'H'}],C.vio,'center',11);
       });
       (dc.zeros||[]).forEach(function(x){
         RC.glowDot(ctx,g.X(mx(x)),g.Y(my(0)),4.5,C.aux,8);
@@ -4995,7 +4995,7 @@ window.addEventListener('DOMContentLoaded',function(){
     label:'sp2lab', labelTex:'\\dfrac{(x-3)(x+2)}{(x-2)(x+2)}',
     num:[{tex:'x-3',f:function(x){return x-3;}},{tex:'x+2',f:function(x){return x+2;}}],
     den:[{tex:'x-2',f:function(x){return x-2;}},{tex:'x+2',f:function(x){return x+2;}}],
-    marks:[{x:-2,label:'HE@-2',kind:'hole'},{x:2,label:'VA@2',kind:'va'},{x:3,label:'Z@3',kind:'zero'}],
+    marks:[{x:-2,label:'H@-2',kind:'hole'},{x:2,label:'VA@2',kind:'va'},{x:3,label:'Z@3',kind:'zero'}],
     probes:[-3,0,2.5,4]
   });
 });

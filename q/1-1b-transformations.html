@@ -2909,7 +2909,7 @@ window.FG = (function(){
         // limit), never written in by hand — no marked point gets a literal y
         var hy = holeY(pf, p[0]);
         RC.openDot(ctx,g.X(mx(p[0])),g.Y(my(hy)),5,C.vio);
-        RC.mlabel(ctx,g.X(mx(p[0])),g.Y(my(hy))-10,[{s:'HE'}],C.vio,'center',11);
+        RC.mlabel(ctx,g.X(mx(p[0])),g.Y(my(hy))-10,[{s:'H'}],C.vio,'center',11);
       });
       (dc.zeros||[]).forEach(function(x){
         RC.glowDot(ctx,g.X(mx(x)),g.Y(my(0)),4.5,C.aux,8);
