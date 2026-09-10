@@ -2341,6 +2341,220 @@
      "count": null
     }
    ]
+  },
+  {
+   "unit": "unit4-applications_of_integrals",
+   "lessons": [
+    {
+     "code": "L4.1a",
+     "slug": "4-1a-areas-between-curves",
+     "title": "Areas Between Curves",
+     "stewart": "4.1a",
+     "quarto": {
+      "file": "q/4-1a-areas-between-curves.html",
+      "hash": "f2487d690813772fdcb6891ae0ace382f81018ce13ef3ec15650c4174c0253fa",
+      "bytes": 3689286
+     },
+     "sections": [
+      {
+       "id": "area-between-two-curves",
+       "text": "Area between two curves",
+       "level": 2
+      },
+      {
+       "id": "top-minus-bottom",
+       "text": "Top minus bottom",
+       "level": 2
+      },
+      {
+       "id": "the-notation-y_t-y_b",
+       "text": "The notation y_T-y_B",
+       "level": 3
+      },
+      {
+       "id": "regions-bounded-only-by-the-curves",
+       "text": "Regions bounded only by the curves",
+       "level": 2
+      },
+      {
+       "id": "crossing-curves",
+       "text": "Crossing curves",
+       "level": 2
+      }
+     ],
+     "docs": {
+      "packet": {
+       "file": "p/4-1a-areas-between-curves-packet.pdf",
+       "hash": "9f502d254df10c3fc290ae84e75d630e3cfc05ade82f0850e913c9d4d4ae6adc",
+       "bytes": 196196
+      },
+      "ticket": {
+       "file": "p/4-1a-areas-between-curves-ticket.pdf",
+       "hash": "43c8cdd3f29c3ec2fa8ab9fca6ecb99095d783a8b82a9a8be1db50b53e798e79",
+       "bytes": 127009
+      },
+      "onepager": {
+       "file": "p/4-1a-areas-between-curves-onepager.pdf",
+       "hash": "57c76e3b5c4d65d4f95a4ceac45e77b9b57539421b80b5f9589bd05dcf94a662",
+       "bytes": 247854
+      }
+     }
+    }
+   ],
+   "guide": [
+    {
+     "kind": "banner",
+     "text": "CHAPTER 5: Applications of Integration (Homework is required this unit)"
+    },
+    {
+     "kind": "lesson",
+     "date": "1/5",
+     "name": "4.1a Areas Between Curves · Crossing Curves",
+     "detail": "Top minus bottom; split at each crossing when · the two curves trade places",
+     "stewart": "§5.1",
+     "hw": "to be assigned",
+     "count": null
+    },
+    {
+     "kind": "lesson",
+     "date": "1/6",
+     "name": "4.1b Graphing x=g(y) · Integrating with Respect to y",
+     "detail": "Choose y as the input; monotonic pieces; · the horizontal strip, right minus left",
+     "stewart": "§5.1",
+     "hw": "to be assigned",
+     "count": null
+    },
+    {
+     "kind": "lesson",
+     "date": "1/8",
+     "name": "4.2a Volumes by Slicing: Known Cross-Sections",
+     "detail": "V=∫_a^b A(x) dx; squares, semicircles and · triangles on a given base",
+     "stewart": "§5.2",
+     "hw": "to be assigned",
+     "count": null
+    },
+    {
+     "kind": "banner",
+     "text": "Jan 11–14 · 2-hour finals-week meeting · unassigned · no fall final"
+    },
+    {
+     "kind": "lesson",
+     "date": "1/19",
+     "name": "4.2b Volumes of Revolution: Disks & Washers",
+     "detail": "A(x)=π R^2 and π(R^2-r^2); when the region · touches the axis and when it does not",
+     "stewart": "§5.2",
+     "hw": "to be assigned",
+     "count": null
+    },
+    {
+     "kind": "lesson",
+     "date": "1/20",
+     "name": "4.2c Rotating About Lines Other Than the Axes",
+     "detail": "Radii measured from x=k or y=k; the axis · inside the region",
+     "stewart": "§5.2",
+     "hw": "to be assigned",
+     "count": null
+    },
+    {
+     "kind": "quiz",
+     "date": "1/22",
+     "name": "QUIZ 4",
+     "detail": "",
+     "stewart": "§5.1–5.2",
+     "hw": "",
+     "count": null
+    },
+    {
+     "kind": "lesson",
+     "date": "1/26",
+     "name": "4.3a Volumes by Cylindrical Shells",
+     "detail": "V=∫_a^b 2π x f(x) dx; the strip parallel to · the axis instead of perpendicular",
+     "stewart": "§5.3",
+     "hw": "to be assigned",
+     "count": null
+    },
+    {
+     "kind": "lesson",
+     "date": "1/27",
+     "name": "4.3b Shells: Choosing the Strip and the Axis",
+     "detail": "Radius and height read off the picture; shells · about a line other than the axis",
+     "stewart": "§5.3",
+     "hw": "to be assigned",
+     "count": null
+    },
+    {
+     "kind": "lesson",
+     "date": "1/29",
+     "name": "4.4 Which Method? Disk / Washer / Shell (BTC)",
+     "detail": "Choosing the method from the region and the · axis; when only one of the two integrates",
+     "stewart": "§5.2–5.3",
+     "hw": "to be assigned",
+     "count": null
+    },
+    {
+     "kind": "lesson",
+     "date": "2/2",
+     "name": "4.5a Average Value of a Function",
+     "detail": "f_avg=1/b-a∫_a^b f; the rectangle of · equal area",
+     "stewart": "§5.5",
+     "hw": "to be assigned",
+     "count": null
+    },
+    {
+     "kind": "lesson",
+     "date": "2/3",
+     "name": "4.5b Density & Net Change · MVT for Integrals",
+     "detail": "Mass from a density; some c in [a,b] hits the · average",
+     "stewart": "§5.5",
+     "hw": "to be assigned",
+     "count": null
+    },
+    {
+     "kind": "quiz",
+     "date": "2/5",
+     "name": "QUIZ 5",
+     "detail": "",
+     "stewart": "§5.3, §5.5",
+     "hw": "",
+     "count": null
+    },
+    {
+     "kind": "lesson",
+     "date": "2/9",
+     "name": "4.6a Work: Springs, Cables & Hooke's Law",
+     "detail": "W=∫_a^b f(x) dx when the force varies; · a hanging cable lifted a piece at a time",
+     "stewart": "§5.4",
+     "hw": "to be assigned",
+     "count": null
+    },
+    {
+     "kind": "lesson",
+     "date": "2/10",
+     "name": "4.6b Work: Pumping Problems*",
+     "detail": "One slab of liquid, its weight and its lift; · summing over the depth",
+     "stewart": "§5.4",
+     "hw": "to be assigned",
+     "count": null
+    },
+    {
+     "kind": "review",
+     "date": "2/16",
+     "name": "Review: Chapter 5",
+     "detail": "",
+     "stewart": "§5.1–5.5",
+     "hw": "Review packet",
+     "count": null
+    },
+    {
+     "kind": "exam",
+     "date": "2/17",
+     "name": "TEST 4: Chapter 5",
+     "detail": "",
+     "stewart": "§5.1–5.5",
+     "hw": "",
+     "count": null
+    }
+   ]
   }
  ]
 }
