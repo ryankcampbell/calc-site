@@ -115,8 +115,8 @@
      "stewart": "1.2",
      "quarto": {
       "file": "q/1-2-limits.html",
-      "hash": "3e9523235c9a53c84e4fc156005f5feaa4518190d542bb5cdbeace670dec9df8",
-      "bytes": 3846573
+      "hash": "a65029cd09edea91b4404a652311379fcc5c91dd94a8c7ac7a6aa7512d924068",
+      "bytes": 3846602
      },
      "sections": [
       {
@@ -193,8 +193,8 @@
      "docs": {
       "packet": {
        "file": "p/1-2-limits-packet.pdf",
-       "hash": "32d55e42dd2caf26d348dd1efa51974a78b9c54c125234241369779cda8deae4",
-       "bytes": 220923
+       "hash": "9c9d606b3450eb43a362ee48638705c32d8a8ee23a06596ee685bf8104619ec6",
+       "bytes": 220833
       },
       "ticket": {
        "file": "p/1-2-limits-ticket.pdf",
