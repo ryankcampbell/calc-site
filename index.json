@@ -303,8 +303,8 @@
      "docs": {
       "packet": {
        "file": "p/1-3-continuity-packet.pdf",
-       "hash": "cf42e85f5d6e5f2e44ac0a2aa712a7311f33b4a3695b22a8eab34bb986105d10",
-       "bytes": 244552
+       "hash": "b1430291d23ebe9768c1b0db599f3b80d0c1ad81eff724b2dc1a00df99fdb4fe",
+       "bytes": 242606
       },
       "ticket": {
        "file": "p/1-3-continuity-ticket.pdf",
@@ -313,8 +313,8 @@
       },
       "onepager": {
        "file": "p/1-3-continuity-onepager.pdf",
-       "hash": "76133661dc8db2da0584870ba446e2a1bc34bdff81d9cd2edffae6219fb9f57d",
-       "bytes": 368366
+       "hash": "f654cf3a11ac84d74c3b9ffd456c871d3d95eb8cb7ab4e0a3ed4eca37528ea8d",
+       "bytes": 364294
       }
      }
     },
@@ -398,18 +398,18 @@
      "docs": {
       "packet": {
        "file": "p/1-4-derivative-packet.pdf",
-       "hash": "e107730cf1d85a6e275ea1c7a9d2c305bf7d5e76fd6596ddac07df70d6a86cfc",
-       "bytes": 65734
+       "hash": "e4367894eb739a3844213ed7844abfbc526ba6730023b547ee5a1b65330d5592",
+       "bytes": 239282
       },
       "ticket": {
        "file": "p/1-4-derivative-ticket.pdf",
-       "hash": "88a89a2a60e71c01340fa5c4949a06893c77577bf428c1991bbba0076d8e9627",
-       "bytes": 25653
+       "hash": "d3728bb97ec27683bf60d8d1f5fa63a4c7984a8d16f4a563d215549411e9983c",
+       "bytes": 125168
       },
       "onepager": {
        "file": "p/1-4-derivative-onepager.pdf",
-       "hash": "6ba43df3aa1e99290bbb43a0dce7325b1a130ada82d6b4cf82da6b09c2e6b434",
-       "bytes": 79397
+       "hash": "add18b53b70f20bbfa260818c395aabeb377c2fade43264601e1c948ca711776",
+       "bytes": 350095
       }
      }
     },
@@ -2399,6 +2399,56 @@
        "bytes": 247854
       }
      }
+    },
+    {
+     "code": "L4.1b",
+     "slug": "4-1b-graphing-x-of-y-and-dy",
+     "title": "Graphing and Integrating Functions of y",
+     "stewart": "4.1b",
+     "quarto": {
+      "file": "q/4-1b-graphing-x-of-y-and-dy.html",
+      "hash": "d5e7f8fd3ffc9d2f680f05a1f1358d1445b6a6b744e5d985b8d9ca4fafc6a26e",
+      "bytes": 3781069
+     },
+     "sections": [
+      {
+       "id": "graphing-sideways",
+       "text": "Graphing Sideways",
+       "level": 2
+      },
+      {
+       "id": "the-graphing-trainer",
+       "text": "The graphing trainer",
+       "level": 3
+      },
+      {
+       "id": "monotonic-pieces",
+       "text": "Monotonic pieces",
+       "level": 2
+      },
+      {
+       "id": "integrating-with-respect-to-y",
+       "text": "Integrating with respect to y",
+       "level": 2
+      }
+     ],
+     "docs": {
+      "packet": {
+       "file": "p/4-1b-graphing-x-of-y-and-dy-packet.pdf",
+       "hash": "39bbbcc19061b2a4b7d956827dba924ad5fac6025729e7a7c08c3189f0d617d0",
+       "bytes": 314997
+      },
+      "ticket": {
+       "file": "p/4-1b-graphing-x-of-y-and-dy-ticket.pdf",
+       "hash": "0748eedd7356dec30a52080e62ed99df74911798b631b526cf92392a7923b0ef",
+       "bytes": 123511
+      },
+      "onepager": {
+       "file": "p/4-1b-graphing-x-of-y-and-dy-onepager.pdf",
+       "hash": "d375bd53359a9e0f285fc4d3c4fc90cad2c137f93ea009884e72c19bc6f8a562",
+       "bytes": 319290
+      }
+     }
     }
    ],
    "guide": [
@@ -2418,7 +2468,7 @@
     {
      "kind": "lesson",
      "date": "1/6",
-     "name": "4.1b Graphing x=g(y) · Integrating with Respect to y",
+     "name": "4.1b Graphing and Integrating Functions of y",
      "detail": "Choose y as the input; monotonic pieces; · the horizontal strip, right minus left",
      "stewart": "§5.1",
      "hw": "to be assigned",
