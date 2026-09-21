@@ -523,8 +523,8 @@
      "docs": {
       "packet": {
        "file": "p/1-5-formulae-packet.pdf",
-       "hash": "d9b6a4b4a562bb51196cb3aad411d642c85d14b4f22657b9969a216e7f0cb868",
-       "bytes": 201766
+       "hash": "aba54ed29e8e2132496823eadf2bcbe6abb0be5a612bcff4fdbe198b83740ec9",
+       "bytes": 212442
       },
       "ticket": {
        "file": "p/1-5-formulae-ticket.pdf",
@@ -533,8 +533,8 @@
       },
       "onepager": {
        "file": "p/1-5-formulae-onepager.pdf",
-       "hash": "b1d85140a9553e9fe37808cb2a2aa1e135a13904343cd9e6c7aacb64b7aa56b6",
-       "bytes": 290865
+       "hash": "1a8cc570011ce435b536c95a9d9b01304ed4b44f972438124dad0b1d9bb0b086",
+       "bytes": 301141
       }
      }
     },
