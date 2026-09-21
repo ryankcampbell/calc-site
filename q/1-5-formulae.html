@@ -2366,8 +2366,11 @@ details.soln > summary::before { content:'\25B6'; display:inline-block; transiti
 details[open].soln > summary::before { transform:rotate(90deg); }
 details[open].soln > summary { background:var(--soln-open); border-radius:6px 6px 0 0; border-bottom:1px solid var(--soln-obd); }
 details.soln > div.soln-body { padding:.7rem 1.1rem .9rem; overflow-x:auto; }
-.soln-body .katex-display { overflow-x:auto; overflow-y:hidden; padding:.4rem 0; }
-.soln-body .katex-display > .katex { white-space:nowrap; }
+
+.katex-display { overflow-x:auto; overflow-y:hidden; padding:.4rem 0; }
+.katex-display > .katex { white-space:nowrap; }
+
+.katex { position:relative; }
 
 .panel.example-box{ background:var(--ex-bg); border:1px solid var(--ex-bd); border-left:4px solid var(--ex-bd); }
 .ex-head{ display:flex; justify-content:space-between; align-items:center; gap:.5rem; margin-bottom:.5rem; }
