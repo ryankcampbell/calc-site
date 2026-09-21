@@ -2424,7 +2424,7 @@ align-items:baseline; gap:.4rem; margin-top:.45rem; }
 .br-sep { flex:0 0 auto; align-self:stretch; display:flex; align-items:center; gap:.4rem;
 padding:0 .1rem; color:var(--red); }
 .br-sep i { display:block; width:0; align-self:stretch; border-left:2px dashed var(--red); opacity:.55; }
-.br-sep span { writing-mode:vertical-rl; font-size:.66rem; font-weight:700; text-transform:uppercase;
+.br-sep span { writing-mode:vertical-rl; text-orientation:sideways; font-size:.66rem; font-weight:700; text-transform:uppercase;
 letter-spacing:.1em; white-space:nowrap; }
 
 .dpan { display:block; }
@@ -2772,32 +2772,32 @@ window.exsGo = function(btn, d){
     <div class="br-read">Constant</div>
     <div class="br-form" data-tex="\frac{d}{dx}(c)=0"></div>
     <div class="br-move">A constant has no slope.</div>
-    <div class="br-cap"><span>term by term</span> <span class="br-go">① →</span></div>
+    <div class="br-cap"><span>works term by term</span> <span class="br-go">① →</span></div>
   </a>
   <a class="br b-tbt" href="#pan-2" id="dxtab-2" role="tab" data-panel="pan-2" aria-selected="false">
     <div class="br-read">Power</div>
     <div class="br-form" data-tex="\frac{d}{dx}\left(x^{n}\right)=nx^{n-1}"></div>
     <div class="br-move">Every root and every reciprocal too — once you rewrite it as a power.</div>
-    <div class="br-cap"><span>term by term</span> <span class="br-go">② →</span></div>
+    <div class="br-cap"><span>works term by term</span> <span class="br-go">② →</span></div>
   </a>
   <a class="br b-tbt" href="#pan-3" id="dxtab-3" role="tab" data-panel="pan-3" aria-selected="false">
     <div class="br-read">Sum &amp; difference</div>
     <div class="br-form" data-tex="\frac{d}{dx}(f\pm g)=\frac{df}{dx}\pm\frac{dg}{dx}"></div>
     <div class="br-move">Differentiate a polynomial one term at a time.</div>
-    <div class="br-cap"><span>term by term</span> <span class="br-go">③ →</span></div>
+    <div class="br-cap"><span>works term by term</span> <span class="br-go">③ →</span></div>
   </a>
-  <div class="br-sep" aria-hidden="true"><i></i><span>not term by term</span><i></i></div>
+  <div class="br-sep" aria-hidden="true"><i></i><span>formulae that don’t<br>work term by term</span><i></i></div>
   <a class="br b-ntb" href="#pan-4" id="dxtab-4" role="tab" data-panel="pan-4" aria-selected="false">
     <div class="br-read">Product</div>
     <div class="br-form" data-tex="\frac{d}{dx}\big(fg\big)=fg&#39;+gf&#39;"></div>
     <div class="br-move">Two things multiplied. <b>Not</b> the product of the derivatives.</div>
-    <div class="br-cap"><span>not term by term</span> <span class="br-go">④ →</span></div>
+    <div class="br-cap"><span>doesn’t work term by term</span> <span class="br-go">④ →</span></div>
   </a>
   <a class="br b-ntb" href="#pan-5" id="dxtab-5" role="tab" data-panel="pan-5" aria-selected="false">
     <div class="br-read">Quotient</div>
     <div class="br-form" data-tex="\frac{d}{dx}\left(\frac{f}{g}\right)=\frac{gf&#39;-fg&#39;}{g^{2}}"></div>
     <div class="br-move">Two things divided. The order in the numerator matters.</div>
-    <div class="br-cap"><span>not term by term</span> <span class="br-go">⑤ →</span></div>
+    <div class="br-cap"><span>doesn’t work term by term</span> <span class="br-go">⑤ →</span></div>
   </a>
 </div>
 </div>
@@ -3318,7 +3318,7 @@ Reveal solution
 </section>
 <section id="four-expressions-and-the-rule-each-needs" class="level3">
 <h3 class="anchored" data-anchor-id="four-expressions-and-the-rule-each-needs">Four expressions and the rule each needs</h3>
-<p>Naming the rule is a separate skill from running it. For each expression, decide before computing anything.</p>
+<p>Which derivative rules do you use to compute these derivatives?</p>
 <details class="soln">
 <summary>
 <span class="math inline">x^{3}\sqrt{x}</span>
@@ -3375,7 +3375,7 @@ rcQuiz('q2',[
 <h2 class="anchored" data-anchor-id="higher-derivatives-and-horizontal-tangents">4 · Higher derivatives and horizontal tangents</h2>
 <section id="the-second-derivative" class="level3">
 <h3 class="anchored" data-anchor-id="the-second-derivative">The second derivative</h3>
-<p><span class="math inline">f&#39;</span> is a function, so it can be differentiated again. The result is the <strong>second derivative</strong>, written <span class="math inline">f&#39;&#39;(x)</span> or <span class="math inline">\frac{d^{2}y}{dx^{2}}</span>, and it is computed with the same five rules, run twice.</p>
+<p><span class="math inline">f&#39;</span> is a function, so it can be differentiated again. The result is the <strong>second derivative</strong>, written <span class="math inline">f&#39;&#39;(x)</span> or <span class="math inline">\frac{d^{2}y}{dx^{2}}</span> — it means you take the derivative twice in a row.</p>
 <p><span class="math display">f(x)=x^{3}-2x^{2}-3x-1 \quad\Rightarrow\quad f&#39;(x)=3x^{2}-4x-3 \quad\Rightarrow\quad f&#39;&#39;(x)=6x-4</span></p>
 <p><strong>The slope in one panel is the height in the next.</strong></p>
 <div class="panel">

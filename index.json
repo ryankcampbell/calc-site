@@ -420,8 +420,8 @@
      "stewart": "2.3",
      "quarto": {
       "file": "q/1-5-formulae.html",
-      "hash": "1dde5e428aabcf9e63fd253d951842d91ea34f27efaff7e5e7531b99601437e0",
-      "bytes": 3710610
+      "hash": "34395302a60d02f3ca4eaddb26b7a5cc53158fd318b561814ca366acab5e75c6",
+      "bytes": 3710655
      },
      "sections": [
       {
@@ -1347,8 +1347,8 @@
      "docs": {
       "packet": {
        "file": "p/2-3-derivatives-graphs-packet.pdf",
-       "hash": "9b0481cc0fc221e96a255522cd0c9aa5f3b353e0ccf7aac84aa7245178e8f535",
-       "bytes": 56859
+       "hash": "0403e0cea8eff12bfbf63884c35ab7292a1d10664c7118e0cc78d93fae6ff789",
+       "bytes": 229721
       },
       "ticket": {
        "file": "p/2-3-derivatives-graphs-ticket.pdf",
