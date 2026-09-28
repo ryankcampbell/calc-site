@@ -643,18 +643,18 @@
      "docs": {
       "packet": {
        "file": "p/1-6-trig-chain-packet.pdf",
-       "hash": "f9a4f8f201f819b5d1bb30598eef68a87d1f541b27f2cb53bea7514ba3b7bc28",
-       "bytes": 53579
+       "hash": "04e0573f5e91d374337b1bd6c33d1a69b1e4fcc9720c45abc7bec9ebd79c66a3",
+       "bytes": 210388
       },
       "ticket": {
        "file": "p/1-6-trig-chain-ticket.pdf",
-       "hash": "3c2476a9c1fb90300f2fb91105b7b9053b038ea270e2e4a1f907547a0d2e34a3",
-       "bytes": 33492
+       "hash": "61da3036cdd6ab81d2fe71b0749a43fb3a68b5aea2ec726e137a688b312688df",
+       "bytes": 150070
       },
       "onepager": {
        "file": "p/1-6-trig-chain-onepager.pdf",
-       "hash": "9e9ae4a6fc325be146909ee40e2b8d74b9c1da097743742d43481f88fb27a444",
-       "bytes": 71467
+       "hash": "bb4af142ac5df8b9310b8871eb0698437c6695083b0e5ab233f7a109f1e09135",
+       "bytes": 299253
       }
      }
     },
