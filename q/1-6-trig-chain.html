@@ -2259,7 +2259,7 @@ window.Quarto = {
   <li><a href="#the-six-trig-derivatives" id="toc-the-six-trig-derivatives" class="nav-link active" data-scroll-target="#the-six-trig-derivatives">1 · The six trig derivatives</a></li>
   <li><a href="#differentials" id="toc-differentials" class="nav-link" data-scroll-target="#differentials">2 · Differentials</a></li>
   <li><a href="#the-chain-rule" id="toc-the-chain-rule" class="nav-link" data-scroll-target="#the-chain-rule">3 · The chain rule</a></li>
-  <li><a href="#the-chain-rule-with-the-product-and-quotient-rules" id="toc-the-chain-rule-with-the-product-and-quotient-rules" class="nav-link" data-scroll-target="#the-chain-rule-with-the-product-and-quotient-rules">4 · The chain rule with the product and quotient rules</a></li>
+  <li><a href="#combining-derivative-rules" id="toc-combining-derivative-rules" class="nav-link" data-scroll-target="#combining-derivative-rules">4 · Combining derivative rules</a></li>
   </ul>
 </nav>
 </div>
@@ -2369,8 +2369,9 @@ details.soln > summary::before { content:'\25B6'; display:inline-block; transiti
 details[open].soln > summary::before { transform:rotate(90deg); }
 details[open].soln > summary { background:var(--soln-open); border-radius:6px 6px 0 0; border-bottom:1px solid var(--soln-obd); }
 details.soln > div.soln-body { padding:.7rem 1.1rem .9rem; overflow-x:auto; }
-.soln-body .katex-display { overflow-x:auto; overflow-y:hidden; padding:.4rem 0; }
-.soln-body .katex-display > .katex { white-space:nowrap; }
+.katex { position:relative; }
+.katex-display { overflow-x:auto; overflow-y:hidden; padding:.4rem 0; }
+.katex-display > .katex { white-space:nowrap; }
 
 .panel.example-box{ background:var(--ex-bg); border:1px solid var(--ex-bd); border-left:4px solid var(--ex-bd); }
 .ex-head{ display:flex; justify-content:space-between; align-items:center; gap:.5rem; margin-bottom:.5rem; }
@@ -2401,6 +2402,7 @@ color:var(--muted); padding:.35rem .7rem; text-align:left; border-bottom:1.5px s
 .cof .cosplit { border-left:2px dashed var(--red); }
 .cof .mi, .cof .mi .katex { color:var(--red); }
 .cof-note { font-size:.78rem; color:var(--muted); margin-top:-.2rem; }
+@media (max-width:480px){ .cof { font-size:.88rem; } .cof th, .cof td { padding-left:.3rem; padding-right:.3rem; } }
 
 .gtab { border-collapse:collapse; font-size:.94rem; margin:.5rem auto .2rem; }
 .gtab th, .gtab td { padding:.28rem .85rem; border:1px solid var(--panel-bd); text-align:center; }
@@ -2767,16 +2769,30 @@ window.exsGo = function(btn, d){
 <h2 class="anchored" data-anchor-id="the-six-trig-derivatives">1 · The six trig derivatives</h2>
 <section id="radians-and-degrees" class="level3">
 <h3 class="anchored" data-anchor-id="radians-and-degrees">Radians and degrees</h3>
-<p><span class="math inline">\dfrac{dy}{dx}</span> is a ratio of an output change to an input change. Differentiating a trig function therefore puts an <strong>angular</strong> measure and a <strong>linear</strong> one in the same ratio — and radians are the measure that puts them on the same footing.</p>
-<div class="key-box">
-<p><strong>Linear and angular measures mixing forces radians. Where nothing mixes, the choice is free.</strong></p>
-<p><strong>Differentiating is itself the mixing</strong>, so every derivative below is in radians.</p>
+<p>For <span class="math inline">y=\sin x</span>, <span class="math inline">x</span> is an <strong>angle</strong> and <span class="math inline">y</span> is a <strong>length</strong>, so <span class="math inline">\dfrac{dy}{dx}</span> divides a length by an angle.</p>
+<div style="display:flex;justify-content:center;margin:.6rem 0">
+<svg viewbox="0 0 230 220" width="230" height="220" role="img" aria-label="Unit circle with a one-radian sector: both radii have length 1 and the arc has length 1" style="max-width:100%;height:auto;color:var(--ink,#222)">
+  <circle cx="110" cy="110" r="80" fill="none" stroke="currentColor" stroke-opacity=".45" stroke-dasharray="4 4"></circle>
+  <line x1="18" y1="110" x2="208" y2="110" stroke="currentColor"></line>
+  <line x1="110" y1="202" x2="110" y2="14" stroke="currentColor"></line>
+  <path d="M110,110 L190,110 A80,80 0 0 0 153.2,42.7 Z" fill="var(--accent,#4682b4)" fill-opacity=".15" />
+  <path d="M190,110 L110,110 L153.2,42.7" fill="none" stroke="currentColor" stroke-width="2" />
+  <path d="M190,110 A80,80 0 0 0 153.2,42.7" fill="none" stroke="var(--red,#c62828)" stroke-width="4" />
+  <path d="M128,110 A18,18 0 0 0 119.7,94.9" fill="none" stroke="var(--accent,#4682b4)" stroke-width="1.8" />
+  <text x="130" y="100" font-size="13" font-style="italic" fill="var(--accent,#4682b4)">1 rad</text>
+  <text x="150" y="127" font-size="14" font-style="italic" fill="currentColor">1</text>
+  <text x="117" y="70" font-size="14" font-style="italic" fill="currentColor">1</text>
+  <text x="190" y="66" font-size="14" font-style="italic" fill="var(--red,#c62828)">1</text>
+</svg>
 </div>
-<p>The special limit (more below), in both systems:</p>
+<div class="key-box">
+<p><strong>Radians put angle and length on even footing.</strong> On a unit circle (<span class="math inline">r=1</span>), an angle of <span class="math inline">1</span> radian subtends an arc of length <span class="math inline">1</span>: angle <span class="math inline">=</span> length, in this system only. Every derivative below is in radians.</p>
+</div>
+<p>In degrees, <span class="math inline">1^{\circ}</span> subtends an arc of only <span class="math inline">\frac{\pi}{180}</span>, and the special limit (more below) shows the cost:</p>
 <p><span class="math display">\lim_{\theta\to0}\frac{\sin\theta}{\theta}=1 \qquad\qquad \lim_{\theta\to0}\frac{\sin(\theta^{\circ})}{\theta}=\frac{\pi}{180}</span></p>
-<p>which is exactly why</p>
+<p>so every trig derivative in degrees carries the factor:</p>
 <p><span class="math display">\frac{d}{dx}\sin(x^{\circ})=\frac{\pi}{180}\cos(x^{\circ})</span></p>
-<p>Degrees stay useful where nothing mixes — reading a graph, or naming a value like <span class="math inline">\sin 30^{\circ}</span>.</p>
+<p>Reading a graph or evaluating <span class="math inline">\sin 30^{\circ}</span> divides nothing by an angle, so there either unit works.</p>
 </section>
 <section id="the-derivatives-of-sine-and-cosine" class="level3">
 <h3 class="anchored" data-anchor-id="the-derivatives-of-sine-and-cosine">The derivatives of sine and cosine</h3>
@@ -3134,7 +3150,7 @@ Reveal solution
     {g:'apply', q:'<b>Differentiate:</b> $y=\\sin^{2}x$', a:'The outer function is <b>squaring</b>:<br><br>$\\boxed{\\dfrac{dy}{dx}=2\\sin x\\cos x}$<br><span class="fc-note">Not $2\\sin x$.</span>'},
     {g:'apply', q:'<b>Differentiate:</b> $y=\\tan(3x)$', a:'$\\boxed{\\dfrac{dy}{dx}=3\\sec^{2}(3x)}$'},
     {g:'apply', q:'<b>Evaluate:</b> $\\lim\\limits_{x\\to0}\\dfrac{\\sin 7x}{4x}$', a:'Match the argument, then fix the constant:<br><br>$\\dfrac{\\sin 7x}{4x}=\\dfrac74\\cdot\\dfrac{\\sin 7x}{7x}$<br><br>$\\boxed{=\\dfrac74}$'},
-    {g:'apply', q:'<b>Why are all six of these in radians?</b>', a:'$\\dfrac{dy}{dx}$ is an output change over an input change, so differentiating <b>mixes a linear measure with an angular one</b> &mdash; and radians put them on the same footing.<br><span class="fc-note">In degrees the special limit is $\\frac{\\pi}{180}$, not $1$.</span>'}
+    {g:'apply', q:'<b>Why are all six of these in radians?</b>', a:'For $y=\\sin x$, $dy$ is a length and $dx$ is an angle. <b>Radians make angle = length</b>: on a unit circle, 1 radian subtends an arc of length 1.<br><span class="fc-note">In degrees the special limit is $\\frac{\\pi}{180}$, not $1$.</span>'}
   ];
   var GNAME={all:'All cards', rules:'The six', cof:'Co-function rule', apply:'Using them'};
   CARDS.forEach(function(c,i){ c.id=i; });
@@ -3234,7 +3250,7 @@ rcQuiz('q1', [
 <h2 class="anchored" data-anchor-id="differentials">2 · Differentials</h2>
 <section id="dx-dy-and-dfx" class="level3">
 <h3 class="anchored" data-anchor-id="dx-dy-and-dfx"><span class="math inline">dx</span>, <span class="math inline">dy</span> and <span class="math inline">d(f(x))</span></h3>
-<p>They <strong>live on their own.</strong> <span class="math inline">dx</span> is a nudge in the input; <span class="math inline">dy</span> is the nudge that comes out. <span class="math inline">\frac{dy}{dx}</span> is a ratio of two of them, not one symbol.</p>
+<p><span class="math inline">dx</span> is a nudge in the input; <span class="math inline">dy</span> is a nudge in the output. <span class="math inline">\frac{dy}{dx}</span> is a ratio of the two, not one symbol.</p>
 <p><span class="math display">\frac{dy}{dx}=f&#39;(x)\quad\Longrightarrow\quad \boxed{\ dy=f&#39;(x)\,dx\ }</span></p>
 </section>
 <section id="computing-dy" class="level3">
@@ -3837,69 +3853,63 @@ rcQuiz('q2', [
 </script>
 </section>
 </section>
-<section id="the-chain-rule-with-the-product-and-quotient-rules" class="level2">
-<h2 class="anchored" data-anchor-id="the-chain-rule-with-the-product-and-quotient-rules">4 · The chain rule with the product and quotient rules</h2>
-<section id="top-level-structure" class="level3">
-<h3 class="anchored" data-anchor-id="top-level-structure">Top-level structure</h3>
-<p><strong>The outermost operation names the first rule.</strong> Read what the expression <em>is</em> before differentiating any piece of it.</p>
+<section id="combining-derivative-rules" class="level2">
+<h2 class="anchored" data-anchor-id="combining-derivative-rules">4 · Combining derivative rules</h2>
+<section id="the-outermost-operation" class="level3">
+<h3 class="anchored" data-anchor-id="the-outermost-operation">The outermost operation</h3>
+<p>When a function needs more than one rule, work <strong>from the outside in</strong>. The <strong>outermost operation</strong> is the last step you would take to evaluate the function at a number. Its rule splits the job into pieces, and each piece needs its own rule: <span class="math inline">\frac{d}{dx}\big[fg\big]=f&#39;g+fg&#39;</span> asks for <span class="math inline">f&#39;</span> and <span class="math inline">g&#39;</span> separately.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Expression</th>
+<th>Function</th>
 <th>Outermost operation</th>
-<th>First rule</th>
-<th>Then</th>
+<th>Rule for each piece</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><span class="math inline">(2x+1)^{2}x^{3}</span></td>
-<td>a product</td>
 <td>product</td>
-<td>chain, on <span class="math inline">(2x+1)^{2}</span></td>
+<td><span class="math inline">(2x+1)^{2}</span>: chain with power · <span class="math inline">x^{3}</span>: power</td>
 </tr>
 <tr class="even">
 <td><span class="math inline">\dfrac{\sin x}{x^{2}+1}</span></td>
-<td>a quotient</td>
 <td>quotient</td>
-<td>—</td>
+<td><span class="math inline">\sin x</span>: trig · <span class="math inline">x^{2}+1</span>: power</td>
 </tr>
 <tr class="odd">
 <td><span class="math inline">\sin\big(x^{2}+1\big)</span></td>
-<td>sine of something</td>
-<td><span class="math inline">\cos(\text{inside})</span></td>
-<td>chain</td>
+<td>sine</td>
+<td>inside <span class="math inline">x^{2}+1</span>: power</td>
 </tr>
 <tr class="even">
 <td><span class="math inline">\big(x^{2}\sin x\big)^{4}</span></td>
-<td>a fourth power</td>
-<td>power</td>
-<td>chain, then product inside</td>
+<td>fourth power</td>
+<td>inside <span class="math inline">x^{2}\sin x</span>: product (<span class="math inline">x^{2}</span> power, <span class="math inline">\sin x</span> trig)</td>
 </tr>
 </tbody>
 </table>
 <div class="info-box">
-<p><strong>The chain rule is not a competitor to the other rules — it is what comes next.</strong> The outermost operation picks the rule you run first; the chain rule is the instruction to then multiply by the derivative of the inside. So <span class="math inline">\big(x^{2}\sin x\big)^{4}</span> is <strong>power rule first</strong>, chain second, product rule third:</p>
+<p><strong>The chain rule is not a separate choice.</strong> Whenever a rule is applied to something other than <span class="math inline">x</span>, multiply by the derivative of that inside. <span class="math inline">\big(x^{2}\sin x\big)^{4}</span> is a fourth power, and its inside <span class="math inline">x^{2}\sin x</span> is a product:</p>
 <p><span class="math display">\frac{dy}{dx}=4\big(x^{2}\sin x\big)^{3}\cdot\underbrace{\big(x^{2}\cos x+2x\sin x\big)}_{\text{the inside&#39;s derivative}}</span></p>
 </div>
 </section>
 <section id="a-product-whose-factor-needs-the-chain-rule" class="level3">
 <h3 class="anchored" data-anchor-id="a-product-whose-factor-needs-the-chain-rule">A product whose factor needs the chain rule</h3>
 <div class="panel example-box">
-<div class="ex-head"><span class="ex-tag">Ex. 10 · Product first, then chain</span></div>
+<div class="ex-head"><span class="ex-tag">Ex. 10 · A product with a chain-rule piece</span></div>
 <p>Differentiate <span class="math inline">y=(2x+1)^{2}x^{3}</span>.</p>
 <details class="soln">
 <summary>
 Reveal solution
 </summary>
 <div class="soln-body">
-<p>Top level is a product, <span class="math inline">u=(2x+1)^{2}</span> and <span class="math inline">v=x^{3}</span>. The first factor needs the chain rule on the way:</p>
+<p>The outermost operation is a product, <span class="math inline">u=(2x+1)^{2}</span> and <span class="math inline">v=x^{3}</span>. The piece <span class="math inline">u</span> needs the chain rule with the power rule; <span class="math inline">v</span> needs the power rule:</p>
 <p><span class="math display">\frac{dy}{dx}=(2x+1)^{2}\big(3x^{2}\big)+x^{3}\cdot 2(2x+1)(2)</span></p>
 <p><span class="math display">=3x^{2}\big(4x^{2}+4x+1\big)+4x^{3}(2x+1) =12x^{4}+12x^{3}+3x^{2}+8x^{4}+4x^{3}</span></p>
 <p><span class="math display">=\boxed{20x^{4}+16x^{3}+3x^{2}}</span></p>
@@ -3917,7 +3927,7 @@ Reveal solution
 Reveal solution
 </summary>
 <div class="soln-body">
-<p>Top level is a <strong>quotient</strong>. Take the two pieces separately first — each is a composite.</p>
+<p>The outermost operation is a <strong>quotient</strong>. Each piece is a composite, so take them separately first.</p>
 <p><span class="math display">u=\sec(\tan x)\ \Rightarrow\ u&#39;=\sec(\tan x)\tan(\tan x)\cdot\sec^{2}x</span></p>
 <p><span class="math display">v=\tan(\sec x)\ \Rightarrow\ v&#39;=\sec^{2}(\sec x)\cdot\sec x\tan x</span></p>
 <p>Low d high, minus high d low, over the square of what’s below:</p>
@@ -3929,18 +3939,18 @@ Reveal solution
 <div class="panel" id="q3"></div>
 <script>
 rcQuiz('q3', [
-  { type:'Which rule runs first', prompt:'For $y=x^{2}\\sin(3x)$, which rule runs <b>first</b>?',
-    opts:[{html:'Product &mdash; the expression is two things multiplied',correct:true},
-          {html:'Chain &mdash; there is a $\\sin(3x)$ in it'},
-          {html:'Quotient'},
-          {html:'Power'}],
-    why:'Top level is a product; the chain rule then handles $\\sin(3x)$ inside it.' },
-  { type:'Which rule runs first', prompt:'For $y=\\big(x^{2}\\sin x\\big)^{4}$, which rule runs <b>first</b>?',
-    opts:[{html:'Power &mdash; the outermost operation is the fourth power',correct:true},
-          {html:'Product &mdash; there is an $x^{2}\\sin x$ in it'},
-          {html:'Quotient'},
-          {html:'Sum'}],
-    why:'Power rule first, then the chain rule multiplies by the inside\'s derivative &mdash; and <i>that</i> is where the product rule runs.' },
+  { type:'Outermost operation', prompt:'For $y=x^{2}\\sin(3x)$, what is the <b>outermost operation</b>?',
+    opts:[{html:'A product &mdash; two things multiplied',correct:true},
+          {html:'A composite &mdash; there is a $\\sin(3x)$ in it'},
+          {html:'A quotient'},
+          {html:'A power'}],
+    why:'A product. Its piece $\\sin(3x)$ needs the chain rule; its piece $x^{2}$ needs the power rule.' },
+  { type:'Outermost operation', prompt:'For $y=\\big(x^{2}\\sin x\\big)^{4}$, what is the <b>outermost operation</b>?',
+    opts:[{html:'A fourth power',correct:true},
+          {html:'A product &mdash; there is an $x^{2}\\sin x$ in it'},
+          {html:'A quotient'},
+          {html:'A sum'}],
+    why:'A fourth power: power rule, times the derivative of the inside. The inside $x^{2}\\sin x$ is a product, so that piece needs the product rule.' },
   { type:'Chain with product', tex:'\\frac{d}{dx}\\left[x\\,(x+1)^{3}\\right]=\\ ?',
     opts:[{tex:'(x+1)^{3}+3x(x+1)^{2}',correct:true},{tex:'3x(x+1)^{2}'},
           {tex:'(x+1)^{3}+x(x+1)^{2}'},{tex:'3(x+1)^{2}'}],

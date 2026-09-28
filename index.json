@@ -545,8 +545,8 @@
      "stewart": "2.4-2.5",
      "quarto": {
       "file": "q/1-6-trig-chain.html",
-      "hash": "651543608db83d7669cf71362344fe8f9a3b0955e359d6ddcb2b0744097339f9",
-      "bytes": 3728867
+      "hash": "617f8d42ceaba325f9544ddb064197ed577c973b185ab262e27f20d02ecceb46",
+      "bytes": 3730941
      },
      "sections": [
       {
@@ -620,13 +620,13 @@
        "level": 3
       },
       {
-       "id": "the-chain-rule-with-the-product-and-quotient-rules",
-       "text": "The chain rule with the product and quotient rules",
+       "id": "combining-derivative-rules",
+       "text": "Combining derivative rules",
        "level": 2
       },
       {
-       "id": "top-level-structure",
-       "text": "Top-level structure",
+       "id": "the-outermost-operation",
+       "text": "The outermost operation",
        "level": 3
       },
       {
@@ -643,18 +643,18 @@
      "docs": {
       "packet": {
        "file": "p/1-6-trig-chain-packet.pdf",
-       "hash": "04e0573f5e91d374337b1bd6c33d1a69b1e4fcc9720c45abc7bec9ebd79c66a3",
-       "bytes": 210388
+       "hash": "471d15cf0bb2ab780925cdd16a8cba8d9d8c4e6a3275233e8a8b1d8c90080cef",
+       "bytes": 180623
       },
       "ticket": {
        "file": "p/1-6-trig-chain-ticket.pdf",
-       "hash": "61da3036cdd6ab81d2fe71b0749a43fb3a68b5aea2ec726e137a688b312688df",
-       "bytes": 150070
+       "hash": "8a42b84dce99a30b358d170ca779246090f895bb636806cd9bf1535cb2d81042",
+       "bytes": 134413
       },
       "onepager": {
        "file": "p/1-6-trig-chain-onepager.pdf",
-       "hash": "bb4af142ac5df8b9310b8871eb0698437c6695083b0e5ab233f7a109f1e09135",
-       "bytes": 299253
+       "hash": "57ec7c4bfa7643bcbb83943331bebae1f0e4294ebda9e8fd421a4a2037c4a7c3",
+       "bytes": 299128
       }
      }
     },
