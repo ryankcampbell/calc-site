@@ -2403,12 +2403,12 @@
     {
      "code": "L4.1b",
      "slug": "4-1b-graphing-x-of-y-and-dy",
-     "title": "Graphing and Integrating Functions of y",
+     "title": "Graphing Functions of y",
      "stewart": "4.1b",
      "quarto": {
       "file": "q/4-1b-graphing-x-of-y-and-dy.html",
-      "hash": "118fc0fee11099d57e2ec7309c939cbe9d55ecce79fb2ad78e3df58d8df2933c",
-      "bytes": 3781197
+      "hash": "37220f2e464b0ed9acd0dff375d4e25c76750feab471ca04aa8d424fbfcf7265",
+      "bytes": 3766744
      },
      "sections": [
       {
@@ -2425,30 +2425,123 @@
        "id": "monotonic-pieces",
        "text": "Monotonic pieces",
        "level": 2
-      },
-      {
-       "id": "integrating-with-respect-to-y",
-       "text": "Integrating with respect to y",
-       "level": 2
       }
      ],
      "docs": {
       "packet": {
        "file": "p/4-1b-graphing-x-of-y-and-dy-packet.pdf",
-       "hash": "39bbbcc19061b2a4b7d956827dba924ad5fac6025729e7a7c08c3189f0d617d0",
-       "bytes": 314997
+       "hash": "a6640111b85804710e97ef0bbac82e574849808c5a169ebcae3bf74b826c9853",
+       "bytes": 354020
       },
       "ticket": {
        "file": "p/4-1b-graphing-x-of-y-and-dy-ticket.pdf",
-       "hash": "0748eedd7356dec30a52080e62ed99df74911798b631b526cf92392a7923b0ef",
-       "bytes": 123511
+       "hash": "398f46387c3061835cf145675fa3ce38ee8789271692cb90fe36907b7020c22f",
+       "bytes": 150704
       },
       "onepager": {
        "file": "p/4-1b-graphing-x-of-y-and-dy-onepager.pdf",
-       "hash": "d375bd53359a9e0f285fc4d3c4fc90cad2c137f93ea009884e72c19bc6f8a562",
-       "bytes": 319290
+       "hash": "4f4ca1bd636533f9032da20090c06a67c4a5cc9e310183443e92df84a9485140",
+       "bytes": 261541
       }
      }
+    },
+    {
+     "code": "L4.1c",
+     "slug": "4-1c-areas-along-y",
+     "title": "Areas Between Curves Along y",
+     "stewart": "4.1c",
+     "quarto": {
+      "file": "q/4-1c-areas-along-y.html",
+      "hash": "67110b22a0e0cfaf3b8752ff15a04eeeda848cd2d56bccffb9b80d750bfa3ecb",
+      "bytes": 3698988
+     },
+     "sections": [
+      {
+       "id": "area-with-sideways-rectangles",
+       "text": "Area with sideways rectangles",
+       "level": 2
+      },
+      {
+       "id": "turning-points-and-crossings",
+       "text": "Turning points and crossings",
+       "level": 2
+      },
+      {
+       "id": "upright-or-sideways-rectangles",
+       "text": "Upright or sideways rectangles",
+       "level": 2
+      }
+     ],
+     "docs": {
+      "packet": {
+       "file": "p/4-1c-areas-along-y-packet.pdf",
+       "hash": "475f1c7ff498348f2cd59213b657bd932bb604f7f68b9f2ffef6732b02b1da4d",
+       "bytes": 155352
+      },
+      "ticket": {
+       "file": "p/4-1c-areas-along-y-ticket.pdf",
+       "hash": "e6d26bcdbd09c556b907ec51cb7514fb6aba07eb65cd51ca947e9cd0ca18fa3f",
+       "bytes": 149241
+      },
+      "onepager": {
+       "file": "p/4-1c-areas-along-y-onepager.pdf",
+       "hash": "44a1473747db7f314a5a46d0bd0a93f3482319b725b99ae2a0094f0626c60c09",
+       "bytes": 264995
+      }
+     }
+    },
+    {
+     "code": "L4.2a",
+     "slug": "4-2a-volumes-by-slicing",
+     "title": "Volumes by Slicing: Disks & Cross-Sections",
+     "stewart": "4.2a",
+     "quarto": {
+      "file": "q/4-2a-volumes-by-slicing.html",
+      "hash": "cf7dbb0a8acf631739cc86dafe69693891a292ecb5ff35956614de10cc600bbf",
+      "bytes": 4372841
+     },
+     "sections": [
+      {
+       "id": "volume-by-slicing",
+       "text": "Volume by slicing",
+       "level": 2
+      },
+      {
+       "id": "disks",
+       "text": "Disks",
+       "level": 2
+      },
+      {
+       "id": "known-cross-sections",
+       "text": "Known cross-sections",
+       "level": 2
+      }
+     ],
+     "docs": {}
+    },
+    {
+     "code": "L4.2b",
+     "slug": "4-2b-washers",
+     "title": "Washers & Rotating About Other Lines",
+     "stewart": "4.2b",
+     "quarto": {
+      "file": "q/4-2b-washers.html",
+      "hash": "0f5cfcea4fa94cb8fa055d0a427579de618027ea9c85737185bb4b5a5228efef",
+      "bytes": 4362664
+     },
+     "sections": [
+      {
+       "id": "washers",
+       "text": "Washers",
+       "level": 2
+      },
+      {
+       "id": "rotating-about-other-lines",
+       "text": "Rotating about other lines",
+       "level": 2
+      }
+     ],
+     "docs": {}
     }
    ],
    "guide": [
@@ -2468,8 +2561,8 @@
     {
      "kind": "lesson",
      "date": "1/6",
-     "name": "4.1b Graphing and Integrating Functions of y",
-     "detail": "Choose y as the input; monotonic pieces; · the horizontal strip, right minus left",
+     "name": "4.1b Graphing Functions of y",
+     "detail": "Choose y as the input; graph x=g(y) from its · structure; monotonic pieces",
      "stewart": "§5.1",
      "hw": "to be assigned",
      "count": null
@@ -2477,9 +2570,9 @@
     {
      "kind": "lesson",
      "date": "1/8",
-     "name": "4.2a Volumes by Slicing: Known Cross-Sections",
-     "detail": "V=∫_a^b A(x) dx; squares, semicircles and · triangles on a given base",
-     "stewart": "§5.2",
+     "name": "4.1c Areas Between Curves Along y",
+     "detail": "The sideways rectangle, right minus left; · choosing dx or dy",
+     "stewart": "§5.1",
      "hw": "to be assigned",
      "count": null
     },
@@ -2490,8 +2583,8 @@
     {
      "kind": "lesson",
      "date": "1/19",
-     "name": "4.2b Volumes of Revolution: Disks & Washers",
-     "detail": "A(x)=π R^2 and π(R^2-r^2); when the region · touches the axis and when it does not",
+     "name": "4.2a Volumes by Slicing: Disks & Cross-Sections",
+     "detail": "V=∫_a^b A(x) dx; disks A=π r^2; triangles · and squares on a given base",
      "stewart": "§5.2",
      "hw": "to be assigned",
      "count": null
@@ -2499,8 +2592,8 @@
     {
      "kind": "lesson",
      "date": "1/20",
-     "name": "4.2c Rotating About Lines Other Than the Axes",
-     "detail": "Radii measured from x=k or y=k; the axis · inside the region",
+     "name": "4.2b Washers & Rotating About Other Lines",
+     "detail": "A=π R^2-π r^2; radii measured from the · axis, including y=k and x=k",
      "stewart": "§5.2",
      "hw": "to be assigned",
      "count": null
