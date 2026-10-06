@@ -913,18 +913,18 @@
      "docs": {
       "packet": {
        "file": "p/1-8-linearize-taylor-packet.pdf",
-       "hash": "2caf5e28aeed4daae30bf5eb22192abdda8ceb1d3eb35c2b7e9edc9030560d9a",
-       "bytes": 58615
+       "hash": "7282dbed410859195431ebc19983ad64b1bee05749851f74ba84b9377e80f624",
+       "bytes": 194708
       },
       "ticket": {
        "file": "p/1-8-linearize-taylor-ticket.pdf",
-       "hash": "bb7c7e2ce67f1bfa5ab49066e2eb30d47dfff468f9aa0ad436bea27932d20abf",
-       "bytes": 27443
+       "hash": "1e3ecd88a8817dc7a5ac423286eb96f518c212a2578deae3c2f41fc11849a76f",
+       "bytes": 127664
       },
       "onepager": {
        "file": "p/1-8-linearize-taylor-onepager.pdf",
-       "hash": "36fdf7c3cde34e9186ce1d9724a916ac80ec818ba96ebf86606b773bf7d97f3b",
-       "bytes": 78625
+       "hash": "68cddc90918424ce7fbc7c3145f95a7894b52fd6d09cb25b2c1335b1985a78e9",
+       "bytes": 336578
       }
      }
     },
