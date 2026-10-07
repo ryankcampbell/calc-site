@@ -923,7 +923,7 @@
       },
       "onepager": {
        "file": "p/1-8-linearize-taylor-onepager.pdf",
-       "hash": "68cddc90918424ce7fbc7c3145f95a7894b52fd6d09cb25b2c1335b1985a78e9",
+       "hash": "e5bd41276f5be5743c517b70d27083d1bd0fd82a2cd0c6115b5515de6a440bec",
        "bytes": 336578
       }
      }
@@ -958,18 +958,18 @@
      "docs": {
       "packet": {
        "file": "p/1-9-lhopital-packet.pdf",
-       "hash": "742a6ea5fff1ae8c6e458c72118a24c8a52b975fed976c6a98657cc467a2c690",
-       "bytes": 45341
+       "hash": "2d9cb30efe1188d5c70ed48e20a6b4d27eeb8990f402945c9242ef976fa25f1d",
+       "bytes": 197462
       },
       "ticket": {
        "file": "p/1-9-lhopital-ticket.pdf",
-       "hash": "e227ce4e1c6468afe0cf649673bdd3ccd07a81f7b324333bff11d62ae294b27f",
-       "bytes": 24998
+       "hash": "360066cf1985ac1a323043e1dc7102ba8b42045466074226ddadf84fc9b2a9bd",
+       "bytes": 134649
       },
       "onepager": {
        "file": "p/1-9-lhopital-onepager.pdf",
-       "hash": "e23de4ffcdc343b8262b103e0da4332db7c510e02e2f740e72c80b65e3ca8f28",
-       "bytes": 70709
+       "hash": "c7d8f94fb4b8ef953993bee1d162fbc2345e851bda0e6dc16cc5a80fa2a01dd2",
+       "bytes": 307377
       }
      }
     }
