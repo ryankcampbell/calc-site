@@ -2497,8 +2497,8 @@
      "stewart": "4.2a",
      "quarto": {
       "file": "q/4-2a-volumes-by-slicing.html",
-      "hash": "cf7dbb0a8acf631739cc86dafe69693891a292ecb5ff35956614de10cc600bbf",
-      "bytes": 4372841
+      "hash": "dc1eb6cc8d396d9b3c0be6dee97b785d8189a8870fcc0fda0a74124d763be784",
+      "bytes": 4396145
      },
      "sections": [
       {
@@ -2517,7 +2517,23 @@
        "level": 2
       }
      ],
-     "docs": {}
+     "docs": {
+      "packet": {
+       "file": "p/4-2a-volumes-by-slicing-packet.pdf",
+       "hash": "c384aaf10b7d8fa1c006ca860d0222dc49e0253c68f52d4d4ab571584438fbcf",
+       "bytes": 155305
+      },
+      "ticket": {
+       "file": "p/4-2a-volumes-by-slicing-ticket.pdf",
+       "hash": "a50f17b20552f8861845849c92544b27f0f1997610c1ddcb464c2bc516d4efb3",
+       "bytes": 117974
+      },
+      "onepager": {
+       "file": "p/4-2a-volumes-by-slicing-onepager.pdf",
+       "hash": "b4089c57e997317f36cca18406807140ec11a024c020213a7e056109a17b2b27",
+       "bytes": 305192
+      }
+     }
     },
     {
      "code": "L4.2b",
@@ -2526,8 +2542,8 @@
      "stewart": "4.2b",
      "quarto": {
       "file": "q/4-2b-washers.html",
-      "hash": "0f5cfcea4fa94cb8fa055d0a427579de618027ea9c85737185bb4b5a5228efef",
-      "bytes": 4362664
+      "hash": "6b0a64e510cd56f18bc4208337ac93c6a70144f11205e1c3be9d863d8036255f",
+      "bytes": 4385968
      },
      "sections": [
       {
@@ -2541,7 +2557,73 @@
        "level": 2
       }
      ],
-     "docs": {}
+     "docs": {
+      "packet": {
+       "file": "p/4-2b-washers-packet.pdf",
+       "hash": "0a96b902bef1bb714cbd448e47d891384b71754b55de0a337318fa457037db88",
+       "bytes": 179333
+      },
+      "ticket": {
+       "file": "p/4-2b-washers-ticket.pdf",
+       "hash": "baaff6d7c6caf240f608509ce8ad5e6d351e915da6725e443ef2af45ad9605e9",
+       "bytes": 116777
+      },
+      "onepager": {
+       "file": "p/4-2b-washers-onepager.pdf",
+       "hash": "e4354a681498e53f682d0708fa14825091a0a868db8e0fcff964898ee2214635",
+       "bytes": 264032
+      }
+     }
+    },
+    {
+     "code": "L4.3a",
+     "slug": "4-3a-cylindrical-shells",
+     "title": "Volumes by Cylindrical Shells",
+     "stewart": "4.3a",
+     "quarto": {
+      "file": "q/4-3a-cylindrical-shells.html",
+      "hash": "908859e37e37d6de8d3550ece3515bb0a0492c282ffb3e265473f799a164a6b1",
+      "bytes": 4393411
+     },
+     "sections": [
+      {
+       "id": "volume-of-a-cylinder-ring-by-ring",
+       "text": "Volume of a cylinder, ring by ring",
+       "level": 2
+      },
+      {
+       "id": "shells-for-a-region-between-two-curves",
+       "text": "Shells for a region between two curves",
+       "level": 2
+      },
+      {
+       "id": "shells-about-the-x-axis",
+       "text": "Shells about the x-axis",
+       "level": 2
+      },
+      {
+       "id": "shells-about-a-line-that-is-not-an-axis",
+       "text": "Shells about a line that is not an axis",
+       "level": 2
+      }
+     ],
+     "docs": {
+      "packet": {
+       "file": "p/4-3a-cylindrical-shells-packet.pdf",
+       "hash": "02eff883b41aaa27046bc26b80c3c57c20d5f69918ef85455d08f14541cbdc11",
+       "bytes": 162474
+      },
+      "ticket": {
+       "file": "p/4-3a-cylindrical-shells-ticket.pdf",
+       "hash": "019291932716ae66c87d9657e73c5796dad6841bcf04e804cd54f95fc9f92b01",
+       "bytes": 123175
+      },
+      "onepager": {
+       "file": "p/4-3a-cylindrical-shells-onepager.pdf",
+       "hash": "3b742580fe796eb74574f24ac61660a40cf1d43c0be81e2a0cfc707306288f51",
+       "bytes": 292253
+      }
+     }
     }
    ],
    "guide": [
