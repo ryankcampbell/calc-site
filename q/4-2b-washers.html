@@ -4826,11 +4826,17 @@ window.VolEngine={ mount:mount, areaAt:areaAt };
 <p><strong>Today:</strong> washers, and solids spun about lines other than the axes.</p>
 <section id="washers" class="level2">
 <h2 class="anchored" data-anchor-id="washers">1 · Washers</h2>
-<p>When the region does not reach the axis, the cross-section is a <strong>washer</strong>: the disk out to the far edge of the region, minus the disk out to the near edge.</p>
+<p>When the region does not reach the axis, the cross-section is a <strong>washer</strong>: the disk out to the outer curve, minus the disk out to the inner curve.</p>
 <div class="key-box">
-<p><strong>Washers.</strong> If the cross-section is a washer with outer edge <span class="math inline">R</span> and inner edge <span class="math inline">r</span>, its area is</p>
-<p><span class="math display">A=\pi R^{2}-\pi r^{2}</span></p>
-<p>and <span class="math inline">V=\int_a^b A(x)\,dx</span>, or <span class="math inline">\int_c^d A(y)\,dy</span> when the slices are perpendicular to the <span class="math inline">y</span>-axis. A disk is a washer with <span class="math inline">r=0</span>: <span class="math inline">A=\pi(\text{radius})^{2}</span>.</p>
+<p><strong>Volume by washers.</strong> With outer radius <span class="math inline">R(x)</span> and inner radius <span class="math inline">r(x)</span>, each chunk is a thin washer:</p>
+<p><span class="math display">A(x)=\pi R(x)^{2}-\pi r(x)^{2}\qquad dV=A(x)\,dx\qquad V=\int_{\text{path}}dV</span></p>
+<p>A region that touches the axis gives a disk: a washer with no hole.</p>
+<ol type="1">
+<li><strong>Draw a representative washer</strong> — a thin rectangle <strong>perpendicular</strong> to the spin axis, from the inner curve to the outer curve, and the washer <span class="math inline">dV</span> it sweeps. Label both radii from the axis: <span class="math inline">R</span> to the outer curve, <span class="math inline">r</span> to the inner curve.</li>
+<li><strong>Path of integration and limits:</strong> along the spin axis — <span class="math inline">dx</span> for a horizontal axis, <span class="math inline">dy</span> for a vertical one — from where the rectangles start to where they stop.</li>
+<li><strong>Formulas for the radii,</strong> <span class="math inline">R(x)</span> and <span class="math inline">r(x)</span>, or <span class="math inline">R(y)</span> and <span class="math inline">r(y)</span>: how far from the axis to each curve, in the variable of the path. Measure from the axis, not from <span class="math inline">0</span>.</li>
+<li><strong>The chunk:</strong> <span class="math inline">dV=A(x)\,dx=\left(\pi R(x)^{2}-\pi r(x)^{2}\right)dx</span>, or the same in <span class="math inline">y</span>.</li>
+</ol>
 </div>
 <div class="panel example-box">
   <div class="ex-head"><span class="ex-tag">Ex. 1 · A washer about the x-axis</span></div>
@@ -4840,15 +4846,18 @@ window.VolEngine={ mount:mount, areaAt:areaAt };
 <details class="soln"><summary>Reveal solution</summary>
 <div class="soln-body">
 
-The curves meet where $x=x^{2}$, at $x=0$ and $x=1$. Test a point: at $x=0.5$, $y=x$ gives $0.5$ and
-$y=x^{2}$ gives $0.25$, so $y=x$ is the outer edge.
+<p>① Draw an upright rectangle from the inner curve up to the outer curve, the washer $dV$ it sweeps, and
+its radii $R(x)$, $r(x)$.</p>
+<p>② Path and limits: $dx$, from $0$ to $1$, where $x=x^{2}$.</p>
+<p>③ Radii: test a point. At $x=0.5$, $y=x$ gives $0.5$ and $y=x^{2}$ gives $0.25$, so $y=x$ is the outer
+curve.</p>
 
 $$R(x)=x \qquad r(x)=x^{2}$$
 
+<p>④ The chunk: $dV=A(x)\,dx=\pi\left(x^{2}-x^{4}\right)dx$.</p>
+
 $$\begin{aligned}
-A(x)&amp;=\pi x^{2}-\pi\left(x^{2}\right)^{2}=\pi x^{2}-\pi x^{4} \\
-V&amp;=\int_0^1 \pi x^{2}-\pi x^{4}\,dx=\pi\int_0^1x^{2}\,dx-\pi\int_0^1x^{4}\,dx \\
-&amp;=\frac{\pi}{3}-\frac{\pi}{5}
+V&amp;=\int_{\text{path}}dV=\pi\int_0^1 x^{2}-x^{4}\,dx=\pi\left[\frac13-\frac15\right]
 \end{aligned}$$
 
 <div class="ansred">
@@ -4868,22 +4877,14 @@ rcQuiz('quizW',[
    opts:[{html:'disk — the region reaches the axis',correct:true},{html:'washer — the curve never touches the axis'}],
    why:'The region runs from the curve all the way down to the axis, so there is no hole: radius $x^{2}+1$, $r=0$.'},
   {type:'Order', prompt:'A student writes $A(x)=\\pi r^{2}-\\pi R^{2}$ and gets a negative volume. The fix is',
-   opts:[{html:'swap them: outer edge first',correct:true},{html:'take the absolute value at the end'},{html:'integrate $dy$ instead'}],
-   why:'$R$ is the outer edge, so $\\pi R^{2}-\\pi r^{2}$ is never negative. A negative volume means the subtraction is backwards.'}
+   opts:[{html:'swap them: outer radius first',correct:true},{html:'take the absolute value at the end'},{html:'integrate $dy$ instead'}],
+   why:'$R$ is the outer radius, so $\\pi R^{2}-\\pi r^{2}$ is never negative. A negative volume means the subtraction is backwards.'}
 ]);
 </script>
 </section>
 <section id="rotating-about-other-lines" class="level2">
 <h2 class="anchored" data-anchor-id="rotating-about-other-lines">2 · Rotating about other lines</h2>
-<p>Sometimes the axis of rotation is a line like <span class="math inline">y=2</span> or <span class="math inline">x=-1</span>. Each radius is still a distance from the axis — measured from that line, not from <span class="math inline">0</span>.</p>
-<div class="key-box">
-<p><strong>Radius from a line.</strong></p>
-<ol type="1">
-<li>Draw the axis of rotation and a strip perpendicular to it.</li>
-<li><span class="math inline">R</span> = distance from the axis to the far curve, <span class="math inline">r</span> = distance from the axis to the near curve. About <span class="math inline">y=k</span>, a distance is a difference of <span class="math inline">y</span>-values; about <span class="math inline">x=k</span>, a difference of <span class="math inline">x</span>-values.</li>
-<li><span class="math inline">A=\pi R^{2}-\pi r^{2}</span>, and integrate along the axis.</li>
-</ol>
-</div>
+<p>Sometimes the axis of rotation is a line like <span class="math inline">y=2</span> or <span class="math inline">x=-1</span>. The four steps do not change. In ③ each radius is how far from that line to the curve — measured from the line, not from <span class="math inline">0</span>.</p>
 <div class="panel example-box">
   <div class="ex-head"><span class="ex-tag">Ex. 2 · About the line y = 2</span></div>
   <div>Find the volume of the solid obtained by rotating the same region, enclosed by $y=x$ and $y=x^{2}$,
@@ -4892,22 +4893,23 @@ rcQuiz('quizW',[
 <details class="soln"><summary>Reveal solution</summary>
 <div class="soln-body">
 
-The axis $y=2$ is above the region. The far curve is $y=x^{2}$, the near curve is $y=x$, and each radius
-is $2$ minus the curve:
+<p>① Draw an upright rectangle, the washer $dV$ it sweeps about $y=2$, and $R(x)$, $r(x)$. The axis is
+above the region, so the outer curve is now the lower one, $y=x^{2}$.</p>
+<p>② Path and limits: $dx$, from $0$ to $1$.</p>
+<p>③ Radii: measure $R$ and $r$ from $y=2$. Each is $2$ minus the curve.</p>
 
 $$R(x)=2-x^{2} \qquad r(x)=2-x$$
 
+<p>④ The chunk: expand and collect.</p>
+
 $$\begin{aligned}
-A(x)&amp;=\pi\left[2-x^{2}\right]^{2}-\pi(2-x)^{2} \\
-V&amp;=\pi\int_0^1\left(2-x^{2}\right)^{2}dx-\pi\int_0^1(2-x)^{2}\,dx
+A(x)&amp;=\pi\left(2-x^{2}\right)^{2}-\pi(2-x)^{2} \\
+&amp;=\pi\left(4-4x^{2}+x^{4}-4+4x-x^{2}\right)=\pi\left(x^{4}-5x^{2}+4x\right)
 \end{aligned}$$
 
-Expand the first: $\pi\int_0^1 4-4x^{2}+x^{4}\,dx=\pi\left(4-\tfrac43+\tfrac15\right)=\tfrac{43\pi}{15}$.
-Substitute in the second, $u=2-x$, $du=-dx$:
-
 $$\begin{aligned}
-\pi\int_0^1(2-x)^{2}\,dx&amp;=\pi\int_1^2u^{2}\,du=\frac{\pi u^{3}}{3}\Big|_1^2=\frac{7\pi}{3}=\frac{35\pi}{15} \\
-V&amp;=\frac{43\pi}{15}-\frac{35\pi}{15}
+V&amp;=\int_{\text{path}}dV=\pi\int_0^1 x^{4}-5x^{2}+4x\,dx \\
+&amp;=\pi\left[\frac15-\frac53+2\right]=\pi\left[\frac{3-25+30}{15}\right]
 \end{aligned}$$
 
 <div class="ansred">
@@ -4924,14 +4926,18 @@ $$\boxed{\,V=\tfrac{8\pi}{15}\,}$$
 <details class="soln"><summary>Reveal solution</summary>
 <div class="soln-body">
 
-The axis is vertical, so slice perpendicular to it: $V=\int_0^1A(y)\,dy$. Solve each curve for $x$:
-$y=x$ gives $x=y$, and $y=x^{2}$ gives $x=\sqrt{y}$. The axis $x=-1$ is to the left, so each radius is
-the curve&#39;s $x$ plus $1$:
+<p>① Draw a sideways rectangle, perpendicular to $x=-1$, from the inner curve $y=x$ across to the outer
+curve $y=x^{2}$, the washer $dV$ it sweeps, and $R(y)$, $r(y)$.</p>
+<p>② Path and limits: $dy$, from $0$ to $1$.</p>
+<p>③ Radii: each is how far from $x=-1$ to get to the curve, $1+x$ — but needed in terms of $y$. The
+inner curve $y=x$ gives $x=y$; the outer curve $y=x^{2}$ gives $x=\sqrt{y}$.</p>
 
-$$R(y)=1+\sqrt{y} \qquad r(y)=1+y$$
+$$r(y)=1+y \qquad R(y)=1+\sqrt{y}$$
+
+<p>④ The chunk: $dV=A(y)\,dy=\pi\left[\left(1+\sqrt{y}\right)^{2}-(1+y)^{2}\right]dy$.</p>
 
 $$\begin{aligned}
-V&amp;=\pi\int_0^1\left(1+\sqrt{y}\right)^{2}-(1+y)^{2}\,dy \\
+V&amp;=\int_{\text{path}}dV=\pi\int_0^1\left(1+\sqrt{y}\right)^{2}-(1+y)^{2}\,dy \\
 &amp;=\pi\int_0^1 1+2\sqrt{y}+y-1-2y-y^{2}\,dy=\pi\int_0^1 2\sqrt{y}-y-y^{2}\,dy \\
 &amp;=\pi\left[\tfrac43y^{3/2}-\tfrac12y^{2}-\tfrac13y^{3}\right]_0^1=\pi\left(\tfrac43-\tfrac12-\tfrac13\right)
 \end{aligned}$$
@@ -4954,7 +4960,7 @@ rcQuiz('quizL',[
    why:'The axis is to the right: distance $=3-y^{2}$, the larger $x$ minus the smaller.'},
   {type:'Area of the slice', prompt:'The region between $y=1$ and $y=x^{2}$ on $[-1,1]$ is rotated about $y=2$. $A(x)=$',
    opts:[{tex:'\\pi\\left(2-x^{2}\\right)^{2}-\\pi\\cdot1^{2}',correct:true},{tex:'\\pi\\left(x^{2}\\right)^{2}-\\pi\\cdot1^{2}'},{tex:'\\pi\\left(1-x^{2}\\right)^{2}'},{tex:'\\pi\\cdot1^{2}-\\pi\\left(2-x^{2}\\right)^{2}'}],
-   why:'From $y=2$: the far curve is $y=x^{2}$ at distance $2-x^{2}$, the near one is $y=1$ at distance $1$.'}
+   why:'From $y=2$: the outer curve is $y=x^{2}$ at distance $2-x^{2}$, the inner one is $y=1$ at distance $1$.'}
 ]);
 </script>
 </section>

@@ -4800,26 +4800,26 @@ window.VE_42A = {
     shapes:[{key:'cylinder',label:'cylinder'},{key:'box',label:'box'},{key:'solid',label:'any solid'}],
     make:function(){ return { kind:'blob', shape:'solid', lo:0, hi:4, view:{x0:0,x1:4,y0:-1.6,y1:1.6},
       Atex:'A(x)\\ \\text{= area of the slice at } x' }; } },
-  ex1: { title:'Ex. 1 · sphere of radius r', sweep:300,
-    params:[{name:'r',label:'r',min:0.5,max:2,step:0.05,value:1}],
+  ex1: { title:'Ex. 1 · sphere of radius R', sweep:300,
+    params:[{name:'r',label:'R',min:0.5,max:2,step:0.05,value:1}],
     make:function(P){ var r=P.r; return { kind:'revolve', v:'x', lo:-r, hi:r, axis:{dir:'h',at:0},
       outer:function(x){ return Math.sqrt(Math.max(r*r-x*x,0)); }, inner:null, equal:true,
       view:{x0:-2.2,x1:2.2,y0:-0.4,y1:2.2},
-      curves:[{on:'x',f:function(x){return Math.sqrt(Math.max(r*r-x*x,0));},from:-r,to:r,label:'y = √(r² − x²)',at:0.3*r}],
-      Atex:'A(x)=\\pi y^2=\\pi\\left(r^2-x^2\\right)', Vtex:'\\tfrac43\\pi r^3' }; } },
+      curves:[{on:'x',f:function(x){return Math.sqrt(Math.max(r*r-x*x,0));},from:-r,to:r,label:'y = √(R² − x²)',at:0.3*r}],
+      Atex:'A(x)=\\pi\\,r(x)^2=\\pi\\left(R^2-x^2\\right)', Vtex:'\\tfrac43\\pi R^3' }; } },
   ex2: { title:'Ex. 2 · y = √x about the x-axis', sweep:300,
     make:function(){ return { kind:'revolve', v:'x', lo:0, hi:1, axis:{dir:'h',at:0},
       outer:function(x){ return Math.sqrt(x); }, inner:null, equal:true,
       view:{x0:-0.2,x1:1.3,y0:-0.15,y1:1.25},
       curves:[{on:'x',f:Math.sqrt,from:0,to:1.25,label:'y = √x',at:1.05}],
-      Atex:'A(x)=\\pi\\left(\\sqrt{x}\\right)^2=\\pi x', Vtex:'\\tfrac{\\pi}{2}' }; } },
+      Atex:'A(x)=\\pi\\,r(x)^2=\\pi\\left(\\sqrt{x}\\right)^2=\\pi x', Vtex:'\\tfrac{\\pi}{2}' }; } },
   ex3: { title:'Ex. 3 · y = x³ about the y-axis', sweep:300,
     make:function(){ return { kind:'revolve', v:'y', lo:0, hi:8, axis:{dir:'v',at:0},
       outer:function(y){ return Math.cbrt(y); }, inner:null,
       view:{x0:-0.4,x1:2.6,y0:-0.6,y1:9},
       curves:[{on:'x',f:function(x){return x*x*x;},from:0,to:2.05,label:'y = x³',at:1.75,dx:4},
               {on:'x',f:function(){return 8;},from:-0.3,to:2.5,label:'y = 8',at:2.1,color:'#9aa6c8'}],
-      Atex:'A(y)=\\pi x^2=\\pi\\left(y^{1/3}\\right)^2=\\pi y^{2/3}', Vtex:'\\tfrac{96\\pi}{5}' }; } },
+      Atex:'A(y)=\\pi\\,r(y)^2=\\pi\\left(y^{1/3}\\right)^2=\\pi y^{2/3}', Vtex:'\\tfrac{96\\pi}{5}' }; } },
   ex4: { title:'Ex. 4 · equilateral triangles on a circular base',
     make:function(){ var h=function(x){ return Math.sqrt(Math.max(1-x*x,0)); };
       return { kind:'section', v:'x', lo:-1, hi:1, shape:'eqtri', baseLo:function(x){return -h(x);}, baseHi:h,
@@ -4884,39 +4884,53 @@ window.VE_42A = {
 <div class="key-box">
 <p><strong>Definition of volume.</strong> Let <span class="math inline">S</span> be a solid that lies between <span class="math inline">x=a</span> and <span class="math inline">x=b</span>. If the cross-section of <span class="math inline">S</span> in the plane through <span class="math inline">x</span>, perpendicular to the <span class="math inline">x</span>-axis, has area <span class="math inline">A(x)</span>, where <span class="math inline">A</span> is continuous, then</p>
 <p><span class="math display">V=\lim_{n\to\infty}\sum_{i=1}^{n}A(x_i^*)\,\Delta x=\int_a^b A(x)\,dx</span></p>
+<p>Each thin slice is a small chunk of volume, <span class="math inline">dV=A(x)\,dx</span> (or <span class="math inline">A(y)\,dy</span>), and the volume is the sum of the chunks along the path of integration:</p>
+<p><span class="math display">V=\int_{\text{path}}dV</span></p>
 </div>
 </section>
 <section id="disks" class="level2">
 <h2 class="anchored" data-anchor-id="disks">2 · Disks</h2>
 <p>Sometimes the solid comes from spinning a flat region about an axis — a <strong>solid of revolution</strong>. Cut it perpendicular to the axis and every cross-section is a disk, whose radius is the distance from the axis to the curve.</p>
 <div class="key-box">
-<p><strong>Disks.</strong> Revolve the region under <span class="math inline">y=f(x)</span> on <span class="math inline">[a,b]</span> about the <span class="math inline">x</span>-axis. The cross-section at <span class="math inline">x</span> is a disk of radius <span class="math inline">f(x)</span>:</p>
-<p><span class="math display">A(x)=\pi(\text{radius})^{2}=\pi\,[f(x)]^{2}\qquad\qquad V=\int_a^b \pi\,[f(x)]^{2}\,dx</span></p>
-<p>Revolve about the <span class="math inline">y</span>-axis instead and the slices are perpendicular to the <span class="math inline">y</span>-axis: write the radius as a function of <span class="math inline">y</span>, find <span class="math inline">A(y)</span>, and integrate <span class="math inline">dy</span>.</p>
+<p><strong>Volume by disks.</strong> Every chunk <span class="math inline">dV</span> is a thin disk.</p>
+<p><span class="math display">V=\int_{\text{path}}dV</span></p>
+<ol type="1">
+<li><strong>Draw a representative disk</strong> — a thin rectangle <strong>perpendicular</strong> to the spin axis, from the axis to the curve, and the disk <span class="math inline">dV</span> it sweeps. Label its radius <span class="math inline">r(x)</span> or <span class="math inline">r(y)</span>: the length of the rectangle.</li>
+<li><strong>Path of integration and limits:</strong> along the spin axis — <span class="math inline">dx</span> for a horizontal axis, <span class="math inline">dy</span> for a vertical one — from where the rectangles start to where they stop.</li>
+<li><strong>A formula for the radius,</strong> <span class="math inline">r(x)</span> or <span class="math inline">r(y)</span>, in the variable of the path.</li>
+<li><strong>The chunk:</strong> <span class="math inline">dV=A(x)\,dx=\pi\,r(x)^{2}\,dx</span>, or <span class="math inline">dV=A(y)\,dy=\pi\,r(y)^{2}\,dy</span>.</li>
+</ol>
 </div>
 <div class="panel example-box">
   <div class="ex-head"><span class="ex-tag">Ex. 1 · Volume of a sphere</span></div>
 
 <div class="exs-card on" data-title="Ex. 1 · Volume of a sphere">
-  <div>Show that the volume of a sphere of radius $r$ is $V=\tfrac43\pi r^{3}$.</div>
+  <div>Show that the volume of a sphere of radius $R$ is $V=\tfrac43\pi R^{3}$, using the method of disks.</div>
   <div id="ve-ex1"></div>
 <details class="soln"><summary>Reveal solution</summary>
 <div class="soln-body">
 
-The sphere is the half-disk under $y=\sqrt{r^{2}-x^{2}}$, revolved about the $x$-axis. The cross-section
-at $x$ is a disk whose radius is the height $y$ of the semicircle.
+<p>① The sphere is the top half of the circle $x^{2}+y^{2}=R^{2}$, spun about the $x$-axis. Draw an upright
+rectangle from the axis up to the circle, the disk $dV$ it sweeps, and its radius $r(x)$.</p>
+<p>② Path and limits: $dx$, from $-R$ to $R$.</p>
+<p>③ Radius: from the triangle,</p>
 
-<div class="figrow"><div style="max-width:300px;margin:0 auto"><canvas id="e1T"></canvas><div class="figcap">$r^{2}=x^{2}+y^{2}$</div></div></div>
+<div class="figrow"><div style="max-width:300px;margin:0 auto"><canvas id="e1T"></canvas><div class="figcap">$R^{2}=r(x)^{2}+x^{2}$</div></div></div>
+
+$$r(x)^{2}=R^{2}-x^{2}$$
+
+<p>④ The chunk:</p>
+
+$$dV=A(x)\,dx=\pi\,r(x)^{2}\,dx=\pi\left(R^{2}-x^{2}\right)dx$$
 
 $$\begin{aligned}
-A(x)&amp;=\pi y^{2}=\pi\left(r^{2}-x^{2}\right) \\
-V&amp;=\int_{-r}^{r}\pi\left(r^{2}-x^{2}\right)dx \\
-&amp;=2\pi\int_{0}^{r}r^{2}-x^{2}\,dx \\
-&amp;=2\pi\left[r^{2}x-\tfrac13x^{3}\right]_0^{r}=2\pi\left(r^{3}-\tfrac13r^{3}\right)
+V&amp;=\int_{\text{path}}dV=\int_{-R}^{R}\pi\left(R^{2}-x^{2}\right)dx \\
+&amp;=2\pi\int_{0}^{R}R^{2}-x^{2}\,dx \\
+&amp;=2\pi\left[R^{2}x-\tfrac13x^{3}\right]_0^{R}=2\pi\left(R^{3}-\tfrac13R^{3}\right)
 \end{aligned}$$
 
 <div class="ansred">
-$$\boxed{\,V=\tfrac43\pi r^{3}\,}$$
+$$\boxed{\,V=\tfrac43\pi R^{3}\,}$$
 </div>
 </div>
 </details>
@@ -4929,12 +4943,13 @@ $$\boxed{\,V=\tfrac43\pi r^{3}\,}$$
 <details class="soln"><summary>Reveal solution</summary>
 <div class="soln-body">
 
-The cross-section at $x$ is a disk of radius $y=\sqrt{x}$.
+<p>① Draw an upright rectangle from the axis up to $y=\sqrt{x}$, the disk $dV$ it sweeps, and its radius
+$r(x)$.</p>
+<p>② Path and limits: $dx$, from $0$ to $1$.</p>
+<p>③ Radius: $r(x)$ is $y$, so $r(x)=\sqrt{x}$.</p>
+<p>④ The chunk: $dV=A(x)\,dx=\pi\left(\sqrt{x}\right)^{2}dx=\pi x\,dx$.</p>
 
-$$\begin{aligned}
-A(x)&amp;=\pi y^{2}=\pi\left(\sqrt{x}\right)^{2}=\pi x \\
-V&amp;=\int_0^1 \pi x\,dx=\pi\,\frac{x^{2}}{2}\,\Big|_0^1
-\end{aligned}$$
+$$V=\int_{\text{path}}dV=\int_0^1 \pi x\,dx=\pi\,\frac{x^{2}}{2}\,\Big|_0^1$$
 
 <div class="ansred">
 $$\boxed{\,V=\tfrac{\pi}{2}\,}$$
@@ -4950,15 +4965,18 @@ $$\boxed{\,V=\tfrac{\pi}{2}\,}$$
 <details class="soln"><summary>Reveal solution</summary>
 <div class="soln-body">
 
-The axis is the $y$-axis, so slice perpendicular to it: $V=\int_0^8 A(y)\,dy$. The radius of the slice at
-height $y$ is the $x$-distance out to the curve, so solve $y=x^{3}$ for $x$. On $[0,2]$ the cube is
-monotonic, so it inverts:
+<p>① Draw a sideways rectangle, perpendicular to the $y$-axis, from the axis across to the curve, the disk
+$dV$ it sweeps, and its radius $r(y)$.</p>
+<p>② Path and limits: $dy$, from $0$ to $8$.</p>
+<p>③ Radius: $r(y)=x$, but it is needed in terms of $y$. Invertible on the domain? On $[0,2]$ the cube is
+monotonic, so yes:</p>
 
-$$x=y^{1/3}$$
+$$r(y)=y^{1/3}$$
+
+<p>④ The chunk: $dV=A(y)\,dy=\pi\,r(y)^{2}\,dy=\pi y^{2/3}\,dy$.</p>
 
 $$\begin{aligned}
-A(y)&amp;=\pi x^{2}=\pi\left(y^{1/3}\right)^{2}=\pi y^{2/3} \\
-V&amp;=\pi\int_0^8 y^{2/3}\,dy=\pi\left[\tfrac35y^{5/3}\right]_0^8 \\
+V&amp;=\int_{\text{path}}dV=\pi\int_0^8 y^{2/3}\,dy=\pi\left[\tfrac35y^{5/3}\right]_0^8 \\
 &amp;=\tfrac{3\pi}{5}\,8^{5/3}=\tfrac{3\pi}{5}\cdot2^{5}
 \end{aligned}$$
 
@@ -4984,10 +5002,10 @@ $$\boxed{\,V=\tfrac{96\pi}{5}\,}$$
     RC.curve(ctx,g,function(x){return Math.sqrt(Math.max(1-x*x,0));},{color:C.curve,from:-1,to:1,lw:2.4,N:400});
     var x=0.6,y=0.8; ctx.strokeStyle=C.ink; ctx.lineWidth=1.8; ctx.beginPath();
     ctx.moveTo(g.X(0),g.Y(0)); ctx.lineTo(g.X(x),g.Y(y)); ctx.lineTo(g.X(x),g.Y(0)); ctx.closePath(); ctx.stroke();
-    RC.mlabel(ctx,g.X(x/2)-10,g.Y(y/2)-4,[{s:'r',it:true}],C.ink,'center',16);
+    RC.mlabel(ctx,g.X(x/2)-10,g.Y(y/2)-4,[{s:'R',it:true}],C.ink,'center',16);
     RC.mlabel(ctx,g.X(x/2),g.Y(0)+17,[{s:'x',it:true}],C.ink,'center',16);
-    RC.mlabel(ctx,g.X(x)+11,g.Y(y/2)+5,[{s:'y',it:true}],C.ink,'center',16);
-    RC.mlabel(ctx,g.X(-1),g.Y(0)+17,[{s:'−r'}],C.dim,'center',14); RC.mlabel(ctx,g.X(1),g.Y(0)+17,[{s:'r',it:true}],C.dim,'center',14);
+    RC.mlabel(ctx,g.X(x)+6,g.Y(y/2)+5,[{s:'r',it:true},{s:'('},{s:'x',it:true},{s:')'}],C.ink,'left',16);
+    RC.mlabel(ctx,g.X(-1),g.Y(0)+17,[{s:'−'},{s:'R',it:true}],C.dim,'center',14); RC.mlabel(ctx,g.X(1),g.Y(0)+17,[{s:'R',it:true}],C.dim,'center',14);
   }
   RC.register(draw);
 })();
@@ -5009,7 +5027,33 @@ rcQuiz('quizDisk',[
 </section>
 <section id="known-cross-sections" class="level2">
 <h2 class="anchored" data-anchor-id="known-cross-sections">3 · Known cross-sections</h2>
-<p>Sometimes the solid is not spun at all. Its base is a flat region, and every cross-section perpendicular to the <span class="math inline">x</span>-axis is a given shape — a square, a semicircle, a triangle — standing on the base. The volume is still <span class="math inline">\int_a^b A(x)\,dx</span>. The side of each slice is the width of the base at <span class="math inline">x</span>.</p>
+<p>Sometimes the solid is not spun at all. Its base is a flat region, and every cross-section perpendicular to the <span class="math inline">x</span>-axis is a given shape — a square, a semicircle, a triangle — standing on the base. The volume is still <span class="math inline">V=\int_{\text{path}}dV</span> with <span class="math inline">dV=A(x)\,dx</span>, but there is no radius to find. The steps collapse to three: ① draw the slice and build the whole <span class="math inline">A(x)</span> from the shape in one step — its side <span class="math inline">s</span> is the length of the rectangle across the base; ② path of integration and limits; ③ integrate.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Shape</th>
+<th>Area</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>square, side <span class="math inline">s</span></td>
+<td><span class="math inline">A=s^{2}</span></td>
+</tr>
+<tr class="even">
+<td>semicircle, diameter <span class="math inline">s</span></td>
+<td><span class="math inline">A=\tfrac12\pi\left(\tfrac{s}{2}\right)^{2}=\tfrac{\pi}{8}s^{2}</span></td>
+</tr>
+<tr class="odd">
+<td>equilateral triangle, side <span class="math inline">s</span></td>
+<td><span class="math inline">A=\tfrac12 s\cdot\tfrac{\sqrt3}{2}s=\tfrac{\sqrt3}{4}s^{2}</span></td>
+</tr>
+</tbody>
+</table>
 <div class="panel example-box">
   <div class="ex-head"><span class="ex-tag">Ex. 4 · Triangles on a circular base</span></div>
   <div>A solid has a circular base of radius $1$. Parallel cross-sections perpendicular to the base are
@@ -5018,15 +5062,22 @@ rcQuiz('quizDisk',[
 <details class="soln"><summary>Reveal solution</summary>
 <div class="soln-body">
 
-Put the base on $x^{2}+y^{2}=1$ and slice perpendicular to the $x$-axis. At $x$ the base runs from $-y$ to
-$y$, so the triangle&#39;s side is $2y$, with $y=\sqrt{1-x^{2}}$.
+<p>① Put the base on $x^{2}+y^{2}=1$. Draw a slice perpendicular to the $x$-axis, the triangle $dV$
+standing on it, and build $A(x)$. The rectangle runs from $-y$ to $y$, so the triangle&#39;s side is $2y$:</p>
 
 <div class="figrow"><div style="max-width:330px;margin:0 auto"><canvas id="e4T"></canvas><div class="figcap">Half the triangle: legs $y$ and $\sqrt3\,y$, hypotenuse $2y$.</div></div></div>
 
+$$h=\sqrt{(2y)^{2}-y^{2}}=\sqrt3\,y\qquad A=\tfrac12(2y)\left(\sqrt3\,y\right)=\sqrt3\,y^{2}$$
+
+<p>Switch to the $x$ variable: $1=x^{2}+y^{2}$, so $y^{2}=1-x^{2}$ and</p>
+
+$$A(x)=\sqrt3\left(1-x^{2}\right)$$
+
+<p>② Path and limits: $dx$, from $-1$ to $1$.</p>
+<p>③ Integrate:</p>
+
 $$\begin{aligned}
-h&amp;=\sqrt{(2y)^{2}-y^{2}}=\sqrt{3y^{2}}=\sqrt3\,y \\
-A(x)&amp;=\tfrac12(2y)\left(\sqrt3\,y\right)=\sqrt3\,y^{2}=\sqrt3\left(1-x^{2}\right) \\
-V&amp;=\int_{-1}^{1}\sqrt3\left(1-x^{2}\right)dx=2\sqrt3\int_0^1 1-x^{2}\,dx \\
+V&amp;=\int_{\text{path}}dV=\int_{-1}^{1}\sqrt3\left(1-x^{2}\right)dx=2\sqrt3\int_0^1 1-x^{2}\,dx \\
 &amp;=2\sqrt3\left(1-\tfrac13\right)
 \end{aligned}$$
 

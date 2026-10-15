@@ -2497,8 +2497,8 @@
      "stewart": "4.2a",
      "quarto": {
       "file": "q/4-2a-volumes-by-slicing.html",
-      "hash": "dc1eb6cc8d396d9b3c0be6dee97b785d8189a8870fcc0fda0a74124d763be784",
-      "bytes": 4396145
+      "hash": "6f222576cbd27a75347cd14b431d6c2e8a3d8813599a60007daf0a6bcebc7381",
+      "bytes": 4398594
      },
      "sections": [
       {
@@ -2520,8 +2520,8 @@
      "docs": {
       "packet": {
        "file": "p/4-2a-volumes-by-slicing-packet.pdf",
-       "hash": "c384aaf10b7d8fa1c006ca860d0222dc49e0253c68f52d4d4ab571584438fbcf",
-       "bytes": 155305
+       "hash": "2d4bb0c24d0bb23093c09cd73d6553aef8e9302431a352cc044f44c88724f5bf",
+       "bytes": 155668
       },
       "ticket": {
        "file": "p/4-2a-volumes-by-slicing-ticket.pdf",
@@ -2530,8 +2530,8 @@
       },
       "onepager": {
        "file": "p/4-2a-volumes-by-slicing-onepager.pdf",
-       "hash": "b4089c57e997317f36cca18406807140ec11a024c020213a7e056109a17b2b27",
-       "bytes": 305192
+       "hash": "0f452ffa4e528431d716e2d8c959da0ae7dcd6636623a942543fa4617ae307b8",
+       "bytes": 282451
       }
      }
     },
@@ -2542,8 +2542,8 @@
      "stewart": "4.2b",
      "quarto": {
       "file": "q/4-2b-washers.html",
-      "hash": "6b0a64e510cd56f18bc4208337ac93c6a70144f11205e1c3be9d863d8036255f",
-      "bytes": 4385968
+      "hash": "926a1e14d30782e8c1f6839d8b696cf2dcde4544dcdb5881e301e8902f065d75",
+      "bytes": 4386840
      },
      "sections": [
       {
@@ -2560,18 +2560,18 @@
      "docs": {
       "packet": {
        "file": "p/4-2b-washers-packet.pdf",
-       "hash": "0a96b902bef1bb714cbd448e47d891384b71754b55de0a337318fa457037db88",
-       "bytes": 179333
+       "hash": "cc1d84a5789ef9c82c241691d923186b0468e999be1026130ee5e40450b04965",
+       "bytes": 180038
       },
       "ticket": {
        "file": "p/4-2b-washers-ticket.pdf",
-       "hash": "baaff6d7c6caf240f608509ce8ad5e6d351e915da6725e443ef2af45ad9605e9",
-       "bytes": 116777
+       "hash": "cde4cdd7107fc7becb677786a520985aadb6efb7636b5b8dd2e78cf6c9dd4073",
+       "bytes": 117488
       },
       "onepager": {
        "file": "p/4-2b-washers-onepager.pdf",
-       "hash": "e4354a681498e53f682d0708fa14825091a0a868db8e0fcff964898ee2214635",
-       "bytes": 264032
+       "hash": "abc82de49cdaa9531c8676793d48438b8fd5ab0aa5ba05ab53ab290438bd64bc",
+       "bytes": 261691
       }
      }
     },
@@ -2622,6 +2622,56 @@
        "file": "p/4-3a-cylindrical-shells-onepager.pdf",
        "hash": "3b742580fe796eb74574f24ac61660a40cf1d43c0be81e2a0cfc707306288f51",
        "bytes": 292253
+      }
+     }
+    },
+    {
+     "code": "L4.3b",
+     "slug": "4-3b-which-method",
+     "title": "Which Method? Disk / Washer / Shell",
+     "stewart": "4.3b",
+     "quarto": {
+      "file": "q/4-3b-which-method.html",
+      "hash": "90de6eab4597b4a8e46eade12a4a481bbbe1d16a485b3479aac148edcdd74947",
+      "bytes": 4393680
+     },
+     "sections": [
+      {
+       "id": "choosing-the-method",
+       "text": "Choosing the method",
+       "level": 2
+      },
+      {
+       "id": "one-solid-two-methods",
+       "text": "One solid, two methods",
+       "level": 2
+      },
+      {
+       "id": "volumes-by-any-method",
+       "text": "Volumes by any method",
+       "level": 2
+      },
+      {
+       "id": "napkin-rings",
+       "text": "Napkin rings",
+       "level": 2
+      }
+     ],
+     "docs": {
+      "packet": {
+       "file": "p/4-3b-which-method-packet.pdf",
+       "hash": "609cd3445fccc2ec393f13ead8ec07931bd7b97a2f23891b9e73c5b33498b412",
+       "bytes": 200508
+      },
+      "ticket": {
+       "file": "p/4-3b-which-method-ticket.pdf",
+       "hash": "e5b5ec0e8e7edb0ad2ea5a29da86518b1bed84f481fc582b506f7eebabe09201",
+       "bytes": 118368
+      },
+      "onepager": {
+       "file": "p/4-3b-which-method-onepager.pdf",
+       "hash": "c6d701ad419d1a696b85bb763effdf5f88d4538be8db06db6676aec511542a5a",
+       "bytes": 200140
       }
      }
     }
