@@ -1134,8 +1134,8 @@
      "stewart": "2.1",
      "quarto": {
       "file": "q/2-1-min-max-values.html",
-      "hash": "fb163d7e65b97305ecc90030aa7f0fe6566baf44922f92da5d438a26c68ee411",
-      "bytes": 3737767
+      "hash": "b9befe3f858b3885f4a423edc04efb6fff67f9ec76704713fe7d7efb61468bbf",
+      "bytes": 3735098
      },
      "sections": [
       {
@@ -1144,8 +1144,8 @@
        "level": 2
       },
       {
-       "id": "the-four-rules",
-       "text": "The four rules",
+       "id": "four-rules-for-finding-extrema",
+       "text": "Four rules for finding extrema",
        "level": 3
       },
       {
@@ -1197,18 +1197,18 @@
      "docs": {
       "packet": {
        "file": "p/2-1-min-max-values-packet.pdf",
-       "hash": "5765e08afe6fb5e1e911031e8c692d5b124b732157547d6d5243774b95fdf7cd",
-       "bytes": 62661
+       "hash": "6eb15ed3cc595950ab01734268fea3fb92439d5c0f49d8d26ed1a122e2f889c3",
+       "bytes": 175321
       },
       "ticket": {
        "file": "p/2-1-min-max-values-ticket.pdf",
-       "hash": "be4893825f8df6db4e47e7278490e8765f79ddbcca2bc026bb15e8cec6544d41",
-       "bytes": 22654
+       "hash": "314734999f4cec571d5a9cefb9978afacdd4ff3485ced83b379f229c18c5b31b",
+       "bytes": 99565
       },
       "onepager": {
        "file": "p/2-1-min-max-values-onepager.pdf",
-       "hash": "44a7c16fb22440212bee5ed05d2780c91bfa18070c6d15003d148e0cad373eab",
-       "bytes": 63985
+       "hash": "5cc661b58d8c681677ad9f67ae1ea82e0e9e20aee4dae1fdfd0dd25f681f3f52",
+       "bytes": 301683
       }
      }
     },
