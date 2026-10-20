@@ -2471,9 +2471,9 @@ border-left:4px solid var(--panel-bd); background:var(--card); min-height:3.2rem
 .hyp-ok { color:var(--green); font-weight:700; }
 .hyp-bad { color:var(--red); font-weight:700; }
 
-.stack { list-style:none; padding-left:0; margin:.45rem 0 .5rem; }
-.stack li { padding:.16rem 0 .16rem 1.1rem; position:relative; font-size:1rem; }
-.stack li::before { content:'\2013'; position:absolute; left:0; color:var(--muted); }
+.stack { list-style:none; padding-left:0; margin:.45rem 0 .5rem; counter-reset:hyp; }
+.stack li { padding:.16rem 0 .16rem 1.5rem; position:relative; font-size:1rem; counter-increment:hyp; }
+.stack li::before { content:counter(hyp) ')'; position:absolute; left:0; color:var(--muted); }
 
 .steps { list-style:none; padding-left:0; margin:.55rem 0 .15rem; }
 .steps li { padding:.24rem 0 .24rem 1.9rem; position:relative; }
@@ -2872,7 +2872,7 @@ window.rcQuiz = function(mountId, bank){
   RC.register(all);
 })();
 </script>
-<p>Every step below is a result from the previous lesson. That is what makes the derivation three lines instead of a period.</p>
+<p>There are only three possibilities if <span class="math inline">f(a)=f(b)</span>: <span class="math inline">f(x)</span> stays constant, it goes up in between, or it goes down.</p>
 <table class="case-tbl caption-top table">
 <tbody>
 <tr class="odd">
@@ -2889,9 +2889,7 @@ window.rcQuiz = function(mountId, bank){
 </tr>
 </tbody>
 </table>
-<div class="info-box">
-<p><strong>Case ② is where both hypotheses are spent.</strong> Continuity on a closed interval is what EVT needs; differentiability on the open interval is what Fermat needs. Drop either one and the case collapses.</p>
-</div>
+<p>Case ② uses both hypotheses: EVT needs <span class="math inline">f</span> continuous on <span class="math inline">[a,b]</span>, and Fermat needs <span class="math inline">f</span> differentiable on <span class="math inline">(a,b)</span>.</p>
 <div class="panel example-box">
 <div class="ex-head"><span class="ex-tag">Ex. 1 · Rolle&#39;s Theorem on a cubic</span></div>
 <p>Verify that <span class="math inline">f(x)=x^{3}-3x^{2}+2x+5</span> satisfies the three hypotheses of Rolle’s Theorem on <span class="math inline">[0,2]</span>, then find all <span class="math inline">c</span> that satisfy the conclusion.</p>
@@ -3015,7 +3013,7 @@ rcQuiz('quiz1',[
 <section id="the-secant-and-the-parallel-tangent" class="level3">
 <h3 class="anchored" data-anchor-id="the-secant-and-the-parallel-tangent">The secant and the parallel tangent</h3>
 <div class="panel">
-  <div class="panel-head"><div class="sec-label">The Mean Value Theorem as a slanted Rolle</div>
+  <div class="panel-head"><div class="sec-label">The tangent parallel to the secant</div>
     <button class="popout-btn" onclick="popOut(this)">⛶ Present</button></div>
 
   <div class="dual" style="align-items:flex-start">
@@ -3292,17 +3290,24 @@ rcQuiz('quiz2',[
 <div class="info-box">
 <p><strong>Proof by contradiction.</strong> Math is 100% internally consistent, but a super over-powered technique for proof is called <em>proof by contradiction</em> — assume one thing that you don’t really know is true and see what happens. If it leads to a contradiction, then since all the rest of math is 100% consistent, you know the thing you assumed is wrong.</p>
 </div>
+<p>The template, and it works on any <em>at most one</em> claim:</p>
+<ul class="steps">
+<li><span class="sn">①</span> Assume the <b>opposite</b> of what you want. Suppose you want to show that only one root exists, and you already know at least one does: assume the opposite, e.g., that two roots exist.</li>
+<li><span class="sn">②</span> Apply a theorem whose hypotheses are true because of the assumption. Two roots give $f(a)=f(b)$, which is Rolle&#39;s third hypothesis.</li>
+<li><span class="sn">③</span> Push to a statement that contradicts something already known — usually a fact about $f&#39;$.</li>
+<li><span class="sn">④</span> The assumption was false.</li>
+</ul>
 <div class="panel example-box">
 <div class="ex-head"><span class="ex-tag">Ex. 4 · Exactly one real root</span></div>
 <p>Show that <span class="math inline">x^{3}+x-1</span> has <strong>exactly one</strong> real root.</p>
 <details class="soln"><summary>Solution</summary><div class="soln-body">
-<p>Two claims, and they need two different theorems.</p>
-<p><strong>(a) At least one — the Intermediate Value Theorem.</strong> <span class="math inline">f(x)=x^{3}+x-1</span> is a polynomial, so it is continuous on <span class="math inline">[0,1]</span>. And</p>
+<p>Let <span class="math inline">f(x)=x^{3}+x-1</span>.</p>
+<p><strong>Step 1) At least one root exists, via IVT.</strong> <span class="math inline">f</span> is a polynomial, so it is continuous on <span class="math inline">[0,1]</span>. And</p>
 <p><span class="math display">f(0)=-1&lt;0, \qquad f(1)=1&gt;0</span></p>
 <p>so <span class="math inline">N=0</span> lies between <span class="math inline">f(0)</span> and <span class="math inline">f(1)</span>. The Intermediate Value Theorem gives a <span class="math inline">c</span> in <span class="math inline">(0,1)</span> with <span class="math inline">f(c)=0</span>. <strong>A root exists.</strong> It does not say which number it is.</p>
-<p><strong>(b) At most one — Rolle’s Theorem, by contradiction.</strong></p>
+<p><strong>Step 2) Only one root exists.</strong></p>
 <ul class="steps">
-<li><span class="sn">①</span> <b>Assume the opposite:</b> suppose there are two roots, $a&lt;b$. Then $f(a)=f(b)=0$.</li>
+<li><span class="sn">①</span> Assume, for the sake of a contradiction, two roots $a&lt;b$. Then $f(a)=f(b)=0$.</li>
 <li><span class="sn">②</span> $f$ is a polynomial, so it is continuous on $[a,b]$ and differentiable on $(a,b)$. With $f(a)=f(b)$, all three hypotheses of Rolle&#39;s Theorem hold, and it gives a $c$ on $(a,b)$ with $f&#39;(c)=0$.</li>
 <li><span class="sn">③</span> But $f&#39;(x)=3x^{2}+1$, and $3x^{2}\ge 0$ for every $x$, so $f&#39;(x)\ge 1&gt;0$ <b>everywhere</b>. There is no number at which $f&#39;=0$.</li>
 <li><span class="sn">④</span> Rolle&#39;s Theorem produced a $c$ with $f&#39;(c)=0$ and the derivative says no such $c$ exists. <b>Contradiction</b> — so the assumption was false and there cannot be two roots.</li>
@@ -3382,7 +3387,7 @@ rcQuiz('quiz2',[
     var c=(R1+b)/2, v=3*c*c+1;
     var el=document.getElementById('conRead');
     if(el){
-      el.innerHTML='A second root at $b='+b.toFixed(2)+'$ would make $f(a)=f(b)=0$, and Rolle would force $f\'(c)=0$ '
+      el.innerHTML='A second root at $b='+b.toFixed(2)+'$ would make $f(a)=f(b)=0$, and Rolle would give $f\'(c)=0$ '
         +'somewhere between them &mdash; here at $c='+c.toFixed(2)+'$. '
         +'<b>But $f\'('+c.toFixed(2)+')='+v.toFixed(2)+'$.</b> '
         +'Move $b$ anywhere at all and the required $c$ moves with it, and the value on the right is never $0$.';
@@ -3398,17 +3403,7 @@ rcQuiz('quiz2',[
   RC.register(function(){ if(document.getElementById('conCv')) update(); });
 })();
 </script>
-<p>The left picture is what a second root would demand. The right picture is what the derivative actually is. <strong>They cannot both be true, and the derivative is not negotiable — so the second root is what has to go.</strong></p>
-</section>
-<section id="the-shape-of-the-argument" class="level3">
-<h3 class="anchored" data-anchor-id="the-shape-of-the-argument">The shape of the argument</h3>
-<p>The same four lines work on any <em>at most one</em> claim.</p>
-<ul class="steps">
-<li><span class="sn">①</span> Assume the opposite of the claim — here, that a second root exists.</li>
-<li><span class="sn">②</span> Apply a theorem whose hypotheses the assumption has just handed you. Two roots give $f(a)=f(b)$, which is exactly Rolle&#39;s third hypothesis.</li>
-<li><span class="sn">③</span> Push to a statement that contradicts something already known — usually a fact about $f&#39;$.</li>
-<li><span class="sn">④</span> Conclude the assumption was false. The claim stands.</li>
-</ul>
+<p>Left: a second root would need <span class="math inline">f&#39;(c)=0</span> somewhere between the two roots. Right: <span class="math inline">f&#39;(x)=3x^{2}+1\ge 1</span>, so <span class="math inline">f&#39;</span> is never <span class="math inline">0</span>. <strong>Both cannot be true, so there is no second root.</strong></p>
 <div class="panel" style="margin-top:1rem">
   <div class="sec-label">Self-check · existence and uniqueness</div>
   <div id="quiz3"></div>
@@ -3428,7 +3423,7 @@ rcQuiz('quiz3',[
   // Inside a <script> the HTML parser does NOT decode entities, so `&lt;`
   // reaches KaTeX literally and throws. In a script block write a bare `<`;
   // the `&lt;` form is only needed in raw-HTML markup outside a script.
-  prompt:'Suppose $f$ is differentiable everywhere and you assume it has two roots $a<b$. What does Rolle\'s Theorem then hand you?',
+  prompt:'Suppose $f$ is differentiable everywhere and you assume it has two roots $a<b$. What does Rolle\'s Theorem then give?',
   opts:[{html:'a $c$ in $(a,b)$ with $f\'(c)=0$',correct:true},
         {html:'a $c$ in $(a,b)$ with $f(c)=0$'},
         {html:'that $f$ has a local maximum at $c$'},
@@ -3456,7 +3451,7 @@ rcQuiz('quiz3',[
 </section>
 <section id="lawyer-math" class="level2">
 <h2 class="anchored" data-anchor-id="lawyer-math">4 · Lawyer Math</h2>
-<p>Six results now do the work in this chapter, and they are used the same way every time: <strong>name the theorem, verify each hypothesis one at a time, then use the conclusion.</strong> They have to be known word for word, because a hypothesis that goes unchecked is a proof that proves nothing.</p>
+<p><strong>To use each theorem, you must show that any needed hypotheses are true.</strong> Otherwise, you aren’t able to use the theorem.</p>
 <div class="br-wrap">
 <button class="br-nav br-prev" type="button" aria-label="scroll left">‹</button>
 <button class="br-nav br-next" type="button" aria-label="scroll right">›</button>
@@ -3464,37 +3459,37 @@ rcQuiz('quiz3',[
   <a class="br b-thm on" href="#pan-ivt" id="dxtab-1" role="tab" data-panel="pan-ivt" aria-selected="true">
     <div class="br-read">Intermediate Value Theorem</div>
     <div class="br-form" data-tex="\exists\,c\in(a,b):\ f(c)=N"></div>
-    <div class="br-move">A continuous curve cannot skip a value between its endpoint heights.</div>
+    <div class="br-move">A continuous curve sweeps out all <i>y</i>-values between its minimum and maximum on some interval.</div>
     <div class="br-cap"><span>existence</span> <span class="br-go">① →</span></div>
   </a>
   <a class="br b-thm" href="#pan-evt" id="dxtab-2" role="tab" data-panel="pan-evt" aria-selected="false">
     <div class="br-read">Extreme Value Theorem</div>
     <div class="br-form" data-tex="\exists\ \text{absolute min/Max on }[a,b]"></div>
-    <div class="br-move">The highest and lowest values are actually attained.</div>
+    <div class="br-move">On a closed interval, a continuous function reaches a highest and a lowest value.</div>
     <div class="br-cap"><span>existence</span> <span class="br-go">② →</span></div>
   </a>
   <a class="br b-thm" href="#pan-fer" id="dxtab-3" role="tab" data-panel="pan-fer" aria-selected="false">
     <div class="br-read">Fermat&#39;s Theorem</div>
     <div class="br-form" data-tex="f&#39;(c)=0"></div>
-    <div class="br-move">At a local extremum the tangent is horizontal — if there is a tangent.</div>
+    <div class="br-move">At a local max or min where <i>f</i>′ exists, <i>f</i>′(<i>c</i>) = 0.</div>
     <div class="br-cap"><span>location</span> <span class="br-go">③ →</span></div>
   </a>
   <a class="br b-prc" href="#pan-cim" id="dxtab-4" role="tab" data-panel="pan-cim" aria-selected="false">
     <div class="br-read">Closed Interval Method</div>
     <div class="br-form" data-tex="\max/\min\ \text{of}\ \{f(\text{CNs}),f(a),f(b)\}"></div>
-    <div class="br-move">The two theorems above, turned into a finite checklist.</div>
+    <div class="br-move">Evaluate <i>f</i> at the critical numbers and both endpoints; take the largest and smallest.</div>
     <div class="br-cap"><span>procedure</span> <span class="br-go">④ →</span></div>
   </a>
   <a class="br b-thm" href="#pan-rol" id="dxtab-5" role="tab" data-panel="pan-rol" aria-selected="false">
     <div class="br-read">Rolle&#39;s Theorem</div>
     <div class="br-form" data-tex="\exists\,c\ \text{on}\ (a,b)\ \text{s.t.}\ f&#39;(c)=0"></div>
-    <div class="br-move">Equal ends force a horizontal tangent somewhere between them.</div>
+    <div class="br-move">Equal endpoint heights force a horizontal tangent between them.</div>
     <div class="br-cap"><span>location</span> <span class="br-go">⑤ →</span></div>
   </a>
   <a class="br b-thm" href="#pan-mvt" id="dxtab-6" role="tab" data-panel="pan-mvt" aria-selected="false">
     <div class="br-read">Mean Value Theorem</div>
     <div class="br-form" data-tex="\exists\,c\ \text{on}\ (a,b)\ \text{s.t.}\ f&#39;(c)=m_{\text{sec}}"></div>
-    <div class="br-move">Somewhere inside, the tangent is parallel to the secant.</div>
+    <div class="br-move">Somewhere between the endpoints, the tangent is parallel to the secant.</div>
     <div class="br-cap"><span>location</span> <span class="br-go">⑥ →</span></div>
   </a>
 </div>
@@ -3506,75 +3501,131 @@ rcQuiz('quiz3',[
 <div id="pan-ivt" class="dpan on" role="tabpanel" aria-labelledby="dxtab-1">
 <section id="intermediate-value-theorem" class="level4">
 <h4 class="anchored" data-anchor-id="intermediate-value-theorem">Intermediate Value Theorem</h4>
-<p>If <span class="math inline">f</span> is continuous on <span class="math inline">[a,b]</span> and <span class="math inline">N</span> is any number between <span class="math inline">f(a)</span> and <span class="math inline">f(b)</span>, with <span class="math inline">f(a)\ne f(b)</span>, then there exists a number <span class="math inline">c</span> in <span class="math inline">(a,b)</span> such that <span class="math inline">f(c)=N</span>.</p>
-<ul class="hyps">
-<li>$f$ is continuous on the closed interval $[a,b]$</li>
-<li>$N$ lies between $f(a)$ and $f(b)$</li>
+<div class="key-box">
+<p><strong>If</strong></p>
+<ul class="stack">
+<li>$f$ continuous on $[a,b]$</li>
+<li>$N$ is between $f(a)$ and $f(b)$</li>
 </ul>
-<div class="invoke"><b>What you get:</b> a $c$ exists. Not its value — a sign change is the whole tell, and nobody finds the root.</div>
+<p><strong>then</strong> <span class="math inline">\exists\,c</span> on <span class="math inline">(a,b)</span> s.t. <span class="math inline">\boxed{f(c)=N}</span></p>
+</div>
+<div class="panel example-box">
+<div class="ex-head"><span class="ex-tag">Ex. 5 · Intermediate Value Theorem</span></div>
+<p>Show <span class="math inline">x^{3}+x-1=0</span> has a solution on <span class="math inline">(0,1)</span>.</p>
+<details class="soln"><summary>Solution</summary><div class="soln-body">
+<p>Let <span class="math inline">f(x)=x^{3}+x-1</span>.</p>
+<p>1) Polynomial, so continuous on <span class="math inline">[0,1]</span> ✓ 2) <span class="math inline">f(0)=-1</span> and <span class="math inline">f(1)=1</span>, so <span class="math inline">N=0</span> is between ✓</p>
+<p>IVT: <span class="math inline">\exists\,c</span> on <span class="math inline">(0,1)</span> s.t. <span class="math inline">\boxed{f(c)=0}</span></p>
+</div></details>
+</div>
 </section>
 </div>
 <div id="pan-evt" class="dpan" role="tabpanel" aria-labelledby="dxtab-2">
 <section id="extreme-value-theorem" class="level4">
 <h4 class="anchored" data-anchor-id="extreme-value-theorem">Extreme Value Theorem</h4>
-<p>If <span class="math inline">f</span> is continuous on <span class="math inline">[a,b]</span>  <span class="ansred">← <strong>closed</strong></span></p>
-<p><span class="math display">\exists\ \text{absolute min/Max values for some numbers on }[a,b]</span></p>
-<ul class="hyps">
-<li>$f$ is continuous on the interval</li>
-<li>the interval is <b>closed</b> — both endpoints included</li>
+<div class="key-box">
+<p><strong>If</strong></p>
+<ul class="stack">
+<li>$f$ continuous on $[a,b]$</li>
 </ul>
-<div class="invoke"><b>What you get:</b> both extreme values exist and are attained. Not where they are, and not that there is only one of each.</div>
-<p><strong>Same hypotheses as IVT, different conclusion.</strong> That is the pair worth holding side by side: continuity on a closed interval buys <em>no skipped values</em> from one theorem and <em>both extremes attained</em> from the other.</p>
+<p><strong>then</strong> <span class="math inline">\boxed{\exists\ \text{ABS min/Max values for some numbers on }[a,b]}</span></p>
+</div>
+<div class="panel example-box">
+<div class="ex-head"><span class="ex-tag">Ex. 6 · Extreme Value Theorem</span></div>
+<p>Does <span class="math inline">f(x)=\dfrac1x</span> have absolute min/Max values on <span class="math inline">[1,3]</span>?</p>
+<details class="soln"><summary>Solution</summary><div class="soln-body">
+<p>1) <span class="math inline">f</span> is discontinuous only at <span class="math inline">x=0</span>, which is not in <span class="math inline">[1,3]</span>, so <span class="math inline">f</span> is continuous on <span class="math inline">[1,3]</span> ✓</p>
+<p>EVT: yes. They are <span class="math inline">\boxed{f(1)=1\ \text{(Max)},\quad f(3)=\tfrac13\ \text{(min)}}</span></p>
+</div></details>
+</div>
 </section>
 </div>
 <div id="pan-fer" class="dpan" role="tabpanel" aria-labelledby="dxtab-3">
 <section id="fermats-theorem" class="level4">
 <h4 class="anchored" data-anchor-id="fermats-theorem">Fermat’s Theorem</h4>
-<p>If <span class="math inline">f</span> has a local min/Max at <span class="math inline">c</span> <strong>and</strong> <span class="math inline">f&#39;(c)\ \exists</span>, then <span class="math inline">f&#39;(c)=0</span>.</p>
-<ul class="hyps">
-<li>$f$ has a local max or min at $c$</li>
+<div class="key-box">
+<p><strong>If</strong></p>
+<ul class="stack">
+<li>$f$ has a local min/Max at $c$</li>
 <li>$f&#39;(c)\ \exists$</li>
 </ul>
-<div class="invoke"><b>What you get:</b> a horizontal tangent. <b>One direction only</b> — a horizontal tangent does not buy an extremum back.</div>
-<p><strong>This is the only one of the six whose hypothesis is about a single point</strong> rather than a whole interval, and the only one that runs the risk of being read backwards.</p>
+<p><strong>then</strong> <span class="math inline">\boxed{f&#39;(c)=0}</span></p>
+</div>
+<div class="panel example-box">
+<div class="ex-head"><span class="ex-tag">Ex. 7 · Fermat&#39;s Theorem</span></div>
+<p>What does Fermat give for <span class="math inline">f(x)=x^{2}-2x</span> at <span class="math inline">c=1</span>?</p>
+<details class="soln"><summary>Solution</summary><div class="soln-body">
+<p>1) <span class="math inline">f</span> is an upward parabola with vertex at <span class="math inline">x=1</span>, so local min at <span class="math inline">1</span> ✓ 2) <span class="math inline">f&#39;(x)=2x-2</span>, so <span class="math inline">f&#39;(1)\ \exists</span> ✓</p>
+<p>Fermat: <span class="math inline">\boxed{f&#39;(1)=0}</span>. Check: <span class="math inline">2(1)-2=0</span>.</p>
+</div></details>
+</div>
 </section>
 </div>
 <div id="pan-cim" class="dpan" role="tabpanel" aria-labelledby="dxtab-4">
 <section id="closed-interval-method" class="level4">
 <h4 class="anchored" data-anchor-id="closed-interval-method">Closed Interval Method</h4>
-<p>For a continuous <span class="math inline">f</span> on a closed <span class="math inline">[a,b]</span>: evaluate <span class="math inline">f</span> at every critical number in <span class="math inline">(a,b)</span> and at both endpoints; the largest value is the absolute maximum and the smallest is the absolute minimum.</p>
-<ul class="hyps">
-<li>$f$ is continuous on the interval</li>
-<li>the interval is <b>closed</b></li>
+<div class="key-box">
+<p><strong>If</strong></p>
+<ul class="stack">
+<li>$f$ continuous on $[a,b]$</li>
 </ul>
-<div class="invoke"><b>What you get:</b> the actual numbers, and where they occur — the only one of the six that returns a value rather than a promise.</div>
-<p><strong>Not a theorem — a procedure assembled from two.</strong> EVT supplies <em>the answer exists</em>; Fermat supplies <em>it can only be at a critical number or an endpoint</em>. Drop either hypothesis and the candidate list stops being complete.</p>
+<p><strong>then</strong> the ABS min/Max values are among <span class="math inline">\boxed{f(a),\ f(b),\ f(\text{each CN in }(a,b))}</span></p>
+</div>
+<div class="panel example-box">
+<div class="ex-head"><span class="ex-tag">Ex. 8 · Closed Interval Method</span></div>
+<p>Find the absolute min/Max of <span class="math inline">f(x)=x^{2}-2x</span> on <span class="math inline">[0,3]</span>.</p>
+<details class="soln"><summary>Solution</summary><div class="soln-body">
+<p>1) Polynomial, so continuous on <span class="math inline">[0,3]</span> ✓</p>
+<p>CN: <span class="math inline">f&#39;(x)=2x-2=0 \Rightarrow x=1</span>, in <span class="math inline">(0,3)</span></p>
+<p><span class="math inline">f(1)=-1,\quad f(0)=0,\quad f(3)=3</span></p>
+<div class="answer-box">
+<p><span class="math inline">\boxed{\text{abs Max } 3 \text{ at } x=3;\quad \text{abs min } {-1} \text{ at } x=1}</span></p>
+</div>
+</div></details>
+</div>
 </section>
 </div>
 <div id="pan-rol" class="dpan" role="tabpanel" aria-labelledby="dxtab-5">
 <section id="rolles-theorem-1" class="level4">
 <h4 class="anchored" data-anchor-id="rolles-theorem-1">Rolle’s Theorem</h4>
-<p>If <span class="math inline">f</span> satisfies: continuous on <span class="math inline">[a,b]</span> · differentiable on <span class="math inline">(a,b)</span> · <span class="math inline">f(a)=f(b)</span>, then <span class="math inline">\exists\,c</span> on <span class="math inline">(a,b)</span> s.t. <span class="math inline">f&#39;(c)=0</span>.</p>
-<ul class="hyps">
-<li>$f$ is continuous on $[a,b]$</li>
-<li>$f$ is differentiable on $(a,b)$ — the <b>open</b> interval</li>
-<li>$f(a)=f(b)$ — <b>equal</b>, not zero</li>
+<div class="key-box">
+<p><strong>If</strong></p>
+<ul class="stack">
+<li>$f$ continuous on $[a,b]$</li>
+<li>$f$ differentiable on $(a,b)$</li>
+<li>$f(a)=f(b)$</li>
 </ul>
-<div class="invoke"><b>What you get:</b> at least one horizontal tangent strictly inside. Not its location, and not that it is the only one.</div>
-<p><strong>It is EVT and Fermat used together</strong>, which is why it needs both a closed interval and an open one: EVT wants the closed interval to produce an extremum, Fermat wants a derivative at the point it produces.</p>
-<p><strong>The second job it does is uniqueness.</strong> If <span class="math inline">f&#39;</span> is never zero, Rolle says no two inputs can share a value — so a function with no critical numbers hits each output at most once.</p>
+<p><strong>then</strong> <span class="math inline">\exists\,c</span> on <span class="math inline">(a,b)</span> s.t. <span class="math inline">\boxed{f&#39;(c)=0}</span></p>
+</div>
+<div class="panel example-box">
+<div class="ex-head"><span class="ex-tag">Ex. 9 · Rolle&#39;s Theorem</span></div>
+<p>Verify that <span class="math inline">f(x)=\cos x</span> satisfies the hypotheses of Rolle’s Theorem on <span class="math inline">[0,2\pi]</span>, then find <span class="math inline">c</span>.</p>
+<details class="soln"><summary>Solution</summary><div class="soln-body">
+<p>1) continuous everywhere ✓ 2) differentiable everywhere ✓ 3) <span class="math inline">\cos 0=1=\cos 2\pi</span> ✓</p>
+<p>Rolle: <span class="math inline">f&#39;(c)=-\sin c=0 \Rightarrow c=0,\ \pi,\ 2\pi</span>. <span class="math inline">0</span> and <span class="math inline">2\pi</span> are endpoints, not in <span class="math inline">(0,2\pi)</span>, so <span class="math inline">\boxed{c=\pi}</span></p>
+</div></details>
+</div>
 </section>
 </div>
 <div id="pan-mvt" class="dpan" role="tabpanel" aria-labelledby="dxtab-6">
 <section id="mean-value-theorem" class="level4">
 <h4 class="anchored" data-anchor-id="mean-value-theorem">Mean Value Theorem</h4>
-<p>If <span class="math inline">f</span> satisfies: continuous on <span class="math inline">[a,b]</span> · differentiable on <span class="math inline">(a,b)</span>, then <span class="math inline">\exists\,c</span> on <span class="math inline">(a,b)</span> s.t. <span class="math inline">f&#39;(c)=m_{\text{sec}}</span>.</p>
-<ul class="hyps">
-<li>$f$ is continuous on $[a,b]$</li>
-<li>$f$ is differentiable on $(a,b)$ — the <b>open</b> interval</li>
+<div class="key-box">
+<p><strong>If</strong></p>
+<ul class="stack">
+<li>$f$ continuous on $[a,b]$</li>
+<li>$f$ differentiable on $(a,b)$</li>
 </ul>
-<div class="invoke"><b>What you get:</b> a point where the tangent is parallel to the secant. It gives existence; solving $f&#39;(x)=m_{\text{sec}}$ gives the number.</div>
-<p><strong>Rolle with the ends unpinned.</strong> Two hypotheses instead of three, and the conclusion tilts from <span class="math inline">0</span> to <span class="math inline">m_{\text{sec}}</span>.</p>
+<p><strong>then</strong> <span class="math inline">\exists\,c</span> on <span class="math inline">(a,b)</span> s.t. <span class="math inline">\boxed{f&#39;(c)=\dfrac{f(b)-f(a)}{b-a}=m_{\text{sec}}}</span></p>
+</div>
+<div class="panel example-box">
+<div class="ex-head"><span class="ex-tag">Ex. 10 · Mean Value Theorem</span></div>
+<p>Verify that <span class="math inline">f(x)=\sqrt{x}</span> satisfies the hypotheses of the Mean Value Theorem on <span class="math inline">[0,4]</span>, then find <span class="math inline">c</span>.</p>
+<details class="soln"><summary>Solution</summary><div class="soln-body">
+<p>1) <span class="math inline">\sqrt{x}</span> is continuous for <span class="math inline">x\ge0</span>, so on <span class="math inline">[0,4]</span> ✓ 2) <span class="math inline">f&#39;(x)=\dfrac{1}{2\sqrt{x}}</span> exists for <span class="math inline">x&gt;0</span>, so on <span class="math inline">(0,4)</span> ✓</p>
+<p>MVT: <span class="math inline">m_{\text{sec}}=\dfrac{2-0}{4-0}=\dfrac12</span>, and <span class="math inline">\dfrac{1}{2\sqrt{c}}=\dfrac12 \Rightarrow \boxed{c=1}</span></p>
+</div></details>
+</div>
 </section>
 </div>
 <script>

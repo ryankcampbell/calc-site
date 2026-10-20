@@ -1219,8 +1219,8 @@
      "stewart": "2.2",
      "quarto": {
       "file": "q/2-2-mvt.html",
-      "hash": "6c5f5cbb2be48fa9c0d75db5ca256d8c4e4750dc965db8bae12b06f768af9388",
-      "bytes": 3719524
+      "hash": "0bf9f4067c04719efac5eb01263106679d76f5442a605df8a13b3d650d450c64",
+      "bytes": 3721071
      },
      "sections": [
       {
@@ -1261,11 +1261,6 @@
       {
        "id": "the-contradiction-as-a-picture",
        "text": "The contradiction, as a picture",
-       "level": 3
-      },
-      {
-       "id": "the-shape-of-the-argument",
-       "text": "The shape of the argument",
        "level": 3
       },
       {
