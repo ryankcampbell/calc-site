@@ -1219,8 +1219,8 @@
      "stewart": "2.2",
      "quarto": {
       "file": "q/2-2-mvt.html",
-      "hash": "e285793cf135ded8428aebbc1e6a24367352ec4673c33f973182f0380f1869c7",
-      "bytes": 3727087
+      "hash": "6c5f5cbb2be48fa9c0d75db5ca256d8c4e4750dc965db8bae12b06f768af9388",
+      "bytes": 3719524
      },
      "sections": [
       {
@@ -1269,36 +1269,26 @@
        "level": 3
       },
       {
-       "id": "functions-with-the-same-derivative",
-       "text": "Functions with the same derivative",
-       "level": 2
-      },
-      {
-       "id": "curves-with-identical-derivatives",
-       "text": "Curves with identical derivatives",
-       "level": 3
-      },
-      {
        "id": "lawyer-math",
        "text": "Lawyer Math",
-       "level": 3
+       "level": 2
       }
      ],
      "docs": {
       "packet": {
        "file": "p/2-2-mvt-packet.pdf",
-       "hash": "76c47f5d1a94c94564ba2fb54253229f00609d714f632e68d03519fd1b9e6785",
-       "bytes": 61591
+       "hash": "a76654541960e0ef3556cc554b201e1293049adb0e9958ee833d4a22581ddd88",
+       "bytes": 217751
       },
       "ticket": {
        "file": "p/2-2-mvt-ticket.pdf",
-       "hash": "888597075aaf6870c6b2ff5e7879ea268dd94421093137251dc354f217729931",
-       "bytes": 26577
+       "hash": "b1ff98f6b1be8f3cdb64145233e89b1f2a25e878948f721cc5b825b7dd26bdea",
+       "bytes": 130949
       },
       "onepager": {
        "file": "p/2-2-mvt-onepager.pdf",
-       "hash": "ee903178f58afe87ee6b4d005e134637ebbb85f9bc108124ce2e0a0dbab01a07",
-       "bytes": 76279
+       "hash": "5c3610cd55e835f63721caac4370bd1d4790fba05364afb8f96ce39f900ebb98",
+       "bytes": 354725
       }
      }
     },
