@@ -1332,18 +1332,18 @@
      "docs": {
       "packet": {
        "file": "p/2-3-derivatives-graphs-packet.pdf",
-       "hash": "0403e0cea8eff12bfbf63884c35ab7292a1d10664c7118e0cc78d93fae6ff789",
-       "bytes": 229721
+       "hash": "2df04a5782c0db0cf99fa3522f21fa7ccdbbf89fe26813993f7c284ad76bf9b0",
+       "bytes": 205591
       },
       "ticket": {
        "file": "p/2-3-derivatives-graphs-ticket.pdf",
-       "hash": "e10dd1bbcce3bb2d67a9ea4ec8a6afdcb98a3020eb84e1676daf29b3f9bfe52e",
-       "bytes": 29702
+       "hash": "2ab8cdcf0369fd686de13b2e295f40db9f1aa871f19d31f70e88661a6aab4dd4",
+       "bytes": 117404
       },
       "onepager": {
        "file": "p/2-3-derivatives-graphs-onepager.pdf",
-       "hash": "73b293c545e203f9ac03785ab391bdce27b17c1e62ae8bbcd20b3f486b692346",
-       "bytes": 71300
+       "hash": "f960bfc4da0ed6ab1319e751270043b765eaa831e877ee1b2e632f409efb3d41",
+       "bytes": 212246
       }
      }
     },
