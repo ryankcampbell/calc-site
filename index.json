@@ -1397,18 +1397,18 @@
      "docs": {
       "packet": {
        "file": "p/2-4-limits-at-infinity-packet.pdf",
-       "hash": "15849e4685973d231ac1f15ad422d9b81b3a794ef63cf2db4d58a0daf074df7b",
-       "bytes": 52394
+       "hash": "b31d20b5a6398d2f78bb3e32ab07e6ebcb59355bcc383fe6cf74ee98b7e932e8",
+       "bytes": 204207
       },
       "ticket": {
        "file": "p/2-4-limits-at-infinity-ticket.pdf",
-       "hash": "60be6b70accd28cad522472c09df7559ff0ce4ef7dd9fd734ba011aa64c8fda0",
-       "bytes": 29488
+       "hash": "dca739e920e9aad35294e0c2dd488336c8a05520b245259ef88321c9408a4aaa",
+       "bytes": 115977
       },
       "onepager": {
        "file": "p/2-4-limits-at-infinity-onepager.pdf",
-       "hash": "1e2833703dfba25bbf5454dfadd338d59d3f11ac488a831c3233d846eae74e68",
-       "bytes": 61749
+       "hash": "5be5082f132a33d85e0d7e59fe7d507d0f586d0d366b9ba0ab348c7bab952470",
+       "bytes": 266685
       }
      }
     },
