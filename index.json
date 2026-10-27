@@ -1342,8 +1342,8 @@
       },
       "onepager": {
        "file": "p/2-3-derivatives-graphs-onepager.pdf",
-       "hash": "f960bfc4da0ed6ab1319e751270043b765eaa831e877ee1b2e632f409efb3d41",
-       "bytes": 212246
+       "hash": "77bfc03e92a016aeabc150f8581c764d106b45b45ddfb392db7057a3c3c11f5c",
+       "bytes": 212278
       }
      }
     },
@@ -1457,18 +1457,18 @@
      "docs": {
       "packet": {
        "file": "p/2-5-curve-sketching-packet.pdf",
-       "hash": "217314c6dd66a48de7f45a9703f4b3811addd1107e77600e18cf0ca044412014",
-       "bytes": 39891
+       "hash": "d6b0c393074126cdd3717eb149a2c8aec79e3f6c786547559a2d030cc9a8f899",
+       "bytes": 160227
       },
       "ticket": {
        "file": "p/2-5-curve-sketching-ticket.pdf",
-       "hash": "2c972d4f95a5f55db25d7c24a68ce43718035bf06751ad17025d566e1a516936",
-       "bytes": 32219
+       "hash": "3de52d23188324d1b6f61f54d8389269368c9f334632ee1aa3b0ea930bfba1b2",
+       "bytes": 152504
       },
       "onepager": {
        "file": "p/2-5-curve-sketching-onepager.pdf",
-       "hash": "f676469c5bf33a9b44ea89662a4815b08e3ddb00ad3c2bee9a489dfad3cdab3c",
-       "bytes": 53296
+       "hash": "73f2f760ae17831c0627bfa05286f87d495257f4fce50ccfc8cb2ed1447fdc10",
+       "bytes": 312365
       }
      }
     },
