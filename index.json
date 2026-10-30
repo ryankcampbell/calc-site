@@ -1479,8 +1479,8 @@
      "stewart": "2.6a",
      "quarto": {
       "file": "q/2-6a-optimization.html",
-      "hash": "b90d84bebf2251c8d9fdf9d0685c5d0d2143a984371780480f001a21997aa4f8",
-      "bytes": 3717073
+      "hash": "bf4e0fd2138f32660aba815238ad62d8a10ebe43deeef9cb3d817e6bdba39fba",
+      "bytes": 3714413
      },
      "sections": [
       {
@@ -1502,8 +1502,8 @@
      "docs": {
       "packet": {
        "file": "p/2-6a-optimization-packet.pdf",
-       "hash": "db07b67b6104266e003ab7fe1a69997ccf591c913c617501b4255c2b1558966c",
-       "bytes": 46362
+       "hash": "fff98f6c73747396bfb83d34d597c2cae22df566fd6f257f94dcbca821bf1a22",
+       "bytes": 181155
       },
       "ticket": {
        "file": "p/2-6a-optimization-ticket.pdf",
