@@ -2755,7 +2755,7 @@ window.rcQuiz = function(mountId, bank){
 <section id="optimization-under-a-constraint" class="level2">
 <h2 class="anchored" data-anchor-id="optimization-under-a-constraint">1 · Optimization under a constraint</h2>
 <p>An optimization question usually asks you to minimize or Maximize some quantity — to make an area, a volume, a cost, or a time as big or as small as possible — while also supplying a <strong>constraint</strong> that must be obeyed: <span class="math inline">160</span> ft of fence, <span class="math inline">1200\ \mathrm{cm^2}</span> of cardboard, or a $5000 budget. The thing being optimized yields an <strong>optimization equation</strong>, <code>OEq</code>; the second yields a <strong>constraint equation</strong>.</p>
-<p>Solving an optimization problem requires identifying three things: the thing being optimized, the constraint, and the interval.</p>
+<p>Solving an optimization problem requires identifying three things: the thing being optimized, the constraint, and the interval. Write all three as one line, the question itself: <span class="ansred"><strong>Q?</strong> Max <span class="math inline">A</span> on <span class="math inline">[0,80]</span> subject to <span class="math inline">2x+2y=160</span></span></p>
 <p>Once the constraint has been used to get down to one variable, the quantity <span class="math inline">Q</span> is a function of a single <span class="math inline">x</span> on a single interval — and finding its largest and smallest values there is something you have already done.</p>
 <div class="panel">
   <div class="panel-head">
@@ -2837,6 +2837,10 @@ Reveal solution
 <tr class="odd">
 <td class="sl">Interval</td>
 <td>$x\in[0,80]$</td>
+</tr>
+<tr class="even">
+<td class="sl ansred">Q?</td>
+<td><span class="ansred">Max $A$ on $[0,80]$ subject to $2x+2y=160$</span></td>
 </tr>
 </tbody>
 </table>
@@ -2924,6 +2928,10 @@ Reveal solution
 <td class="sl">Interval</td>
 <td>$x\in[0,72]$</td>
 </tr>
+<tr class="even">
+<td class="sl ansred">Q?</td>
+<td><span class="ansred">Max $V$ on $[0,72]$ subject to $2x+2y=144$</span></td>
+</tr>
 </tbody>
 </table>
 <p><span class="math display">V=x^{2}(72-x)=72x^{2}-x^{3}</span></p>
@@ -2974,7 +2982,7 @@ rcQuiz('q1',[
 <p><strong>The optimization template.</strong></p>
 <ol class="steps">
   <li><span class="sn">①</span> <b>Picture.</b> Draw it in a box and label every length.</li>
-  <li><span class="sn">②</span> <b>Sort the question.</b> <b>OEq</b> · <b>Constraint</b> · <b>Interval</b>, then eliminate.</li>
+  <li><span class="sn">②</span> <b>Sort the question.</b> <b>OEq</b> · <b>Constraint</b> · <b>Interval</b>, then write it as one line: <span class="ansred"><b>Q?</b> Max/min (the OEq) on (the interval) subject to (the constraint)</span>. Then eliminate.</li>
   <li><span class="sn">③</span> <b>Find critical pts.</b> $f&#39;=0$ or $f&#39;$ undefined.</li>
   <li><span class="sn">④</span> <b>Does this Maximize/min?</b> 1st D Test or 2nd D Test.</li>
   <li><span class="sn">⑤</span> <b>Check endpoints.</b> Evaluate at both ends and compare.</li>
@@ -3032,6 +3040,7 @@ y\ge 5 \;\Longrightarrow\; 40-2x &amp;\ge 5 \\
 17.5 &amp;\ge x
 \end{aligned}</span></p>
 <p><span class="math display">\boxed{x\in[5,17.5]}</span></p>
+<p><span class="ansred"><strong>Q?</strong> Max and min <span class="math inline">A</span> on <span class="math inline">[5,17.5]</span> subject to <span class="math inline">2x+y=40</span></span></p>
 <p><strong>③ Find critical pts.</strong></p>
 <p><span class="math display">A=x(40-2x)=40x-2x^{2},\qquad A&#39;=40-4x=0 \quad\Longrightarrow\quad x=10</span></p>
 <p>Back-substitute: <span class="math inline">2(10)+y=40</span>, so <span class="math inline">y=20</span>.</p>
@@ -3102,22 +3111,19 @@ rcQuiz('q2',[
  {type:'A stated restriction', prompt:'A plot is fenced with $40$ ft of fencing, with a wall as one whole side, so $2x+y=40$. Every side must be at least $3$ ft. What is the interval?',
   opts:[{tex:'[3,\\,18.5]',correct:true},{tex:'[3,\\,40]'},{tex:'[0,\\,20]'},{tex:'[3,\\,20]'}],
   why:'$x\\ge3$ directly, and $y=40-2x\\ge3$ gives $2x\\le37$, so $x\\le18.5$. The clause sets <b>both</b> ends.'},
- {type:'Read it off the domain', prompt:'Minimize $f(x)=x+\\dfrac{9}{x}$, where $x$ must be positive. What is the interval?',
-  opts:[{tex:'(0,\\,\\infty)',correct:true},{tex:'[0,\\,\\infty)'},{tex:'(-\\infty,\\,\\infty)'},{tex:'[0,\\,9]'}],
-  why:'$x=0$ is not in the domain, and nothing bounds $x$ above &mdash; so there are no ends to check and step &#9315; has to carry the argument.'},
  {type:'A lower bound that is not zero', prompt:'Two numbers add to $12$, and neither may be less than $2$. If $x$ is one of them, what is the interval?',
   opts:[{tex:'[2,\\,10]',correct:true},{tex:'[0,\\,12]'},{tex:'[2,\\,12]'},{tex:'[2,\\,6]'}],
   why:'$x\\ge2$, and the other number $12-x\\ge2$ gives $x\\le10$.'}
 ]);
 </script>
-<p>Eight problems, each a full run of ①–⑤. The picture comes drawn; steps ② through ⑤ are yours.</p>
+<p>Four problems, each a full run of ①–⑤. The picture comes drawn; steps ② through ⑤ are yours.</p>
 <div class="panel" id="trPanel">
   <div class="panel-head">
     <div class="sec-label">Template trainer</div>
     <button class="popout-btn" onclick="popOut(this)" title="Open in presentation mode">⛶ Present</button>
   </div>
   <div class="tr-bar">
-    <span class="tr-count">Card <b id="trN">1</b>/<b id="trTot">6</b></span>
+    <span class="tr-count">Card <b id="trN">1</b>/<b id="trTot">4</b></span>
     <span class="tr-title" id="trTitle"></span>
     <button class="type-btn" id="trPrev">← Prev</button>
     <button class="type-btn" id="trNext">Next →</button>
@@ -3302,59 +3308,6 @@ rcQuiz('q2',[
           why:'Cutting nothing gives a flat sheet; cutting $1.5$ ft gives no base. Both ends give $V=0$.' },
     solve:{ q:'The largest volume is', val:2, tol:0.05, units:'$\\mathrm{ft^3}$',
             why:'$V(0.5)=0.5(3-1)^{2}=0.5(4)=2\\ \\mathrm{ft^3}$.' } },
-
-  { id:'two', title:'Two numbers, difference 100',
-    stem:'Find two numbers whose difference is $100$ and whose product is a minimum.',
-    chips:[ {t:'$P=xy$', z:'O'},
-            {t:'make $P$ as small as possible', z:'O'},
-            {t:'$y-x=100$', z:'C'},
-            {t:'$y=x+100$', z:'C'},
-            {t:'nothing restricts $x$', z:'I'},
-            {t:'$x$ can be any real number', z:'I'} ],
-    sortWhy:'Nothing here is a length, so no bound appears anywhere &mdash; the <b>Interval</b> slot gets all of $\\mathbb{R}$, and there will be no ends to check.',
-    ask:{ q:'$P=x(x+100)=x^{2}+100x$. The critical number is',
-          opts:[{tex:'x=-50',ok:1},{tex:'x=50'},{tex:'x=0'},{tex:'x=100'}],
-          why:'$P\'=2x+100=0$ at $x=-50$, and then $y=-50+100=50$.' },
-    meq:{ q:'$P\'\'=2$, so',
-          opts:[{tex:'P\\text{ is CU everywhere and }x=-50\\text{ is a min}',ok:1},
-                {tex:'P\\text{ is CD everywhere and }x=-50\\text{ is a Max}'},
-                {tex:'x=-50\\text{ is an inflection point}'},
-                {tex:'\\text{a negative }x\\text{ is not allowed}'}],
-          why:'The problem never said the numbers were positive, and a positive second derivative means the parabola opens up.' },
-    req:{ q:'Step ⑤:',
-          opts:[{tex:'\\text{there are no ends to check}',ok:1},
-                {tex:'P(0)\\text{ and }P(100)'},
-                {tex:'P(-50)\\text{ only}'},
-                {tex:'P\'(0)\\text{ and }P\'(100)'}],
-          why:'The interval is all of $\\mathbb{R}$, so nothing gets evaluated at an end. Step ④ is the whole argument: $P\'\'=2>0$ everywhere, so the one critical point is the lowest point on the whole parabola.' },
-    solve:{ q:'The smallest product is', val:-2500, tol:1, units:'',
-            why:'$x=-50$ and $y=50$, so $P=-2500$.' } },
-
-  { id:'kfun', title:'Rational function with a constant',
-    stem:'Let $f(x)=\\dfrac{kx}{1+x^{2}}$ for $x>0$, where $k$ is a positive constant. Find the value of $x$ where $f$ has its maximum, and the maximum value.',
-    chips:[ {t:'$f(x)=\\dfrac{kx}{1+x^{2}}$', z:'O'},
-            {t:'make $f$ as large as possible', z:'O'},
-            {t:'no second equation &mdash; nothing has to be eliminated', z:'C'},
-            {t:'$x>0$', z:'I'},
-            {t:'nothing bounds $x$ above', z:'I'} ],
-    sortWhy:'The OEq arrives already in one variable, so the <b>Constraint</b> slot is empty &mdash; write NONE. And $k$ is a constant riding along; it is never differentiated.',
-    ask:{ q:'$f\'(x)=\\dfrac{k(1-x^{2})}{(1+x^{2})^{2}}$. The critical number in the interval is',
-          opts:[{tex:'x=1',ok:1},{tex:'x=-1'},{tex:'x=0'},{tex:'x=k'}],
-          why:'$f\'=0$ when $1-x^{2}=0$, so $x=\\pm1$ &mdash; and only $x=1$ is positive. $k>0$ never moves the critical number.' },
-    meq:{ q:'$f\'\'(1)=-\\dfrac{k}{2}$ and $k>0$, so',
-          opts:[{tex:'f\'\'(1)<0,\\ \\text{so }x=1\\text{ is a Max}',ok:1},
-                {tex:'f\'\'(1)>0,\\ \\text{so }x=1\\text{ is a min}'},
-                {tex:'\\text{the answer depends on }k'},
-                {tex:'x=1\\text{ is an inflection point}'}],
-          why:'A positive $k$ makes $-k/2$ negative, so the sign is settled no matter what $k$ is.' },
-    req:{ q:'Step ⑤ on $(0,\\infty)$:',
-          opts:[{tex:'\\text{no ends to check; the 2nd Derivative Test settles it}',ok:1},
-                {tex:'f(0)\\text{ and }f(\\infty)'},
-                {tex:'f(0)\\text{ only}'},
-                {tex:'f\'(0)\\text{ and }f\'(1)'}],
-          why:'An open interval has nothing to evaluate at its ends, so the 2nd Derivative Test is doing real work here rather than saving time.' },
-    solve:{ q:'The maximum is at $x=$', val:1, tol:0.01, units:'',
-            why:'$x=1$, and the maximum value is $f(1)=\\dfrac{k}{2}$ &mdash; where the maximum sits does not depend on $k$ at all.' } }
 
   ];
 

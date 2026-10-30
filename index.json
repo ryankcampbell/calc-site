@@ -1479,8 +1479,8 @@
      "stewart": "2.6a",
      "quarto": {
       "file": "q/2-6a-optimization.html",
-      "hash": "bf4e0fd2138f32660aba815238ad62d8a10ebe43deeef9cb3d817e6bdba39fba",
-      "bytes": 3714413
+      "hash": "ad2d718d7c1a64e3af5f7e093cec8d87f468b35719cf7296894167fe2b1f6708",
+      "bytes": 3710998
      },
      "sections": [
       {
@@ -1502,8 +1502,8 @@
      "docs": {
       "packet": {
        "file": "p/2-6a-optimization-packet.pdf",
-       "hash": "fff98f6c73747396bfb83d34d597c2cae22df566fd6f257f94dcbca821bf1a22",
-       "bytes": 181155
+       "hash": "e4038a225860ce6eed52714731f7777c4894b28e779da283b2a73362f8accc7b",
+       "bytes": 159593
       },
       "ticket": {
        "file": "p/2-6a-optimization-ticket.pdf",
@@ -1512,8 +1512,8 @@
       },
       "onepager": {
        "file": "p/2-6a-optimization-onepager.pdf",
-       "hash": "74144882d496816e12ec8c324aca63267d544d7e8c76ebc873a37649d24918b4",
-       "bytes": 215107
+       "hash": "e3b19b5662d76dcfc52294ced9efc7b9f637642fd930a704f9e5a90561fdb44f",
+       "bytes": 229824
       }
      }
     },
@@ -1524,8 +1524,8 @@
      "stewart": "2.6b",
      "quarto": {
       "file": "q/2-6b-more-optimization.html",
-      "hash": "a72dd5872c70aa6e963f2357d6e000bf99a5f82cbabb1c6075e68d5ad0070af1",
-      "bytes": 3714877
+      "hash": "49cb338b446d4a9114c1d992a061af317c467df3ba3a586b2f3998fea01f592f",
+      "bytes": 3713072
      },
      "sections": [
       {
