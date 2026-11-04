@@ -1110,12 +1110,30 @@
      "count": null
     },
     {
+     "kind": "review",
+     "date": "10/13",
+     "name": "Review: Differentials, Uncertainty & Taylor",
+     "detail": "",
+     "stewart": "§2.9, 11.10",
+     "hw": "",
+     "count": null
+    },
+    {
+     "kind": "review",
+     "date": "10/14",
+     "name": "Review: Chapters 1–2",
+     "detail": "",
+     "stewart": "§1.1–2.9, 6.8",
+     "hw": "",
+     "count": null
+    },
+    {
      "kind": "break",
      "text": "Bridge day · after the exam, out of Chapter 2 and into Chapter 3"
     },
     {
      "kind": "exam",
-     "date": "10/13",
+     "date": "10/16",
      "name": "REVIEW EXAM",
      "detail": "Test 1 · Chapters 1–2 and §6.8 · P01–",
      "stewart": "§1.1–2.9, 6.8",
@@ -1562,13 +1580,13 @@
      "docs": {
       "packet": {
        "file": "p/2-6b-more-optimization-packet.pdf",
-       "hash": "45733627cacd538fc2cf4f5de2324a4533466f435716ee4f0d48d592f1d7d5fd",
-       "bytes": 45330
+       "hash": "5bf27770d3a6e8d429049cc0b7fc8fd60a8d108ecc28b5e65684160e7b990693",
+       "bytes": 126289
       },
       "ticket": {
        "file": "p/2-6b-more-optimization-ticket.pdf",
-       "hash": "c1f5a3afb25e7ca28fb56abb9127b194730eb6dc8bbd200de59276d24df2eb71",
-       "bytes": 26612
+       "hash": "61c187601a4cd61b0f0f1911b4f32ed0e2cc60573d703c95b0b4f75562a0ee8a",
+       "bytes": 116476
       },
       "onepager": {
        "file": "p/2-6b-more-optimization-onepager.pdf",
@@ -1760,7 +1778,7 @@
     },
     {
      "kind": "lesson",
-     "date": "10/14",
+     "date": "10/20",
      "name": "2.1 Maximum & Minimum Values",
      "detail": "The four rules, EVT, Fermat, · Closed Interval Method",
      "stewart": "§3.1",
@@ -1769,7 +1787,7 @@
     },
     {
      "kind": "lesson",
-     "date": "10/16",
+     "date": "10/21",
      "name": "2.2 The Mean Value Theorem",
      "detail": "Rolle from EVT + Fermat, MVT as a · slanted Rolle, proof by contradiction",
      "stewart": "§3.2",
@@ -1778,7 +1796,7 @@
     },
     {
      "kind": "lesson",
-     "date": "10/20",
+     "date": "10/23",
      "name": "2.3 Derivatives & Graphs",
      "detail": "I/D test, 1st and 2nd derivative tests, · CNs, PIPs, the sign test",
      "stewart": "§3.3",
@@ -1787,7 +1805,7 @@
     },
     {
      "kind": "lesson",
-     "date": "10/21",
+     "date": "10/27",
      "name": "2.4 Limits at Infinity",
      "detail": "Where the precalc asymptote rules come · from; HA, SA, the conjugate trick",
      "stewart": "§3.4",
@@ -1795,8 +1813,26 @@
      "count": 12
     },
     {
+     "kind": "lesson",
+     "date": "10/28",
+     "name": "2.5 Curve Sketching",
+     "detail": "DIAS (precalc) + the derivatives · table",
+     "stewart": "§3.5",
+     "hw": "p.250: 1,9,11,15,17,21,23,29,37 p.251: 47,49",
+     "count": 11
+    },
+    {
+     "kind": "lesson",
+     "date": "10/30",
+     "name": "2.6a Optimization",
+     "detail": "Picture · OEq, Constraint, Interval · CPs · min or max? · check the ends",
+     "stewart": "§3.7",
+     "hw": "p.264: 3,7 p.265: 13,15,16",
+     "count": 5
+    },
+    {
      "kind": "quiz",
-     "date": "10/23",
+     "date": "11/3",
      "name": "QUIZ 2",
      "detail": "",
      "stewart": "§3.1–3.4",
@@ -1805,25 +1841,7 @@
     },
     {
      "kind": "lesson",
-     "date": "10/27",
-     "name": "2.5 Curve Sketching",
-     "detail": "DIAS (precalc) + the derivatives · table (day 18)",
-     "stewart": "§3.5",
-     "hw": "p.250: 1,9,11,15,17,21,23,29,37 p.251: 47,49",
-     "count": 11
-    },
-    {
-     "kind": "lesson",
-     "date": "10/28",
-     "name": "2.6a Optimization",
-     "detail": "Picture · OEq, Constraint, Interval · CPs · min or max? · check the ends",
-     "stewart": "§3.7",
-     "hw": "p.264: 3,7 p.265: 13,15,16",
-     "count": 5
-    },
-    {
-     "kind": "lesson",
-     "date": "10/30",
+     "date": "11/4",
      "name": "2.6b More Optimization",
      "detail": "Open intervals ⇒ 2nd derivative test; · minimize d^2, not d",
      "stewart": "§3.7",
@@ -1832,7 +1850,7 @@
     },
     {
      "kind": "lesson",
-     "date": "11/3",
+     "date": "11/6",
      "name": "2.7 Newton's Method",
      "detail": "The tangent's x-intercept, iterated; · when it fails",
      "stewart": "§3.8",
@@ -1841,7 +1859,7 @@
     },
     {
      "kind": "lesson",
-     "date": "11/4",
+     "date": "11/10",
      "name": "2.8 Antiderivatives",
      "detail": "Running the rules backwards, the +C · family, initial value problems",
      "stewart": "§3.9",
@@ -1850,7 +1868,7 @@
     },
     {
      "kind": "review",
-     "date": "11/6",
+     "date": "11/13",
      "name": "Review: Chapter 3",
      "detail": "",
      "stewart": "§3.1–3.9",
@@ -1859,7 +1877,7 @@
     },
     {
      "kind": "exam",
-     "date": "11/10",
+     "date": "11/17",
      "name": "TEST 2: Chapter 3",
      "detail": "",
      "stewart": "§3.1–3.9",
@@ -1878,8 +1896,8 @@
      "stewart": "",
      "quarto": {
       "file": "q/3-1-areas-and-distances.html",
-      "hash": "77408e6b3a2c6b972dd0b6780236c5977bb5496c02d9f3fb712e911fac853573",
-      "bytes": 4507666
+      "hash": "cfccac5fd33f79790d2f358ea0a21bc212a713aa8ac6f30382aea3feb734282d",
+      "bytes": 4477527
      },
      "sections": [
       {
@@ -1913,7 +1931,23 @@
        "level": 2
       }
      ],
-     "docs": {}
+     "docs": {
+      "packet": {
+       "file": "p/3-1-areas-and-distances-packet.pdf",
+       "hash": "aa8ea852944055a9fe9abf96653b7d576687452799c9aa0f463dc540a60dac83",
+       "bytes": 153165
+      },
+      "ticket": {
+       "file": "p/3-1-areas-and-distances-ticket.pdf",
+       "hash": "1c1e86d7ac92cd393401d403863bef2baf476836202b1f8f631950d462dd8ea2",
+       "bytes": 106948
+      },
+      "onepager": {
+       "file": "p/3-1-areas-and-distances-onepager.pdf",
+       "hash": "3ee7ac533889d9bf631406272d833c32637bce0e72afec8cf7feb630f4634e3a",
+       "bytes": 219114
+      }
+     }
     },
     {
      "code": "L3.2a",
@@ -1922,8 +1956,8 @@
      "stewart": "",
      "quarto": {
       "file": "q/3-2a-definite-integral.html",
-      "hash": "001b0fd99993fff62f8e34e5a683705c6af1ce4f1549ab86978c7dffa1a499fd",
-      "bytes": 3763075
+      "hash": "ecbc33d0358779ae4a50ebd18e4a0d57b09abaa9eeeb06eb39a3e66555ae43bf",
+      "bytes": 3701006
      },
      "sections": [
       {
@@ -1957,7 +1991,23 @@
        "level": 2
       }
      ],
-     "docs": {}
+     "docs": {
+      "packet": {
+       "file": "p/3-2a-definite-integral-packet.pdf",
+       "hash": "3e5b3ba93616c170870954536e38171717dabf1311bedbbd01e987d1ee01d16e",
+       "bytes": 172623
+      },
+      "ticket": {
+       "file": "p/3-2a-definite-integral-ticket.pdf",
+       "hash": "f683a43e46cf9517655aca5a3b8bd233befe5b10492b0c05d70646f16baed7c3",
+       "bytes": 126983
+      },
+      "onepager": {
+       "file": "p/3-2a-definite-integral-onepager.pdf",
+       "hash": "59e0b9c15d54c4354013b33f478e7bfbcac1112a0eb58f5aef4fcac3e2277b23",
+       "bytes": 248089
+      }
+     }
     },
     {
      "code": "L3.2b",
@@ -1966,17 +2016,43 @@
      "stewart": "",
      "quarto": {
       "file": "q/3-2b-properties.html",
-      "hash": "38f70251971dcc751d0b3b1ef784dc896a5254797c7a2c41d2e6bd3513c67518",
-      "bytes": 3734419
+      "hash": "9dc87947526b848e7c38f5388189fb8ce9a041adbfecb22ccff561edc94af93e",
+      "bytes": 3683483
      },
      "sections": [
       {
-       "id": "properties",
-       "text": "Properties",
+       "id": "properties-of-the-definite-integral",
+       "text": "Properties of the Definite Integral",
+       "level": 2
+      },
+      {
+       "id": "interval-additivity",
+       "text": "Interval Additivity",
+       "level": 2
+      },
+      {
+       "id": "integrals-from-labeled-areas",
+       "text": "Integrals from Labeled Areas",
        "level": 2
       }
      ],
-     "docs": {}
+     "docs": {
+      "packet": {
+       "file": "p/3-2b-properties-packet.pdf",
+       "hash": "88b4a996c0b8cfca34c704e48782481a24030792e1c0a255016b571d531aeccb",
+       "bytes": 136292
+      },
+      "ticket": {
+       "file": "p/3-2b-properties-ticket.pdf",
+       "hash": "13507077d71d5f492abb62283c9ab3ae89fe270e1ecc025d24b607b8b409007e",
+       "bytes": 131204
+      },
+      "onepager": {
+       "file": "p/3-2b-properties-onepager.pdf",
+       "hash": "947713e621e9f9dfcc6d072e822b4d1a672cee105b82ab9e273b99e709c9f761",
+       "bytes": 134312
+      }
+     }
     },
     {
      "code": "L3.3a",
@@ -1985,8 +2061,8 @@
      "stewart": "",
      "quarto": {
       "file": "q/3-3a-ftc-part-1.html",
-      "hash": "df4fa8126f8a0efe8a85e733e1f8da0bdfb10962e3149bc2e88bc725c8b0a9af",
-      "bytes": 3748128
+      "hash": "02e217af2d7acfb93d9dd2bbcbbc910131d26eaf6cb8107732635ebe5b1242f1",
+      "bytes": 3692579
      },
      "sections": [
       {
@@ -2005,7 +2081,23 @@
        "level": 2
       }
      ],
-     "docs": {}
+     "docs": {
+      "packet": {
+       "file": "p/3-3a-ftc-part-1-packet.pdf",
+       "hash": "9344f8f9ccfa7a147b6b1e87d630dd166fb5a202f453751a8b96f07887d0cbac",
+       "bytes": 150732
+      },
+      "ticket": {
+       "file": "p/3-3a-ftc-part-1-ticket.pdf",
+       "hash": "8cb76df133cda5ed22816579c1e2ab5cedbd25632aa66e05350d7c7623b5d889",
+       "bytes": 114383
+      },
+      "onepager": {
+       "file": "p/3-3a-ftc-part-1-onepager.pdf",
+       "hash": "9ba475659eb6b4ed713a16921df7a2cb0ae8bd9d189583edc6f31a92706708de",
+       "bytes": 217462
+      }
+     }
     },
     {
      "code": "L3.3b",
@@ -2014,8 +2106,8 @@
      "stewart": "",
      "quarto": {
       "file": "q/3-3b-ftc-part-2.html",
-      "hash": "9b79647307b89a4ec773431f801e83d0e672b23e53eb26e3c58362b0972165a6",
-      "bytes": 3758053
+      "hash": "6ac37a912aff7a3300be6f6da11e1895bb02fe6932a5a30d27fe216d794bfc39",
+      "bytes": 3697250
      },
      "sections": [
       {
@@ -2039,27 +2131,38 @@
        "level": 2
       }
      ],
-     "docs": {}
+     "docs": {
+      "packet": {
+       "file": "p/3-3b-ftc-part-2-packet.pdf",
+       "hash": "a6f5a296cdb8152bad13fe295a93732c95611dc4424bd27c5f876aa25c5c59f4",
+       "bytes": 179506
+      },
+      "ticket": {
+       "file": "p/3-3b-ftc-part-2-ticket.pdf",
+       "hash": "7c0db6c8acb6f7ba97101ee2355f33ae3b046d05ccea1267a6b95ba251db6509",
+       "bytes": 124457
+      },
+      "onepager": {
+       "file": "p/3-3b-ftc-part-2-onepager.pdf",
+       "hash": "7f6b3c9b7ba7186127044e254fdaf4e8314196fe3ad62b96e080b1ee9b0db528",
+       "bytes": 184025
+      }
+     }
     },
     {
-     "code": "L3.4a",
-     "slug": "3-4a-indefinite-integrals",
-     "title": "Indefinite Integrals",
-     "stewart": "",
+     "code": "L3.4",
+     "slug": "3-4-indefinite-integrals-net-change",
+     "title": "Indefinite Integrals & Net Change",
+     "stewart": "4.4",
      "quarto": {
-      "file": "q/3-4a-indefinite-integrals.html",
-      "hash": "e06f9e4a2e0ef034e06848eedda8e106e5a53ab64d64a98549e5929749010abc",
-      "bytes": 4480250
+      "file": "q/3-4-indefinite-integrals-net-change.html",
+      "hash": "7718c491d7b025249b69fb1319ca66056f25b674a03311f3d7b731475425cc6c",
+      "bytes": 4426505
      },
      "sections": [
       {
-       "id": "from-derivative-to-antiderivative",
-       "text": "From derivative to antiderivative",
-       "level": 2
-      },
-      {
-       "id": "indefinite-vs.-definite-dont-confuse-them",
-       "text": "Indefinite vs. definite — don’t confuse them",
+       "id": "indefinite-integral",
+       "text": "Indefinite integral",
        "level": 2
       },
       {
@@ -2068,41 +2171,48 @@
        "level": 2
       },
       {
-       "id": "worked-examples",
-       "text": "Worked examples",
-       "level": 2
-      }
-     ],
-     "docs": {}
-    },
-    {
-     "code": "L3.4b",
-     "slug": "3-4b-net-change",
-     "title": "Net Change as an Integral",
-     "stewart": "",
-     "quarto": {
-      "file": "q/3-4b-net-change.html",
-      "hash": "59c6b4115d4da9c02ba0b2353e57c369104c9b68be097a8ea98ea14890ba63fd",
-      "bytes": 4475823
-     },
-     "sections": [
-      {
-       "id": "the-net-change-theorem",
-       "text": "The Net Change Theorem",
+       "id": "indefinite-and-definite-integrals",
+       "text": "Indefinite and definite integrals",
        "level": 2
       },
       {
-       "id": "application-particle-motion",
-       "text": "Application — particle motion",
+       "id": "evaluating-with-the-table",
+       "text": "Evaluating with the table",
        "level": 2
       },
       {
-       "id": "a-note-on-units",
-       "text": "A note on units",
+       "id": "net-change-theorem",
+       "text": "Net Change Theorem",
+       "level": 2
+      },
+      {
+       "id": "particle-motion",
+       "text": "Particle motion",
+       "level": 2
+      },
+      {
+       "id": "units-of-an-integral",
+       "text": "Units of an integral",
        "level": 2
       }
      ],
-     "docs": {}
+     "docs": {
+      "packet": {
+       "file": "p/3-4-indefinite-integrals-net-change-packet.pdf",
+       "hash": "621b3745be558cab341eba3b49c49278ccab55199db9feb069fcb6610519a1ca",
+       "bytes": 135279
+      },
+      "ticket": {
+       "file": "p/3-4-indefinite-integrals-net-change-ticket.pdf",
+       "hash": "216fb68b84ea297ac814fda4ec6246e1de7a10cfaf2b7963cef741661550bcc8",
+       "bytes": 134423
+      },
+      "onepager": {
+       "file": "p/3-4-indefinite-integrals-net-change-onepager.pdf",
+       "hash": "6c8253804bfb3d40658523225c6b8ca4fe71202533767d359178a75f3b67382c",
+       "bytes": 194478
+      }
+     }
     },
     {
      "code": "L3.5a",
@@ -2111,8 +2221,8 @@
      "stewart": "",
      "quarto": {
       "file": "q/3-5a-substitution-rule.html",
-      "hash": "6852d7712859966b54bf7706200cda36a31babbacdb7261f769db95efe478707",
-      "bytes": 3759384
+      "hash": "1a262da84b01d4de2cb76f79c05f554da5ed9074fae6cd4827692361769792d2",
+      "bytes": 3692237
      },
      "sections": [
       {
@@ -2146,27 +2256,28 @@
        "level": 2
       },
       {
-       "id": "worked-example-1-displaystyleint-x3-cosx4-2dx",
-       "text": "Worked Example 1 — \\(\\displaystyle\\int x^3 \\cos(x^4 + 2)\\,dx\\)",
-       "level": 3
-      },
-      {
-       "id": "worked-example-2-displaystyleint-sqrt2x1dx",
-       "text": "Worked Example 2 — \\(\\displaystyle\\int \\sqrt{2x+1}\\,dx\\)",
-       "level": 3
-      },
-      {
-       "id": "worked-example-3-displaystyleint-fracxsqrt1-4x2dx",
-       "text": "Worked Example 3 — \\(\\displaystyle\\int \\frac{x}{\\sqrt{1-4x^2}}\\,dx\\)",
-       "level": 3
-      },
-      {
        "id": "drill-spot-the-u",
-       "text": "Drill — spot the \\(u\\)",
+       "text": "Drill — spot the u",
        "level": 3
       }
      ],
-     "docs": {}
+     "docs": {
+      "packet": {
+       "file": "p/3-5a-substitution-rule-packet.pdf",
+       "hash": "7124328a187867a21e5c02444a5b6ac0e7fe7dcc8d642bcbf7f4ef309f91b8cc",
+       "bytes": 160446
+      },
+      "ticket": {
+       "file": "p/3-5a-substitution-rule-ticket.pdf",
+       "hash": "1ba45a9ac957a6c142157b6c3249e13526f7870bd98d444be20f8fbabeab279f",
+       "bytes": 132934
+      },
+      "onepager": {
+       "file": "p/3-5a-substitution-rule-onepager.pdf",
+       "hash": "4f877a2bc7fa2c35103fc3e86ee77e1b0dcbe9e0d55fe37eb594ea0ecf2f55f6",
+       "bytes": 186377
+      }
+     }
     },
     {
      "code": "L3.5b",
@@ -2175,8 +2286,8 @@
      "stewart": "",
      "quarto": {
       "file": "q/3-5b-definite-substitution-and-symmetry.html",
-      "hash": "449c9ffdcca715be6f1312fc74b295f27bfd0537600be78914d0778f348fcbec",
-      "bytes": 3744140
+      "hash": "d042f0f31a2639aab82f0b170b7fb0c5b5eb95ec71efceab66e8376c3d2c84d5",
+      "bytes": 3676850
      },
      "sections": [
       {
@@ -2185,27 +2296,28 @@
        "level": 2
       },
       {
-       "id": "worked-example-displaystyleint_12-fracdx3-5x2",
-       "text": "Worked Example — \\(\\displaystyle\\int_1^{2} \\frac{dx}{(3-5x)^2}\\)",
-       "level": 3
-      },
-      {
        "id": "symmetry-shortcuts",
        "text": "Symmetry shortcuts",
        "level": 2
-      },
-      {
-       "id": "worked-example-displaystyleint_-221-x6dx",
-       "text": "Worked Example — \\(\\displaystyle\\int_{-2}^{2}(1 + x^6)\\,dx\\)",
-       "level": 3
-      },
-      {
-       "id": "worked-example-displaystyleint_-11fractan-x1-x2-x4dx",
-       "text": "Worked Example — \\(\\displaystyle\\int_{-1}^{1}\\frac{\\tan x}{1 + x^2 + x^4}\\,dx\\)",
-       "level": 3
       }
      ],
-     "docs": {}
+     "docs": {
+      "packet": {
+       "file": "p/3-5b-definite-substitution-and-symmetry-packet.pdf",
+       "hash": "a15956d9b4cac78e9ad2bdf0ef9da44b491beb5dcb34ed9d49d98f320c736c52",
+       "bytes": 146812
+      },
+      "ticket": {
+       "file": "p/3-5b-definite-substitution-and-symmetry-ticket.pdf",
+       "hash": "d53a86bb112af157cacee78b54e0eeef027e24098acb12c63745b9f2f1f9d8a0",
+       "bytes": 114029
+      },
+      "onepager": {
+       "file": "p/3-5b-definite-substitution-and-symmetry-onepager.pdf",
+       "hash": "1ae8ea1e00d40009386542a9f6a43d28eab53cf63817e828ee7d5ed3d71148d6",
+       "bytes": 181833
+      }
+     }
     }
    ],
    "guide": [
@@ -2215,28 +2327,10 @@
     },
     {
      "kind": "lesson",
-     "date": "11/13",
+     "date": "11/18",
      "name": "3.1 Areas and Distances",
      "detail": "Summation notation, the area problem, · Riemann sums, the distance problem",
      "stewart": "§4.1",
-     "hw": "to be assigned",
-     "count": null
-    },
-    {
-     "kind": "lesson",
-     "date": "11/17",
-     "name": "3.2a The Definite Integral",
-     "detail": "The definition, net area, recognizing a · Riemann sum, the Midpoint Rule",
-     "stewart": "§4.2",
-     "hw": "to be assigned",
-     "count": null
-    },
-    {
-     "kind": "lesson",
-     "date": "11/18",
-     "name": "3.2b Properties of the Definite Integral",
-     "detail": "The five properties, additivity, · comparison",
-     "stewart": "§4.2",
      "hw": "to be assigned",
      "count": null
     },
@@ -2247,24 +2341,33 @@
     {
      "kind": "lesson",
      "date": "12/1",
-     "name": "3.3a Re-entry: Riemann Sums → FTC Part 1",
+     "name": "3.2a The Definite Integral",
+     "detail": "Recap of Riemann sums; the definition, net area, · recognizing a Riemann sum, the Midpoint Rule",
+     "stewart": "§4.2",
+     "hw": "to be assigned",
+     "count": null
+    },
+    {
+     "kind": "lesson",
+     "date": "12/2",
+     "name": "3.2b Properties of the Definite Integral",
+     "detail": "The five properties, additivity, · comparison",
+     "stewart": "§4.2",
+     "hw": "to be assigned",
+     "count": null
+    },
+    {
+     "kind": "lesson",
+     "date": "12/4",
+     "name": "3.3a Riemann Sums → FTC Part 1",
      "detail": "The accumulation function; FTC unites · differentiation and integration",
      "stewart": "§4.2–4.3",
      "hw": "to be assigned",
      "count": null
     },
     {
-     "kind": "quiz",
-     "date": "12/2",
-     "name": "QUIZ 3",
-     "detail": "",
-     "stewart": "§4.1–4.2",
-     "hw": "",
-     "count": null
-    },
-    {
      "kind": "lesson",
-     "date": "12/4",
+     "date": "12/8",
      "name": "3.3b FTC Part 2: the Evaluation Theorem",
      "detail": "F(x)=g(x)+c, so the c's cancel; FTC 1 · with the chain rule",
      "stewart": "§4.3",
@@ -2273,18 +2376,9 @@
     },
     {
      "kind": "lesson",
-     "date": "12/8",
-     "name": "3.4a Indefinite Integrals",
-     "detail": "A family, not a number; the table read · backwards from the derivative rules",
-     "stewart": "§4.4",
-     "hw": "to be assigned",
-     "count": null
-    },
-    {
-     "kind": "lesson",
      "date": "12/9",
-     "name": "3.4b Net Change as an Integral",
-     "detail": "The integral of a rate of change is the · net change; displacement vs. distance",
+     "name": "3.4 Indefinite Integrals & Net Change",
+     "detail": "The table from the derivative rules; the Net Change · Theorem; displacement vs. distance",
      "stewart": "§4.4",
      "hw": "to be assigned",
      "count": null
@@ -2659,6 +2753,51 @@
        "bytes": 200140
       }
      }
+    },
+    {
+     "code": "L4.4",
+     "slug": "4-4-work",
+     "title": "Work",
+     "stewart": "4.4",
+     "quarto": {
+      "file": "q/4-4-work.html",
+      "hash": "04a2b27a84a62fb7e6cedea23125e47eda7531974e75d1703fc7e48c2a2ed8f4",
+      "bytes": 4435060
+     },
+     "sections": [
+      {
+       "id": "work-along-a-path",
+       "text": "Work along a path",
+       "level": 2
+      },
+      {
+       "id": "springs-and-hookes-law",
+       "text": "Springs and Hooke’s Law",
+       "level": 2
+      },
+      {
+       "id": "gravity",
+       "text": "Gravity",
+       "level": 2
+      }
+     ],
+     "docs": {
+      "packet": {
+       "file": "p/4-4-work-packet.pdf",
+       "hash": "8c46a0a2548d89281f9af9fea01590a8412cfcb6da8ec6a20f88dcf05b0022ad",
+       "bytes": 168178
+      },
+      "ticket": {
+       "file": "p/4-4-work-ticket.pdf",
+       "hash": "a8a3ed66771fbe6c27bb96594b5d74a025ec2081c2eb08b28d4b19de46ac7d30",
+       "bytes": 139795
+      },
+      "onepager": {
+       "file": "p/4-4-work-onepager.pdf",
+       "hash": "b2b085f3b543d24c7f20a2c6f5d33a488253f8b01c961947d57269186e755d45",
+       "bytes": 275878
+      }
+     }
     }
    ],
    "guide": [
@@ -2736,16 +2875,7 @@
     {
      "kind": "lesson",
      "date": "1/27",
-     "name": "4.3b Shells: Choosing the Strip and the Axis",
-     "detail": "Radius and height read off the picture; shells · about a line other than the axis",
-     "stewart": "§5.3",
-     "hw": "to be assigned",
-     "count": null
-    },
-    {
-     "kind": "lesson",
-     "date": "1/29",
-     "name": "4.4 Which Method? Disk / Washer / Shell (BTC)",
+     "name": "4.3b Which Method? Disk / Washer / Shell (BTC)",
      "detail": "Choosing the method from the region and the · axis; when only one of the two integrates",
      "stewart": "§5.2–5.3",
      "hw": "to be assigned",
@@ -2753,9 +2883,18 @@
     },
     {
      "kind": "lesson",
+     "date": "1/29",
+     "name": "4.4 Work: Springs & Gravity",
+     "detail": "W=∫ F(r) dr from start to end; springs · F_s=-kx and gravity GMm/r^2",
+     "stewart": "§5.4",
+     "hw": "p.386: 1,3,4 p.387: 5,7,9,11 p.388: 33",
+     "count": null
+    },
+    {
+     "kind": "lesson",
      "date": "2/2",
-     "name": "4.5a Average Value of a Function",
-     "detail": "f_avg=1/b-a∫_a^b f; the rectangle of · equal area",
+     "name": "4.5a Average Value · MVT for Integrals",
+     "detail": "f_avg=1/b-a∫_a^b f; some c in [a,b] · hits the average",
      "stewart": "§5.5",
      "hw": "to be assigned",
      "count": null
@@ -2763,8 +2902,8 @@
     {
      "kind": "lesson",
      "date": "2/3",
-     "name": "4.5b Density & Net Change · MVT for Integrals",
-     "detail": "Mass from a density; some c in [a,b] hits the · average",
+     "name": "4.5b Density & Net Change",
+     "detail": "Mass from a density; net change from a rate",
      "stewart": "§5.5",
      "hw": "to be assigned",
      "count": null
@@ -2774,26 +2913,26 @@
      "date": "2/5",
      "name": "QUIZ 5",
      "detail": "",
-     "stewart": "§5.3, §5.5",
+     "stewart": "§5.3–5.5",
      "hw": "",
      "count": null
     },
     {
      "kind": "lesson",
      "date": "2/9",
-     "name": "4.6a Work: Springs, Cables & Hooke's Law",
-     "detail": "W=∫_a^b f(x) dx when the force varies; · a hanging cable lifted a piece at a time",
-     "stewart": "§5.4",
-     "hw": "to be assigned",
+     "name": "Catch-up / Flex Day",
+     "detail": "",
+     "stewart": "—",
+     "hw": "",
      "count": null
     },
     {
      "kind": "lesson",
      "date": "2/10",
-     "name": "4.6b Work: Pumping Problems*",
-     "detail": "One slab of liquid, its weight and its lift; · summing over the depth",
-     "stewart": "§5.4",
-     "hw": "to be assigned",
+     "name": "Catch-up / Flex Day",
+     "detail": "",
+     "stewart": "—",
+     "hw": "",
      "count": null
     },
     {
