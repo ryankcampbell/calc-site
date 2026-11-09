@@ -1702,8 +1702,8 @@
      "stewart": "2.8",
      "quarto": {
       "file": "q/2-8-antiderivatives.html",
-      "hash": "a44b4a5723fd6ca3bf5a5ff3f9ef95b9e58268c69a89012636891cb4e9eb67cf",
-      "bytes": 3706795
+      "hash": "06e18d425e4d751b658678d870c9cfa7c58fda5c2449933667d16a9d0469a59c",
+      "bytes": 3704147
      },
      "sections": [
       {
@@ -1755,8 +1755,8 @@
      "docs": {
       "packet": {
        "file": "p/2-8-antiderivatives-packet.pdf",
-       "hash": "437bf6b9b78803bc402971376d2590eb2c76c719d4e6196d60de23deb80c3ff7",
-       "bytes": 288619
+       "hash": "cf94cb5c96c97ebe52e28b438138a0969d919e86926ef64155b35f781811954a",
+       "bytes": 205226
       },
       "ticket": {
        "file": "p/2-8-antiderivatives-ticket.pdf",
@@ -1765,8 +1765,8 @@
       },
       "onepager": {
        "file": "p/2-8-antiderivatives-onepager.pdf",
-       "hash": "aff83c6f140a93b5d7e62c88799e38c03e911d5003d168fa75733c82f4febecd",
-       "bytes": 290785
+       "hash": "87ff965c04f5b708eb075868a560d3a4fdcf8bced809719d3e38c65e51b256b3",
+       "bytes": 136795
       }
      }
     }
@@ -1851,11 +1851,11 @@
     {
      "kind": "lesson",
      "date": "11/6",
-     "name": "2.7 Newton's Method",
-     "detail": "The tangent's x-intercept, iterated; · when it fails",
-     "stewart": "§3.8",
-     "hw": "p.276: 1,2,3,4,5,6,7,8,11,13(a),14(a) p.277: 28(a),32",
-     "count": 13
+     "name": "Optimization Practice",
+     "detail": "Five problems, easy to hard",
+     "stewart": "§3.7",
+     "hw": "",
+     "count": null
     },
     {
      "kind": "lesson",
