@@ -2798,6 +2798,56 @@
        "bytes": 275878
       }
      }
+    },
+    {
+     "code": "L4.5a",
+     "slug": "4-5a-average-value",
+     "title": "Average Value · MVT for Integrals",
+     "stewart": "4.5a",
+     "quarto": {
+      "file": "q/4-5a-average-value.html",
+      "hash": "b157e6e157fc0b4a6680b643e13d28777b517c920d9fa385b444a38e68dbafa3",
+      "bytes": 4431026
+     },
+     "sections": [
+      {
+       "id": "average-value",
+       "text": "Average value",
+       "level": 2
+      },
+      {
+       "id": "the-mean-value-theorem-for-integrals",
+       "text": "The Mean Value Theorem for Integrals",
+       "level": 2
+      },
+      {
+       "id": "computing-the-average-value-and-c",
+       "text": "Computing the average value and c",
+       "level": 2
+      },
+      {
+       "id": "average-of-a-changing-quantity",
+       "text": "Average of a changing quantity",
+       "level": 2
+      }
+     ],
+     "docs": {
+      "packet": {
+       "file": "p/4-5a-average-value-packet.pdf",
+       "hash": "0635642f478e516f46f709122338a4c79ff8f4decf04449f0c0725c79e512410",
+       "bytes": 158628
+      },
+      "ticket": {
+       "file": "p/4-5a-average-value-ticket.pdf",
+       "hash": "d6c1262fa89039ef0e2b440808608465c49349cdbf740841f43f52db6122cde0",
+       "bytes": 124451
+      },
+      "onepager": {
+       "file": "p/4-5a-average-value-onepager.pdf",
+       "hash": "86260311dd39b0732f0b1e1e3aa73272d2207d0001af05070123f23b85f69df5",
+       "bytes": 236352
+      }
+     }
     }
    ],
    "guide": [
@@ -2894,9 +2944,9 @@
      "kind": "lesson",
      "date": "2/2",
      "name": "4.5a Average Value · MVT for Integrals",
-     "detail": "f_avg=1/b-a∫_a^b f; some c in [a,b] · hits the average",
+     "detail": "f_ave=1/b-a∫_a^b f; f(c)=f_ave · for some c in [a,b]",
      "stewart": "§5.5",
-     "hw": "to be assigned",
+     "hw": "p.391: 1,3,5,7,9,10, 13,14,15,17 p.392: 23",
      "count": null
     },
     {
